@@ -16,13 +16,11 @@ namespace QuanLyDeCuongProject
         public Form1()
         {
             InitializeComponent();
-            
-            
         }
         
         private void Form1_Load(object sender, EventArgs e)
-        {
-            DataBase database = new DataBase(@"MSI\\MSSQLSERVER01");
+        { 
+            DataBase database = new DataBase(@"MSI\\MSSQLSERVER01"); // Your server name
         }
     }
 }
