@@ -1,12 +1,91 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\QuanLyDeCuongProject\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\QuanLyDeCuongProject\\QuanLyDeCuongProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|d:\\quanlydecuongproject\\quanlydecuongproject\\quanlydecuongproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|solutionrelative:quanlydecuongproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|d:\\quanlydecuongproject\\quanlydecuongproject\\quanlydecuongproject\\data\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|solutionrelative:quanlydecuongproject\\data\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|d:\\quanlydecuongproject\\quanlydecuongproject\\quanlydecuongproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|solutionrelative:quanlydecuongproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|D:\\QuanLyDeCuongProject\\QuanLyDeCuongProject\\quanlydecuongproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|solutionrelative:quanlydecuongproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\QuanLyDeCuongProject\\QuanLyDeCuongProject\\QuanLyDeCuongProject\\Form1.cs",
+              "RelativeDocumentMoniker": "QuanLyDeCuongProject\\Form1.cs",
+              "ToolTip": "D:\\QuanLyDeCuongProject\\QuanLyDeCuongProject\\QuanLyDeCuongProject\\Form1.cs",
+              "RelativeToolTip": "QuanLyDeCuongProject\\Form1.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAIAwwAkAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T16:30:37.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataBase.cs",
+              "DocumentMoniker": "D:\\QuanLyDeCuongProject\\QuanLyDeCuongProject\\QuanLyDeCuongProject\\Data\\DataBase.cs",
+              "RelativeDocumentMoniker": "QuanLyDeCuongProject\\Data\\DataBase.cs",
+              "ToolTip": "D:\\QuanLyDeCuongProject\\QuanLyDeCuongProject\\QuanLyDeCuongProject\\Data\\DataBase.cs",
+              "RelativeToolTip": "QuanLyDeCuongProject\\Data\\DataBase.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAwwA8AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T16:22:13.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\QuanLyDeCuongProject\\QuanLyDeCuongProject\\QuanLyDeCuongProject\\Program.cs",
+              "RelativeDocumentMoniker": "QuanLyDeCuongProject\\Program.cs",
+              "ToolTip": "D:\\QuanLyDeCuongProject\\QuanLyDeCuongProject\\QuanLyDeCuongProject\\Program.cs",
+              "RelativeToolTip": "QuanLyDeCuongProject\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T16:11:42.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\QuanLyDeCuongProject\\QuanLyDeCuongProject\\QuanLyDeCuongProject\\Form1.cs",
+              "RelativeDocumentMoniker": "QuanLyDeCuongProject\\Form1.cs",
+              "ToolTip": "D:\\QuanLyDeCuongProject\\QuanLyDeCuongProject\\QuanLyDeCuongProject\\Form1.cs [Design]",
+              "RelativeToolTip": "QuanLyDeCuongProject\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T16:11:31.92Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,10 @@
+D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe.config
+D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe
+D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.pdb
+D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.AssemblyReference.cache
+D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Form1.resources
+D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Properties.Resources.resources
+D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.GenerateResource.cache
+D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.CoreCompileInputs.cache
+D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.exe
+D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.pdb
