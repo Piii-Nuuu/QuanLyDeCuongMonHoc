@@ -22,7 +22,7 @@ namespace QuanLyDeCuongProject
         
         private void Form1_Load(object sender, EventArgs e)
         {
-            // test push api
+            // test push api acccddd
             DataBase database = new DataBase(@"MSI\\MSSQLSERVER01");
         }
     }
