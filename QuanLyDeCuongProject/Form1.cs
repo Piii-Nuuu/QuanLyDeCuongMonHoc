@@ -22,7 +22,7 @@ namespace QuanLyDeCuongProject
         { 
             // Enter Your Server Name
             // Hello Aliens @@
-            DataBase database = new DataBase(@""); 
+            DataBase database = new DataBase(@"SerVer Name"); 
         }
     }
 }
