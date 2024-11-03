@@ -22,6 +22,7 @@ namespace QuanLyDeCuongProject
         { 
             // Enter Your Server Name
             // Hello Aliens @@
+            // branch GiaTu/2411/08
             DataBase database = new DataBase(@"Server Name"); 
         }
     }
