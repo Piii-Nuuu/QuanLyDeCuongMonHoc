@@ -20,7 +20,9 @@ namespace QuanLyDeCuongProject
         
         private void Form1_Load(object sender, EventArgs e)
         { 
-            DataBase database = new DataBase(@"MSI\\MSSQLSERVER01"); // Enter Your Server Name
+            // Enter Your Server Name
+            // Hello Aliens
+            DataBase database = new DataBase(@"MSI\\MSSQLSERVER01"); 
         }
     }
 }
