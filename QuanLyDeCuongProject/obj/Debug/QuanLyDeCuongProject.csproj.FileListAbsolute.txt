@@ -8,3 +8,14 @@ D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\Quan
 D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.CoreCompileInputs.cache
 D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.exe
 D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.pdb
+D:\ad\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe.config
+D:\ad\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe
+D:\ad\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.pdb
+D:\ad\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.AssemblyReference.cache
+D:\ad\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Form1.resources
+D:\ad\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Properties.Resources.resources
+D:\ad\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QL_Nganh.resources
+D:\ad\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.GenerateResource.cache
+D:\ad\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.CoreCompileInputs.cache
+D:\ad\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.exe
+D:\ad\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.pdb
