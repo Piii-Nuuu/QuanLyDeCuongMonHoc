@@ -3,6 +3,10 @@
     "",
     "\\QuanLyDeCuongProject"
   ],
-  "SelectedNode": "\\QuanLyDeCuongProject\\Form1.cs",
+<<<<<<< HEAD
+  "SelectedNode": "\\QuanLyDeCuongProject\\QuanLyPhanQuyen.cs",
+=======
+  "SelectedNode": "\\QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj",
+>>>>>>> main
   "PreviewInSolutionExplorer": false
 }
