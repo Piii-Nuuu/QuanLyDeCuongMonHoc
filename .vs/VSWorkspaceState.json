@@ -1,11 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\QuanLyDeCuongProject",
-    "\\QuanLyDeCuongProject\\bin",
-    "\\QuanLyDeCuongProject\\Data",
-    "\\QuanLyDeCuongProject\\obj",
-    "\\QuanLyDeCuongProject\\Properties"
+    "\\QuanLyDeCuongProject"
   ],
+  "SelectedNode": "\\QuanLyDeCuongProject\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
