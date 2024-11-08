@@ -149,8 +149,6 @@
               "ToolTip": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\Sign_in.cs [Design]",
               "RelativeToolTip": "QuanLyDeCuongProject\\Sign_in.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:53:15.207Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -188,6 +186,17 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T16:11:31.92Z",
               "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-08T15:33:02.476Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }

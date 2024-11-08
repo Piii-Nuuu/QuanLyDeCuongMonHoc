@@ -89,6 +89,12 @@
       <DependentUpon>Sign_in.cs</DependentUpon>
     </Compile>
     <Compile Include="Taikhoans.cs" />
+    <Compile Include="QL_Nganh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_Nganh.Designer.cs">
+      <DependentUpon>QL_Nganh.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +118,9 @@
     </Compile>
     <EmbeddedResource Include="Sign_in.resx">
       <DependentUpon>Sign_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_Nganh.resx">
+      <DependentUpon>QL_Nganh.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
