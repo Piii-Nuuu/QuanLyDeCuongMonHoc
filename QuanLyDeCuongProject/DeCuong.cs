@@ -16,5 +16,15 @@ namespace QuanLyDeCuongProject
         {
             InitializeComponent();
         }
+
+        private void DeCuong_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void List_DS_De_Cuong_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
