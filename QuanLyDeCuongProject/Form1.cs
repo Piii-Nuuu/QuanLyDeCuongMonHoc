@@ -24,7 +24,11 @@ namespace QuanLyDeCuongProject
             // Enter Your Server Name
             // Hello Aliens @@
 <<<<<<< HEAD
+<<<<<<< HEAD
             DataBase database = new DataBase(@"SerVer Name"); 
+=======
+            DataBase database = new DataBase(@"Server Name"); 
+>>>>>>> main
 =======
             // Branch VanBao/241108
             DataBase database = new DataBase(@"servername"); 
