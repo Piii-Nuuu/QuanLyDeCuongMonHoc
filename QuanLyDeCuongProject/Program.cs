@@ -16,7 +16,7 @@ namespace QuanLyDeCuongProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_SinhVien());
+            Application.Run(new Sign_in());
         }
     }
 }
