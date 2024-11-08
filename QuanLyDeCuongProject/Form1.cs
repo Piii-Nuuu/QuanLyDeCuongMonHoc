@@ -1,3 +1,4 @@
+
 ﻿using QuanLyDeCuongProject.Data;
 using System;
 using System.Collections.Generic;
@@ -22,9 +23,9 @@ namespace QuanLyDeCuongProject
         { 
             // Enter Your Server Name
             // Hello Aliens @@
-            // branch GiaTu/241108
-            //yjjjj fff bbvvvv vvvvvvv
-            DataBase database = new DataBase(@"Server Name"); 
+            // test  github ac
+
+          //  DataBase database = new DataBase(@"SerVer Name"); 
         }
     }
 }
