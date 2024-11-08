@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "ExpandedNodes": [
     "",
@@ -13,4 +14,13 @@
 >>>>>>> main
 >>>>>>> main
   "PreviewInSolutionExplorer": false
+=======
+{
+  "ExpandedNodes": [
+    "",
+    "\\QuanLyDeCuongProject"
+  ],
+  "SelectedNode": "\\QuanLyDeCuongProject\\Form1.cs",
+  "PreviewInSolutionExplorer": false
+>>>>>>> eb82de20232b3b6f7066bd29bb51bb2b17b65f43
 }
