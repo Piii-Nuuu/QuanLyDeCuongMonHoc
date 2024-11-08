@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\QuanLyDeCuongMonHoc\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|d:\\quanlydecuongmonhoc\\quanlydecuongproject\\quanlyphanquyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|solutionrelative:quanlydecuongproject\\quanlyphanquyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|d:\\quanlydecuongmonhoc\\quanlydecuongproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|solutionrelative:quanlydecuongproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,21 +34,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\Form1.cs",
               "RelativeDocumentMoniker": "QuanLyDeCuongProject\\Form1.cs",
               "ToolTip": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\Form1.cs",
               "RelativeToolTip": "QuanLyDeCuongProject\\Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T16:30:37.014Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuanLyPhanQuyen.cs [Design]",
+              "DocumentMoniker": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\QuanLyPhanQuyen.cs",
+              "RelativeDocumentMoniker": "QuanLyDeCuongProject\\QuanLyPhanQuyen.cs",
+              "ToolTip": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\QuanLyPhanQuyen.cs [Design]",
+              "RelativeToolTip": "QuanLyDeCuongProject\\QuanLyPhanQuyen.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T13:27:59.072Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",
@@ -56,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "README.md",
               "DocumentMoniker": "D:\\QuanLyDeCuongMonHoc\\README.md",
               "RelativeDocumentMoniker": "README.md",
@@ -68,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DataBase.cs",
               "DocumentMoniker": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\Data\\DataBase.cs",
               "RelativeDocumentMoniker": "QuanLyDeCuongProject\\Data\\DataBase.cs",
@@ -80,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\Program.cs",
               "RelativeDocumentMoniker": "QuanLyDeCuongProject\\Program.cs",
@@ -92,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\Form1.cs",
               "RelativeDocumentMoniker": "QuanLyDeCuongProject\\Form1.cs",
