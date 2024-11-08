@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 ﻿using QuanLyDeCuongProject.Data;
 using QuanLyDeCuongProject.Queries;
 using System;
+=======
+﻿using System;
+>>>>>>> e883e05 (up)
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,14 +18,18 @@ namespace QuanLyDeCuongProject
 {
     public partial class QuanLyPhanQuyen : Form
     {
+<<<<<<< HEAD
         DataBase database = new DataBase(@"MSI\MSSQLSERVER01");
         DataTable listPermissions, listQuyen;
         QuyenQuery quyen_query = new QuyenQuery();
         PermissionQuery permission_query = new PermissionQuery();
+=======
+>>>>>>> e883e05 (up)
         public QuanLyPhanQuyen()
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
         private void comboxPermission_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -76,5 +84,7 @@ namespace QuanLyDeCuongProject
         {
            
         }
+=======
+>>>>>>> e883e05 (up)
     }
 }
