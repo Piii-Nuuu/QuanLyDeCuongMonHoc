@@ -16,7 +16,8 @@ namespace QuanLyDeCuongProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QL_Nganh());
+            Application.Run(new QuanLyPhanQuyen());
         }
     }
 }
+
