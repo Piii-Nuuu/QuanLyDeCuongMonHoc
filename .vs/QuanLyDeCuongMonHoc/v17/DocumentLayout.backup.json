@@ -1,12 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\QuanLyDeCuongMonHoc\\",
+<<<<<<< HEAD
+  "Documents": [],
+=======
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\QuanLyDeCuongMonHoc\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     }
   ],
+>>>>>>> main
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -15,11 +19,15 @@
         {
           "DockedWidth": 200,
 <<<<<<< HEAD
+          "SelectedChildIndex": -1,
+=======
+<<<<<<< HEAD
           "SelectedChildIndex": 0,
           "Children": [
             {
 =======
           "SelectedChildIndex": 2,
+>>>>>>> main
           "Children": [
             {
               "$type": "Bookmark",
@@ -28,6 +36,8 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+<<<<<<< HEAD
+=======
             },
             {
 >>>>>>> main
@@ -60,6 +70,7 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
               "WhenOpened": "2024-11-03T13:27:15.48Z",
               "EditorCaption": ""
+>>>>>>> main
 >>>>>>> main
             }
           ]
