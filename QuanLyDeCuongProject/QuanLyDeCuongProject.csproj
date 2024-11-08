@@ -61,6 +61,8 @@
     <Compile Include="QuanLyPhanQuyen.Designer.cs">
       <DependentUpon>QuanLyPhanQuyen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Queries\PermissionQuery.cs" />
+    <Compile Include="Queries\QuyenQuery.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -73,6 +75,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QuanLyPhanQuyen.resx">
+      <DependentUpon>QuanLyPhanQuyen.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -86,5 +91,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

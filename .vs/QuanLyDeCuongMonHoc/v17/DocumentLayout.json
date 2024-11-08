@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\QuanLyDeCuongMonHoc\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\QuanLyPhanQuyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QuanLyDeCuongProject\\QuanLyPhanQuyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\QuanLyDeCuongMonHoc\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     }
@@ -27,6 +35,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "QuanLyDeCuongProject.csproj",
+              "DocumentMoniker": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj",
+              "RelativeDocumentMoniker": "QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj",
+              "ToolTip": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj",
+              "RelativeToolTip": "QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-08T12:31:30.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuanLyPhanQuyen.cs",
+              "DocumentMoniker": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\QuanLyPhanQuyen.cs",
+              "RelativeDocumentMoniker": "QuanLyDeCuongProject\\QuanLyPhanQuyen.cs",
+              "ToolTip": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\QuanLyPhanQuyen.cs",
+              "RelativeToolTip": "QuanLyDeCuongProject\\QuanLyPhanQuyen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T12:31:11.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "README.md",
               "DocumentMoniker": "D:\\QuanLyDeCuongMonHoc\\README.md",
               "RelativeDocumentMoniker": "README.md",
