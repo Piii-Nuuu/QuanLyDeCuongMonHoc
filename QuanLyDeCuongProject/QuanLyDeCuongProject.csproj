@@ -53,27 +53,27 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_SinhVien.cs">
+    <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_SinhVien.Designer.cs">
-      <DependentUpon>frm_SinhVien.cs</DependentUpon>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modify.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuanLyPhanQuyen.cs">
+    <Compile Include="Sign_in.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyPhanQuyen.Designer.cs">
-      <DependentUpon>QuanLyPhanQuyen.cs</DependentUpon>
+    <Compile Include="Sign_in.Designer.cs">
+      <DependentUpon>Sign_in.cs</DependentUpon>
     </Compile>
-    <Compile Include="Queries\PermissionQuery.cs" />
-    <Compile Include="Queries\QuyenQuery.cs" />
+    <Compile Include="Taikhoans.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_SinhVien.resx">
-      <DependentUpon>frm_SinhVien.cs</DependentUpon>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,8 +84,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="QuanLyPhanQuyen.resx">
-      <DependentUpon>QuanLyPhanQuyen.cs</DependentUpon>
+    <EmbeddedResource Include="Sign_in.resx">
+      <DependentUpon>Sign_in.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
