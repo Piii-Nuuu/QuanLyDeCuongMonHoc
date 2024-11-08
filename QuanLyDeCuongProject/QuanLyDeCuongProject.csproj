@@ -95,8 +95,6 @@
     <Compile Include="QL_Nganh.Designer.cs">
       <DependentUpon>QL_Nganh.cs</DependentUpon>
     </Compile>
-    <Compile Include="Queries\PermissionQuery.cs" />
-    <Compile Include="Queries\QuyenQuery.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
