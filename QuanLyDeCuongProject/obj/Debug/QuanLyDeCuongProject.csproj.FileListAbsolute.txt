@@ -8,3 +8,16 @@ D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\Quan
 D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.CoreCompileInputs.cache
 D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.exe
 D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.pdb
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.AssemblyReference.cache
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DeCuong.resources
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Form1.resources
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.GenerateResource.cache
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.exe
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.pdb
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe.config
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.pdb
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\Guna.UI2.dll
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Properties.Resources.resources
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.CoreCompileInputs.cache
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDe.31FE06E8.Up2Date

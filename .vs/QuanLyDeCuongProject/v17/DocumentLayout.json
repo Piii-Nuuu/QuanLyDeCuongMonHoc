@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "D:\\QuanLyDeCuongMonHoc\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|D:\\QuanLyDeCuongMonHoc\\quanlydecuongproject\\decuong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|solutionrelative:quanlydecuongproject\\decuong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|D:\\QuanLyDeCuongMonHoc\\quanlydecuongproject\\decuong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|solutionrelative:quanlydecuongproject\\decuong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|D:\\QuanLyDeCuongMonHoc\\quanlydecuongproject\\decuong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|solutionrelative:quanlydecuongproject\\decuong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|d:\\quanlydecuongmonhoc\\quanlydecuongproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|solutionrelative:quanlydecuongproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|D:\\QuanLyDeCuongMonHoc\\quanlydecuongproject\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|solutionrelative:quanlydecuongproject\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|D:\\QuanLyDeCuongMonHoc\\quanlydecuongproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|solutionrelative:quanlydecuongproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\QuanLyDeCuongMonHoc\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     }
@@ -14,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +54,82 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\Program.cs",
+              "RelativeDocumentMoniker": "QuanLyDeCuongProject\\Program.cs",
+              "ToolTip": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\Program.cs",
+              "RelativeToolTip": "QuanLyDeCuongProject\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T14:51:12.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "QuanLyDeCuongProject\\Properties\\Resources.resx",
+              "ToolTip": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\Properties\\Resources.resx",
+              "RelativeToolTip": "QuanLyDeCuongProject\\Properties\\Resources.resx",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAQwHoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-11-08T14:48:45.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DeCuong.cs",
+              "DocumentMoniker": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\DeCuong.cs",
+              "RelativeDocumentMoniker": "QuanLyDeCuongProject\\DeCuong.cs",
+              "ToolTip": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\DeCuong.cs",
+              "RelativeToolTip": "QuanLyDeCuongProject\\DeCuong.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAawB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T14:44:56.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DeCuong.cs [Design]",
+              "DocumentMoniker": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\DeCuong.cs",
+              "RelativeDocumentMoniker": "QuanLyDeCuongProject\\DeCuong.cs",
+              "ToolTip": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\DeCuong.cs [Design]",
+              "RelativeToolTip": "QuanLyDeCuongProject\\DeCuong.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T14:30:08.583Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeCuong.Designer.cs",
+              "DocumentMoniker": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\DeCuong.Designer.cs",
+              "RelativeDocumentMoniker": "QuanLyDeCuongProject\\DeCuong.Designer.cs",
+              "ToolTip": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\DeCuong.Designer.cs",
+              "RelativeToolTip": "QuanLyDeCuongProject\\DeCuong.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T14:29:58.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\Form1.cs",
+              "RelativeDocumentMoniker": "QuanLyDeCuongProject\\Form1.cs",
+              "ToolTip": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\Form1.cs [Design]",
+              "RelativeToolTip": "QuanLyDeCuongProject\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T14:29:57.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "README.md",
               "DocumentMoniker": "D:\\QuanLyDeCuongMonHoc\\README.md",
               "RelativeDocumentMoniker": "README.md",
