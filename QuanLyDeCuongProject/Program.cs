@@ -11,6 +11,8 @@ namespace QuanLyDeCuongProject
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// update change
+        /// 
         [STAThread]
         static void Main()
         {
