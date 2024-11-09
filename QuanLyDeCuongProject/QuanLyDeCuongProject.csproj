@@ -53,16 +53,67 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_SinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SinhVien.Designer.cs">
+      <DependentUpon>frm_SinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GIANGVIEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIANGVIEN.Designer.cs">
+      <DependentUpon>GIANGVIEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modify.cs" />
+    <Compile Include="Query\PermissionQuery.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+
     <Compile Include="QLMonHoc.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="QLMonHoc.Designer.cs">
       <DependentUpon>QLMonHoc.cs</DependentUpon>
+
+    <Compile Include="QuanLyPhanQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyPhanQuyen.Designer.cs">
+      <DependentUpon>QuanLyPhanQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\QuyenQuery.cs" />
+    <Compile Include="Sign_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign_in.Designer.cs">
+      <DependentUpon>Sign_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Taikhoans.cs" />
+    <Compile Include="QL_Nganh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_Nganh.Designer.cs">
+      <DependentUpon>QL_Nganh.cs</DependentUpon>
+
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SinhVien.resx">
+      <DependentUpon>frm_SinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIANGVIEN.resx">
+      <DependentUpon>GIANGVIEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -73,8 +124,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+
     <EmbeddedResource Include="QLMonHoc.resx">
       <DependentUpon>QLMonHoc.cs</DependentUpon>
+
+    <EmbeddedResource Include="Sign_in.resx">
+      <DependentUpon>Sign_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_Nganh.resx">
+      <DependentUpon>QL_Nganh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyPhanQuyen.resx">
+      <DependentUpon>QuanLyPhanQuyen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -89,5 +150,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
