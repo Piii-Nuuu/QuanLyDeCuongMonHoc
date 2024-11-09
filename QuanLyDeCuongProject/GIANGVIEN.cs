@@ -20,7 +20,12 @@ namespace QuanLyDeCuongProject
         private void GIANGVIEN_Load(object sender, EventArgs e)
         {
             // push: Changes => commit => SYsc
-            // push: changes => commit => sync => push
+            // push: changes => commit => sync => pushdddddd
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
