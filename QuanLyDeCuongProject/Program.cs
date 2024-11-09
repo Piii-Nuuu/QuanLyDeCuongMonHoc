@@ -11,12 +11,19 @@ namespace QuanLyDeCuongProject
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// update change
+        /// 
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new DeCuong());
+=======
+            Application.Run(new frm_SinhVien());
+>>>>>>> main
         }
     }
 }
+
