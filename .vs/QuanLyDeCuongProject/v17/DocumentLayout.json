@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\QuanLyDeCuongMonHoc\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|D:\\QuanLyDeCuongMonHoc\\quanlydecuongproject\\decuong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|d:\\quanlydecuongmonhoc\\quanlydecuongproject\\decuong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|solutionrelative:quanlydecuongproject\\decuong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|solutionrelative:quanlydecuongproject\\decuong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|d:\\quanlydecuongmonhoc\\quanlydecuongproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|D:\\QuanLyDeCuongMonHoc\\quanlydecuongproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}|QuanLyDeCuongProject\\QuanLyDeCuongProject.csproj|solutionrelative:quanlydecuongproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -42,11 +42,11 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -62,8 +62,7 @@
               "RelativeToolTip": "QuanLyDeCuongProject\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T14:51:12.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T14:51:12.563Z"
             },
             {
               "$type": "Document",
@@ -73,7 +72,6 @@
               "RelativeDocumentMoniker": "QuanLyDeCuongProject\\Properties\\Resources.resx",
               "ToolTip": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\Properties\\Resources.resx",
               "RelativeToolTip": "QuanLyDeCuongProject\\Properties\\Resources.resx",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAQwHoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
               "WhenOpened": "2024-11-08T14:48:45.161Z",
               "EditorCaption": ""
@@ -86,7 +84,6 @@
               "RelativeDocumentMoniker": "QuanLyDeCuongProject\\DeCuong.cs",
               "ToolTip": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\DeCuong.cs",
               "RelativeToolTip": "QuanLyDeCuongProject\\DeCuong.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAawB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T14:44:56.88Z",
               "EditorCaption": ""
@@ -111,7 +108,6 @@
               "RelativeDocumentMoniker": "QuanLyDeCuongProject\\DeCuong.Designer.cs",
               "ToolTip": "D:\\QuanLyDeCuongMonHoc\\QuanLyDeCuongProject\\DeCuong.Designer.cs",
               "RelativeToolTip": "QuanLyDeCuongProject\\DeCuong.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T14:29:58.659Z",
               "EditorCaption": ""
@@ -138,6 +134,16 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
               "WhenOpened": "2024-11-02T16:54:28.284Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }
