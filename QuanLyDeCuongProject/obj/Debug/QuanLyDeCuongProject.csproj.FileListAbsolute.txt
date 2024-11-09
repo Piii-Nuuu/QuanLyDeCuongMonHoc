@@ -8,7 +8,6 @@ D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\Quan
 D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.CoreCompileInputs.cache
 D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.exe
 D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.pdb
-
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.AssemblyReference.cache
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DeCuong.resources
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Form1.resources

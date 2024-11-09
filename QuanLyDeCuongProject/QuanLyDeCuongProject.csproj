@@ -1,179 +1,172 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-	<PropertyGroup>
-		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-		<ProjectGuid>{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}</ProjectGuid>
-		<OutputType>WinExe</OutputType>
-		<RootNamespace>QuanLyDeCuongProject</RootNamespace>
-		<AssemblyName>QuanLyDeCuongProject</AssemblyName>
-		<TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-		<FileAlignment>512</FileAlignment>
-		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-		<Deterministic>true</Deterministic>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-		<PlatformTarget>AnyCPU</PlatformTarget>
-		<DebugSymbols>true</DebugSymbols>
-		<DebugType>full</DebugType>
-		<Optimize>false</Optimize>
-		<OutputPath>bin\Debug\</OutputPath>
-		<DefineConstants>DEBUG;TRACE</DefineConstants>
-		<ErrorReport>prompt</ErrorReport>
-		<WarningLevel>4</WarningLevel>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-		<PlatformTarget>AnyCPU</PlatformTarget>
-		<DebugType>pdbonly</DebugType>
-		<Optimize>true</Optimize>
-		<OutputPath>bin\Release\</OutputPath>
-		<DefineConstants>TRACE</DefineConstants>
-		<ErrorReport>prompt</ErrorReport>
-		<WarningLevel>4</WarningLevel>
-	</PropertyGroup>
-	<ItemGroup>
-		<Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
-			<HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
-		</Reference>
-		<Reference Include="System" />
-		<Reference Include="System.Core" />
-		<Reference Include="System.Design" />
-		<Reference Include="System.Management" />
-		<Reference Include="System.Web" />
-		<Reference Include="System.Xml.Linq" />
-		<Reference Include="System.Data.DataSetExtensions" />
-		<Reference Include="Microsoft.CSharp" />
-		<Reference Include="System.Data" />
-		<Reference Include="System.Deployment" />
-		<Reference Include="System.Drawing" />
-		<Reference Include="System.Net.Http" />
-		<Reference Include="System.Windows.Forms" />
-		<Reference Include="System.Xml" />
-	</ItemGroup>
-	<ItemGroup>
-	<Compile Include="Data\DataBase.cs" />
-	<Compile Include="DeCuong.cs">
-		<SubType>Form</SubType>
-	</Compile>
-	<Compile Include="DeCuong.Designer.cs">
-		<DependentUpon>DeCuong.cs</DependentUpon>
-	</Compile>
-	<Compile Include="Form1.cs">
-		<SubType>Form</SubType>
-	</Compile>
-	<Compile Include="Form1.Designer.cs">
-		<DependentUpon>Form1.cs</DependentUpon>
-	</Compile>
-	<Compile Include="frm_SinhVien.cs">
-		<SubType>Form</SubType>
-	</Compile>
-	<Compile Include="frm_SinhVien.Designer.cs">
-		<DependentUpon>frm_SinhVien.cs</DependentUpon>
-	</Compile>
-	<Compile Include="GIANGVIEN.cs">
-		<SubType>Form</SubType>
-	</Compile>
-	<Compile Include="GIANGVIEN.Designer.cs">
-		<DependentUpon>GIANGVIEN.cs</DependentUpon>
-	</Compile>
-	<Compile Include="Home.cs">
-		<SubType>Form</SubType>
-	</Compile>
-	<Compile Include="Home.Designer.cs">
-		<DependentUpon>Home.cs</DependentUpon>
-	</Compile>
-	<Compile Include="Modify.cs" />
-	<Compile Include="Query\PermissionQuery.cs" />
-	<Compile Include="Program.cs" />
-	<Compile Include="Properties\AssemblyInfo.cs" />
-
-	<EmbeddedResource Include="DeCuong.resx">
-		<DependentUpon>DeCuong.cs</DependentUpon>
-	</EmbeddedResource>
-
-
-	<Compile Include="QLMonHoc.cs">
-		<SubType>Form</SubType>
-	</Compile>
-	<Compile Include="QLMonHoc.Designer.cs">
-		<DependentUpon>QLMonHoc.cs</DependentUpon>
-	</Compile>
-	<Compile Include="QuanLyPhanQuyen.cs">
-		<SubType>Form</SubType>
-	</Compile>
-	<Compile Include="QuanLyPhanQuyen.Designer.cs">
-		<DependentUpon>QuanLyPhanQuyen.cs</DependentUpon>
-	</Compile>
-	<Compile Include="Query\QuyenQuery.cs" />
-	<Compile Include="Sign_in.cs">
-		<SubType>Form</SubType>
-	</Compile>
-	<Compile Include="Sign_in.Designer.cs">
-		<DependentUpon>Sign_in.cs</DependentUpon>
-	</Compile>
-	<Compile Include="Taikhoans.cs" />
-	<Compile Include="QL_Nganh.cs">
-		<SubType>Form</SubType>
-	</Compile>
-	<Compile Include="QL_Nganh.Designer.cs">
-		<DependentUpon>QL_Nganh.cs</DependentUpon>
-
-	</Compile>
-	<EmbeddedResource Include="Form1.resx">
-		<DependentUpon>Form1.cs</DependentUpon>
-	</EmbeddedResource>
-	<EmbeddedResource Include="frm_SinhVien.resx">
-		<DependentUpon>frm_SinhVien.cs</DependentUpon>
-	</EmbeddedResource>
-	<EmbeddedResource Include="GIANGVIEN.resx">
-		<DependentUpon>GIANGVIEN.cs</DependentUpon>
-	</EmbeddedResource>
-	<EmbeddedResource Include="Home.resx">
-		<DependentUpon>Home.cs</DependentUpon>
-	</EmbeddedResource>
-	<EmbeddedResource Include="Properties\Resources.resx">
-		<Generator>ResXFileCodeGenerator</Generator>
-		<LastGenOutput>Resources.Designer.cs</LastGenOutput>
-		<SubType>Designer</SubType>
-	</EmbeddedResource>
-	<Compile Include="Properties\Resources.Designer.cs">
-		<AutoGen>True</AutoGen>
-		<DependentUpon>Resources.resx</DependentUpon>
-		<DesignTime>True</DesignTime>
-	</Compile>
-	<None Include="packages.config" />
-
-
-	<EmbeddedResource Include="QLMonHoc.resx">
-		<DependentUpon>QLMonHoc.cs</DependentUpon>
-	</EmbeddedResource>
-	<EmbeddedResource Include="Sign_in.resx">
-		<DependentUpon>Sign_in.cs</DependentUpon>
-	</EmbeddedResource>
-	<EmbeddedResource Include="QL_Nganh.resx">
-		<DependentUpon>QL_Nganh.cs</DependentUpon>
-	</EmbeddedResource>
-	<EmbeddedResource Include="QuanLyPhanQuyen.resx">
-		<DependentUpon>QuanLyPhanQuyen.cs</DependentUpon>
-	</EmbeddedResource>
-	<None Include="Properties\Settings.settings">
-		<Generator>SettingsSingleFileGenerator</Generator>
-		<LastGenOutput>Settings.Designer.cs</LastGenOutput>
-	</None>
-	<Compile Include="Properties\Settings.Designer.cs">
-		<AutoGen>True</AutoGen>
-		<DependentUpon>Settings.settings</DependentUpon>
-		<DesignTimeSharedInput>True</DesignTimeSharedInput>
-	</Compile>
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="App.config" />
-	</ItemGroup>
-	<ItemGroup />
-	<ItemGroup>
-		<None Include="Resources\gradient-5812_256.gif" />
-	</ItemGroup>
-
-	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{359E7AA6-D352-48B8-9F6F-23A59CF59AD4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyDeCuongProject</RootNamespace>
+    <AssemblyName>QuanLyDeCuongProject</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\DataBase.cs" />
+    <Compile Include="DeCuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeCuong.Designer.cs">
+      <DependentUpon>DeCuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SinhVien.Designer.cs">
+      <DependentUpon>frm_SinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GIANGVIEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIANGVIEN.Designer.cs">
+      <DependentUpon>GIANGVIEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modify.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Query\PermissionQuery.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DeCuong.resx">
+      <DependentUpon>DeCuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="QLMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLMonHoc.Designer.cs">
+      <DependentUpon>QLMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyPhanQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyPhanQuyen.Designer.cs">
+      <DependentUpon>QuanLyPhanQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\QuyenQuery.cs" />
+    <Compile Include="Sign_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign_in.Designer.cs">
+      <DependentUpon>Sign_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Taikhoans.cs" />
+    <Compile Include="QL_Nganh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_Nganh.Designer.cs">
+      <DependentUpon>QL_Nganh.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SinhVien.resx">
+      <DependentUpon>frm_SinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIANGVIEN.resx">
+      <DependentUpon>GIANGVIEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <EmbeddedResource Include="QLMonHoc.resx">
+      <DependentUpon>QLMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sign_in.resx">
+      <DependentUpon>Sign_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_Nganh.resx">
+      <DependentUpon>QL_Nganh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyPhanQuyen.resx">
+      <DependentUpon>QuanLyPhanQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\gradient-5812_256.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
