@@ -23,14 +23,12 @@ namespace QuanLyDeCuongProject
         { 
             // Enter Your Server Name
             // Hello Aliens @@
-<<<<<<< HEAD
-            // Branch TienDat/241108
-            DataBase database = new DataBase(@"servername"); 
-=======
+
+
             // test  github ac
 
           //  DataBase database = new DataBase(@"SerVer Name"); 
->>>>>>> main
+
         }
     }
 }
