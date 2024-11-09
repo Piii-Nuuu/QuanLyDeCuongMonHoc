@@ -16,5 +16,10 @@ namespace QuanLyDeCuongProject
         {
             InitializeComponent();
         }
+
+        private void GIANGVIEN_Load(object sender, EventArgs e)
+        {
+            // push: Changes => commit => SYsc
+        }
     }
 }

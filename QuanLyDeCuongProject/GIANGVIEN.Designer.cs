@@ -487,6 +487,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "GIANGVIEN";
             this.Text = "GIANGVIEN";
+            this.Load += new System.EventHandler(this.GIANGVIEN_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
