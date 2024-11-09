@@ -18,7 +18,11 @@ namespace QuanLyDeCuongProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
+            Application.Run(new DeCuong());
+=======
             Application.Run(new frm_SinhVien());
+>>>>>>> main
         }
     }
 }

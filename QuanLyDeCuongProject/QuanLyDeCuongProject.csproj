@@ -33,8 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\DataBase.cs" />
+    <Compile Include="DeCuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeCuong.Designer.cs">
+      <DependentUpon>DeCuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,12 +88,16 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
 
+    <EmbeddedResource Include="DeCuong.resx">
+      <DependentUpon>DeCuong.cs</DependentUpon>
+    </EmbeddedResource>
+
+
     <Compile Include="QLMonHoc.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="QLMonHoc.Designer.cs">
       <DependentUpon>QLMonHoc.cs</DependentUpon>
-
     <Compile Include="QuanLyPhanQuyen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,11 +139,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
+
 
     <EmbeddedResource Include="QLMonHoc.resx">
       <DependentUpon>QLMonHoc.cs</DependentUpon>
-
     <EmbeddedResource Include="Sign_in.resx">
       <DependentUpon>Sign_in.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,5 +169,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\gradient-5812_256.gif" />
+  </ItemGroup>
+
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
