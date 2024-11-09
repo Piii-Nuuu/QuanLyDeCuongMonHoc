@@ -75,6 +75,13 @@
     <Compile Include="Query\PermissionQuery.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+
+    <Compile Include="QLMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLMonHoc.Designer.cs">
+      <DependentUpon>QLMonHoc.cs</DependentUpon>
+
     <Compile Include="QuanLyPhanQuyen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +101,7 @@
     </Compile>
     <Compile Include="QL_Nganh.Designer.cs">
       <DependentUpon>QL_Nganh.cs</DependentUpon>
+
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -116,6 +124,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+
+    <EmbeddedResource Include="QLMonHoc.resx">
+      <DependentUpon>QLMonHoc.cs</DependentUpon>
+
     <EmbeddedResource Include="Sign_in.resx">
       <DependentUpon>Sign_in.cs</DependentUpon>
     </EmbeddedResource>
