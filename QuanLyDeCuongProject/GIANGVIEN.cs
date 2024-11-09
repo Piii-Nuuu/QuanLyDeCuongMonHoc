@@ -20,6 +20,7 @@ namespace QuanLyDeCuongProject
         private void GIANGVIEN_Load(object sender, EventArgs e)
         {
             // push: Changes => commit => SYsc
+            // push: changes => commit => sync => push
         }
     }
 }
