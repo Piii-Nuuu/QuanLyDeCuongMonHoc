@@ -43,11 +43,13 @@
             // 
             // comboxPermission
             // 
+            this.comboxPermission.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.comboxPermission.FormattingEnabled = true;
-            this.comboxPermission.Location = new System.Drawing.Point(924, 197);
+            this.comboxPermission.ItemHeight = 25;
+            this.comboxPermission.Location = new System.Drawing.Point(1577, 232);
             this.comboxPermission.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboxPermission.Name = "comboxPermission";
-            this.comboxPermission.Size = new System.Drawing.Size(254, 24);
+            this.comboxPermission.Size = new System.Drawing.Size(300, 33);
             this.comboxPermission.TabIndex = 0;
             this.comboxPermission.SelectedIndexChanged += new System.EventHandler(this.comboxPermission_SelectedIndexChanged);
             // 
@@ -56,13 +58,14 @@
             this.listPermission.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
+            this.listPermission.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.listPermission.FullRowSelect = true;
             this.listPermission.GridLines = true;
             this.listPermission.HideSelection = false;
-            this.listPermission.Location = new System.Drawing.Point(350, 197);
+            this.listPermission.Location = new System.Drawing.Point(12, 253);
             this.listPermission.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listPermission.Name = "listPermission";
-            this.listPermission.Size = new System.Drawing.Size(454, 389);
+            this.listPermission.Size = new System.Drawing.Size(400, 389);
             this.listPermission.TabIndex = 1;
             this.listPermission.UseCompatibleStateImageBehavior = false;
             this.listPermission.View = System.Windows.Forms.View.Details;
@@ -83,45 +86,46 @@
             // 
             // comboBoxQuyen
             // 
+            this.comboBoxQuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.comboBoxQuyen.FormattingEnabled = true;
-            this.comboBoxQuyen.Location = new System.Drawing.Point(350, 101);
+            this.comboBoxQuyen.Location = new System.Drawing.Point(12, 157);
             this.comboBoxQuyen.Name = "comboBoxQuyen";
-            this.comboBoxQuyen.Size = new System.Drawing.Size(454, 24);
+            this.comboBoxQuyen.Size = new System.Drawing.Size(454, 33);
             this.comboBoxQuyen.TabIndex = 2;
             this.comboBoxQuyen.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuyen_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.BackColor = System.Drawing.Color.SteelBlue;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(987, 253);
+            this.button1.Location = new System.Drawing.Point(1640, 288);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 39);
+            this.button1.Size = new System.Drawing.Size(172, 46);
             this.button1.TabIndex = 3;
             this.button1.Text = "Thêm";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button2.BackColor = System.Drawing.Color.SteelBlue;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(986, 323);
+            this.button2.Location = new System.Drawing.Point(1639, 358);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 39);
+            this.button2.Size = new System.Drawing.Size(172, 46);
             this.button2.TabIndex = 3;
             this.button2.Text = "Sửa";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button3.BackColor = System.Drawing.Color.SteelBlue;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(986, 398);
+            this.button3.Location = new System.Drawing.Point(1639, 433);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(141, 39);
+            this.button3.Size = new System.Drawing.Size(172, 46);
             this.button3.TabIndex = 3;
             this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = false;
@@ -129,33 +133,33 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(919, 163);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label1.Location = new System.Drawing.Point(1572, 198);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 20);
+            this.label1.Size = new System.Drawing.Size(85, 29);
             this.label1.TabIndex = 4;
             this.label1.Text = "Action";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label2.Location = new System.Drawing.Point(354, 163);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label2.Location = new System.Drawing.Point(16, 219);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(197, 20);
+            this.label2.Size = new System.Drawing.Size(270, 29);
             this.label2.TabIndex = 4;
             this.label2.Text = "Danh sách permission";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label3.Location = new System.Drawing.Point(354, 64);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label3.Location = new System.Drawing.Point(16, 120);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(154, 20);
+            this.label3.Size = new System.Drawing.Size(211, 29);
             this.label3.TabIndex = 4;
             this.label3.Text = "Danh sách quyền";
             // 
@@ -163,7 +167,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1837, 689);
+            this.ClientSize = new System.Drawing.Size(1924, 1017);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
