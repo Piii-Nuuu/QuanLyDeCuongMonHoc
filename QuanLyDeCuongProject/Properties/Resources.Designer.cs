@@ -59,5 +59,15 @@ namespace QuanLyDeCuongProject.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gradient_5812_256 {
+            get {
+                object obj = ResourceManager.GetObject("gradient-5812_256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
