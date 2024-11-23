@@ -66,7 +66,7 @@
             this.txtEmail.Location = new System.Drawing.Point(92, 199);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(313, 19);
+            this.txtEmail.Size = new System.Drawing.Size(278, 19);
             this.txtEmail.TabIndex = 1;
             // 
             // txtPassword
@@ -77,7 +77,7 @@
             this.txtPassword.Location = new System.Drawing.Point(92, 288);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(313, 19);
+            this.txtPassword.Size = new System.Drawing.Size(278, 19);
             this.txtPassword.TabIndex = 1;
             this.txtPassword.UseSystemPasswordChar = true;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
@@ -87,7 +87,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(126, 100);
+            this.label1.Location = new System.Drawing.Point(110, 99);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(247, 23);
@@ -115,23 +115,26 @@
             this.grB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grB.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.grB.AutoSize = true;
             this.grB.Controls.Add(this.label3);
             this.grB.Controls.Add(this.label2);
             this.grB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.grB.Location = new System.Drawing.Point(470, 84);
+            this.grB.Location = new System.Drawing.Point(447, 70);
             this.grB.Margin = new System.Windows.Forms.Padding(5, 0, 5, 5);
             this.grB.Name = "grB";
             this.grB.Padding = new System.Windows.Forms.Padding(4, 0, 4, 4);
-            this.grB.Size = new System.Drawing.Size(856, 457);
+            this.grB.Size = new System.Drawing.Size(938, 466);
             this.grB.TabIndex = 4;
             this.grB.TabStop = false;
             this.grB.Enter += new System.EventHandler(this.grB_Enter);
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(277, 406);
+            this.label3.Location = new System.Drawing.Point(293, 414);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(309, 13);
             this.label3.TabIndex = 1;
@@ -148,7 +151,7 @@
             this.label2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(280, 36);
+            this.label2.Location = new System.Drawing.Point(317, 37);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(4, 0, 4, 4);
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -164,7 +167,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1362, 583);
+            this.ClientSize = new System.Drawing.Size(1444, 592);
             this.Controls.Add(this.grB);
             this.Controls.Add(this.ckHienMatKhau);
             this.Controls.Add(this.label1);
