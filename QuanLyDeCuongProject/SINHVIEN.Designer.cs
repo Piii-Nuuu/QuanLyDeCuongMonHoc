@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnxoa = new System.Windows.Forms.Button();
             this.btncapnhat = new System.Windows.Forms.Button();
             this.btnthem = new System.Windows.Forms.Button();
@@ -38,11 +36,13 @@
             this.cblop = new System.Windows.Forms.ComboBox();
             this.dtns = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txthtdt = new System.Windows.Forms.TextBox();
             this.txtnganh = new System.Windows.Forms.TextBox();
             this.cbGioiTinh = new System.Windows.Forms.ComboBox();
             this.txtMssv = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -53,8 +53,6 @@
             this.txtHoten = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.listDS = new System.Windows.Forms.ListView();
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label13 = new System.Windows.Forms.Label();
             this.cbdonvi = new System.Windows.Forms.ComboBox();
             this.lbSL = new System.Windows.Forms.Label();
@@ -63,8 +61,10 @@
             this.txtMaGv = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txthtdt = new System.Windows.Forms.TextBox();
+            this.listSV = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -74,21 +74,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(872, 251);
+            this.label1.Location = new System.Drawing.Point(876, 251);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(381, 35);
+            this.label1.Size = new System.Drawing.Size(357, 35);
             this.label1.TabIndex = 101;
-            this.label1.Text = "DANH SÁCH GIẢNG VIÊN";
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Tên sinh viên";
-            this.columnHeader2.Width = 243;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Mã sinh viên";
-            this.columnHeader1.Width = 129;
+            this.label1.Text = "DANH SÁCH SINH VIÊN";
             // 
             // btnxoa
             // 
@@ -202,6 +192,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "THÔNG TIN SINH VIÊN";
             // 
+            // txthtdt
+            // 
+            this.txthtdt.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txthtdt.Location = new System.Drawing.Point(570, 315);
+            this.txthtdt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txthtdt.Multiline = true;
+            this.txthtdt.Name = "txthtdt";
+            this.txthtdt.Size = new System.Drawing.Size(278, 32);
+            this.txthtdt.TabIndex = 32;
+            // 
             // txtnganh
             // 
             this.txtnganh.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -249,6 +249,17 @@
             this.label12.Size = new System.Drawing.Size(66, 29);
             this.label12.TabIndex = 23;
             this.label12.Text = "Lớp:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(448, 315);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(89, 29);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "HTĐT:";
             // 
             // label11
             // 
@@ -356,30 +367,6 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "MSSV:";
             // 
-            // listDS
-            // 
-            this.listDS.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
-            this.listDS.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listDS.FullRowSelect = true;
-            this.listDS.GridLines = true;
-            this.listDS.HideSelection = false;
-            this.listDS.Location = new System.Drawing.Point(878, 290);
-            this.listDS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.listDS.Name = "listDS";
-            this.listDS.OwnerDraw = true;
-            this.listDS.Size = new System.Drawing.Size(547, 238);
-            this.listDS.TabIndex = 102;
-            this.listDS.UseCompatibleStateImageBehavior = false;
-            this.listDS.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Lớp";
-            this.columnHeader3.Width = 122;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -437,7 +424,7 @@
             this.btnTim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTim.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTim.ForeColor = System.Drawing.Color.White;
-            this.btnTim.Location = new System.Drawing.Point(356, 145);
+            this.btnTim.Location = new System.Drawing.Point(327, 157);
             this.btnTim.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(161, 50);
@@ -476,35 +463,43 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Lớp:";
             // 
-            // label10
+            // listSV
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(448, 315);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(89, 29);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "HTĐT:";
+            this.listSV.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.listSV.FullRowSelect = true;
+            this.listSV.GridLines = true;
+            this.listSV.HideSelection = false;
+            this.listSV.Location = new System.Drawing.Point(882, 309);
+            this.listSV.Name = "listSV";
+            this.listSV.Size = new System.Drawing.Size(535, 204);
+            this.listSV.TabIndex = 104;
+            this.listSV.UseCompatibleStateImageBehavior = false;
+            this.listSV.View = System.Windows.Forms.View.Details;
             // 
-            // txthtdt
+            // columnHeader1
             // 
-            this.txthtdt.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txthtdt.Location = new System.Drawing.Point(570, 315);
-            this.txthtdt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txthtdt.Multiline = true;
-            this.txthtdt.Name = "txthtdt";
-            this.txthtdt.Size = new System.Drawing.Size(278, 32);
-            this.txthtdt.TabIndex = 32;
+            this.columnHeader1.Text = "MSSV";
+            this.columnHeader1.Width = 161;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Họ tên ";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Lớp";
             // 
             // SINHVIEN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1438, 574);
+            this.Controls.Add(this.listSV);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.listDS);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.lbSL);
             this.Controls.Add(this.groupBox2);
@@ -522,8 +517,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.Button btnxoa;
         private System.Windows.Forms.Button btncapnhat;
         private System.Windows.Forms.Button btnthem;
@@ -546,8 +539,6 @@
         private System.Windows.Forms.TextBox txtHoten;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ListView listDS;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cbdonvi;
         private System.Windows.Forms.Label lbSL;
@@ -558,5 +549,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txthtdt;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ListView listSV;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }
