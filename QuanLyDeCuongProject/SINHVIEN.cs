@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyDeCuongProject
 {
-    public partial class frm_SinhVien : Form
+    public partial class SINHVIEN : Form
     {
-        public frm_SinhVien()
+        public SINHVIEN()
         {
             InitializeComponent();
         }

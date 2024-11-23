@@ -48,9 +48,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
-      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -79,12 +76,6 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_SinhVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_SinhVien.Designer.cs">
-      <DependentUpon>frm_SinhVien.cs</DependentUpon>
     </Compile>
     <Compile Include="GIANGVIEN.cs">
       <SubType>Form</SubType>
@@ -123,11 +114,17 @@
       <DependentUpon>QuanLyPhanQuyen.cs</DependentUpon>
     </Compile>
     <Compile Include="Query\QuyenQuery.cs" />
-    <Compile Include="Sign_in.cs">
+    <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sign_in.Designer.cs">
-      <DependentUpon>Sign_in.cs</DependentUpon>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SINHVIEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SINHVIEN.Designer.cs">
+      <DependentUpon>SINHVIEN.cs</DependentUpon>
     </Compile>
     <Compile Include="Taikhoans.cs" />
     <Compile Include="QL_Nganh.cs">
@@ -138,9 +135,6 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_SinhVien.resx">
-      <DependentUpon>frm_SinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GIANGVIEN.resx">
       <DependentUpon>GIANGVIEN.cs</DependentUpon>
@@ -153,12 +147,15 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="SINHVIEN.resx">
+      <DependentUpon>SINHVIEN.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <EmbeddedResource Include="QLMonHoc.resx">
       <DependentUpon>QLMonHoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sign_in.resx">
-      <DependentUpon>Sign_in.cs</DependentUpon>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QL_Nganh.resx">
       <DependentUpon>QL_Nganh.cs</DependentUpon>
