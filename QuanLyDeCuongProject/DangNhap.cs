@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace QuanLyDeCuongProject
 {
-    public partial class Sign_in : Form
+    public partial class DangNhap : Form
     {
         DataBase db;
-        public Sign_in()
+        public DangNhap()
         {
             InitializeComponent();
         }
@@ -57,6 +57,16 @@ namespace QuanLyDeCuongProject
             }
             Home home = new Home();
             home.ShowDialog();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grB_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

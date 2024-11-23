@@ -14,7 +14,7 @@ namespace QuanLyDeCuongProject
 {
     public partial class QuanLyPhanQuyen : Form
     {
-        DataBase database = new DataBase(@"MSI\MSSQLSERVER01");
+        DataBase database = new DataBase(@"");
         DataTable listPermissions, listQuyen;
         QuyenQuery quyen_query = new QuyenQuery();
         PermissionQuery permission_query = new PermissionQuery();
