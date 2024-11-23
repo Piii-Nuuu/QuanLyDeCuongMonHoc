@@ -65,7 +65,7 @@
             this.listPermission.Location = new System.Drawing.Point(12, 253);
             this.listPermission.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listPermission.Name = "listPermission";
-            this.listPermission.Size = new System.Drawing.Size(400, 389);
+            this.listPermission.Size = new System.Drawing.Size(538, 389);
             this.listPermission.TabIndex = 1;
             this.listPermission.UseCompatibleStateImageBehavior = false;
             this.listPermission.View = System.Windows.Forms.View.Details;
@@ -90,7 +90,7 @@
             this.comboBoxQuyen.FormattingEnabled = true;
             this.comboBoxQuyen.Location = new System.Drawing.Point(12, 157);
             this.comboBoxQuyen.Name = "comboBoxQuyen";
-            this.comboBoxQuyen.Size = new System.Drawing.Size(454, 33);
+            this.comboBoxQuyen.Size = new System.Drawing.Size(538, 33);
             this.comboBoxQuyen.TabIndex = 2;
             this.comboBoxQuyen.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuyen_SelectedIndexChanged);
             // 
