@@ -52,11 +52,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -351,20 +349,20 @@
             // guna2PictureBox1
             // 
           //  this.guna2PictureBox1.Image = global::QuanLyDeCuongProject.Properties.Resources.gradient_5812_256;
-            this.guna2PictureBox1.ImageRotate = 0F;
+/*            this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(43, 39);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 94;
-            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.TabStop = false;*/
             // 
             // DeCuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1681, 672);
-            this.Controls.Add(this.guna2PictureBox1);
+     
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
@@ -379,7 +377,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+/*            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();*/
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -411,6 +409,5 @@
         public System.Windows.Forms.Label label7;
         public System.Windows.Forms.Label label19;
         public System.Windows.Forms.Label label14;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }
