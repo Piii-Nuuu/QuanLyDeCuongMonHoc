@@ -87,10 +87,12 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
+
             this.groupBox2.Controls.Add(this.btTim);
             this.groupBox2.Controls.Add(this.txtSearchmadecuong);
             this.groupBox2.Controls.Add(this.txtSearchtendecuong);
             this.groupBox2.Controls.Add(this.label5);
+
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
@@ -440,6 +442,7 @@
             this.label11.Text = "đề cương";
             // 
             // S
+
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
