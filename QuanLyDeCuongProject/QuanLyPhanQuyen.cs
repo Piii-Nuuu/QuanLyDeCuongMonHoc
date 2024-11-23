@@ -14,7 +14,7 @@ namespace QuanLyDeCuongProject
 {
     public partial class QuanLyPhanQuyen : Form
     {
-        DataBase database = new DataBase(@"MSI\MSSQLSERVER01");
+        DataBase database = new DataBase(@"");
         DataTable listPermissions, listQuyen;
         QuyenQuery quyen_query = new QuyenQuery();
         PermissionQuery permission_query = new PermissionQuery();
@@ -70,6 +70,26 @@ namespace QuanLyDeCuongProject
         private void listPermission_Click(object sender, EventArgs e)
         {
             comboxPermission.SelectedValue = listPermission.SelectedItems[0].Text;
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void listPermission_SelectedIndexChanged(object sender, EventArgs e)

@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,9 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
-      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -102,11 +100,11 @@
       <DependentUpon>QuanLyPhanQuyen.cs</DependentUpon>
     </Compile>
     <Compile Include="Query\QuyenQuery.cs" />
-    <Compile Include="Sign_in.cs">
+    <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sign_in.Designer.cs">
-      <DependentUpon>Sign_in.cs</DependentUpon>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="SINHVIEN.cs">
       <SubType>Form</SubType>
@@ -142,8 +140,8 @@
     <EmbeddedResource Include="QLMonHoc.resx">
       <DependentUpon>QLMonHoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sign_in.resx">
-      <DependentUpon>Sign_in.cs</DependentUpon>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QL_Nganh.resx">
       <DependentUpon>QL_Nganh.cs</DependentUpon>
