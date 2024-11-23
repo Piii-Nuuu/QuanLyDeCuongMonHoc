@@ -72,6 +72,16 @@ namespace QuanLyDeCuongProject
             comboxPermission.SelectedValue = listPermission.SelectedItems[0].Text;
         }
 
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void listPermission_SelectedIndexChanged(object sender, EventArgs e)
         {
            
