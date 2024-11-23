@@ -9,7 +9,6 @@ D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\Quan
 D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.exe
 D:\QuanLyDeCuongProject\QuanLyDeCuongProject\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.pdb
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.AssemblyReference.cache
-D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DeCuong.resources
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Form1.resources
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.GenerateResource.cache
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.exe
@@ -56,3 +55,4 @@ C:\Users\M1\Source\Repos\Piii-Nuuu\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\
 C:\Users\M1\Source\Repos\Piii-Nuuu\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.GenerateResource.Cache
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DangNhap.resources
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.SINHVIEN.resources
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.S.resources
