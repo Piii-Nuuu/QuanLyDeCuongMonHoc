@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyDeCuongProject
 {
-    public partial class DeCuong : Form
+    public partial class S : Form
     {
-        public DeCuong()
+        public S()
         {
             InitializeComponent();
         }
@@ -28,6 +28,46 @@ namespace QuanLyDeCuongProject
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSearchDeCuong_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtGV_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtHH_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSDT_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
         {
 
         }
