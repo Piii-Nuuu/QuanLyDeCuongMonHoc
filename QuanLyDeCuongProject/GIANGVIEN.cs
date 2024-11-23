@@ -32,5 +32,15 @@ namespace QuanLyDeCuongProject
         {
 
         }
+
+        private void groupBox1_Enter_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtHoten_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
