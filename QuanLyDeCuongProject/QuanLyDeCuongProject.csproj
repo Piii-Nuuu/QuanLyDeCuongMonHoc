@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -108,11 +109,11 @@
       <DependentUpon>QuanLyPhanQuyen.cs</DependentUpon>
     </Compile>
     <Compile Include="Query\QuyenQuery.cs" />
-    <Compile Include="Sign_in.cs">
+    <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sign_in.Designer.cs">
-      <DependentUpon>Sign_in.cs</DependentUpon>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="Taikhoans.cs" />
     <Compile Include="QL_Nganh.cs">
@@ -142,8 +143,8 @@
     <EmbeddedResource Include="QLMonHoc.resx">
       <DependentUpon>QLMonHoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sign_in.resx">
-      <DependentUpon>Sign_in.cs</DependentUpon>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QL_Nganh.resx">
       <DependentUpon>QL_Nganh.cs</DependentUpon>
