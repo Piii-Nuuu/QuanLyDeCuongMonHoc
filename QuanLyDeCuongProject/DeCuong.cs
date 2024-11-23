@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyDeCuongProject
 {
-    public partial class DeCuong : Form
+    public partial class S : Form
     {
-        public DeCuong()
+        public S()
         {
             InitializeComponent();
         }
@@ -63,6 +63,11 @@ namespace QuanLyDeCuongProject
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
         {
 
         }
