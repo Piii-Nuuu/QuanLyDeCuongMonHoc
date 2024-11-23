@@ -48,11 +48,11 @@
             this.btSIGNIn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btSIGNIn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.btSIGNIn.ForeColor = System.Drawing.Color.White;
-            this.btSIGNIn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btSIGNIn.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btSIGNIn.Location = new System.Drawing.Point(161, 382);
             this.btSIGNIn.Margin = new System.Windows.Forms.Padding(2);
             this.btSIGNIn.Name = "btSIGNIn";
-            this.btSIGNIn.Size = new System.Drawing.Size(150, 65);
+            this.btSIGNIn.Size = new System.Drawing.Size(161, 50);
             this.btSIGNIn.TabIndex = 0;
             this.btSIGNIn.Text = "Đăng Nhập";
             this.btSIGNIn.UseVisualStyleBackColor = false;
@@ -148,7 +148,7 @@
             this.label2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(280, 49);
+            this.label2.Location = new System.Drawing.Point(280, 36);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(4, 0, 4, 4);
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
