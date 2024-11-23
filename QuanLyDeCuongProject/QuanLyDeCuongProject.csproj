@@ -65,12 +65,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_SinhVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_SinhVien.Designer.cs">
-      <DependentUpon>frm_SinhVien.cs</DependentUpon>
-    </Compile>
     <Compile Include="GIANGVIEN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +108,12 @@
     <Compile Include="Sign_in.Designer.cs">
       <DependentUpon>Sign_in.cs</DependentUpon>
     </Compile>
+    <Compile Include="SINHVIEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SINHVIEN.Designer.cs">
+      <DependentUpon>SINHVIEN.cs</DependentUpon>
+    </Compile>
     <Compile Include="Taikhoans.cs" />
     <Compile Include="QL_Nganh.cs">
       <SubType>Form</SubType>
@@ -123,9 +123,6 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_SinhVien.resx">
-      <DependentUpon>frm_SinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GIANGVIEN.resx">
       <DependentUpon>GIANGVIEN.cs</DependentUpon>
@@ -137,6 +134,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SINHVIEN.resx">
+      <DependentUpon>SINHVIEN.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <EmbeddedResource Include="QLMonHoc.resx">
