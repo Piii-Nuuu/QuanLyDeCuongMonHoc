@@ -16,5 +16,10 @@ namespace QuanLyDeCuongProject
         {
             InitializeComponent();
         }
+
+        private void QLMonHoc_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

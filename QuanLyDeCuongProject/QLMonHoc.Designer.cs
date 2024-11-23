@@ -78,7 +78,7 @@
             this.btnTim.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTim.ForeColor = System.Drawing.Color.White;
             this.btnTim.Location = new System.Drawing.Point(231, 139);
-            this.btnTim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTim.Margin = new System.Windows.Forms.Padding(4);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(161, 50);
             this.btnTim.TabIndex = 27;
@@ -89,7 +89,7 @@
             // 
             this.txtMaGv.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaGv.Location = new System.Drawing.Point(115, 82);
-            this.txtMaGv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaGv.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaGv.Name = "txtMaGv";
             this.txtMaGv.Size = new System.Drawing.Size(278, 32);
             this.txtMaGv.TabIndex = 18;
@@ -111,7 +111,7 @@
             this.cbMaMon.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMaMon.FormattingEnabled = true;
             this.cbMaMon.Location = new System.Drawing.Point(114, 37);
-            this.cbMaMon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbMaMon.Margin = new System.Windows.Forms.Padding(4);
             this.cbMaMon.Name = "cbMaMon";
             this.cbMaMon.Size = new System.Drawing.Size(278, 32);
             this.cbMaMon.TabIndex = 11;
@@ -138,9 +138,9 @@
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.RoyalBlue;
             this.groupBox2.Location = new System.Drawing.Point(718, 13);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(612, 197);
             this.groupBox2.TabIndex = 100;
             this.groupBox2.TabStop = false;
@@ -157,7 +157,7 @@
             this.listMonHoc.GridLines = true;
             this.listMonHoc.HideSelection = false;
             this.listMonHoc.Location = new System.Drawing.Point(717, 280);
-            this.listMonHoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listMonHoc.Margin = new System.Windows.Forms.Padding(4);
             this.listMonHoc.Name = "listMonHoc";
             this.listMonHoc.OwnerDraw = true;
             this.listMonHoc.Size = new System.Drawing.Size(547, 238);
@@ -215,9 +215,9 @@
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(625, 342);
             this.groupBox1.TabIndex = 104;
             this.groupBox1.TabStop = false;
@@ -231,7 +231,7 @@
             this.button3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(437, 219);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(161, 50);
             this.button3.TabIndex = 87;
@@ -246,7 +246,7 @@
             this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(222, 219);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(161, 50);
             this.button2.TabIndex = 86;
@@ -261,7 +261,7 @@
             this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(8, 219);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(161, 50);
             this.button1.TabIndex = 85;
@@ -272,7 +272,7 @@
             // 
             this.txtHH.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHH.Location = new System.Drawing.Point(181, 82);
-            this.txtHH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHH.Margin = new System.Windows.Forms.Padding(4);
             this.txtHH.Name = "txtHH";
             this.txtHH.Size = new System.Drawing.Size(278, 32);
             this.txtHH.TabIndex = 30;
@@ -281,7 +281,7 @@
             // 
             this.txtGV.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGV.Location = new System.Drawing.Point(179, 37);
-            this.txtGV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGV.Margin = new System.Windows.Forms.Padding(4);
             this.txtGV.Name = "txtGV";
             this.txtGV.Size = new System.Drawing.Size(278, 32);
             this.txtGV.TabIndex = 25;
@@ -290,7 +290,7 @@
             // 
             this.txtSDT.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSDT.Location = new System.Drawing.Point(181, 137);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(4);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(278, 32);
             this.txtSDT.TabIndex = 24;
@@ -345,6 +345,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "QLMonHoc";
             this.Text = "QLMonHoc";
+            this.Load += new System.EventHandler(this.QLMonHoc_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
