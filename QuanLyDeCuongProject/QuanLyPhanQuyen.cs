@@ -28,7 +28,7 @@ namespace QuanLyDeCuongProject
             
 
         }
-       
+     
         private void QuanLyPhanQuyen_Load(object sender, EventArgs e)
         {
             listPermissions = permission_query.GetAllPermisstion();
