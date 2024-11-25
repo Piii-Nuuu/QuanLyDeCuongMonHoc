@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consts\Const.cs" />
     <Compile Include="Data\DataBase.cs" />
     <Compile Include="DeCuong.cs">
       <SubType>Form</SubType>
@@ -95,6 +96,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Query\KhoaQuery.cs" />
+    <Compile Include="Query\NganhQuery.cs" />
     <Compile Include="Query\PermissionQuery.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
