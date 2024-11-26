@@ -16,5 +16,10 @@ namespace QuanLyDeCuongProject
         {
             InitializeComponent();
         }
+
+        private void QL_Nganh_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
