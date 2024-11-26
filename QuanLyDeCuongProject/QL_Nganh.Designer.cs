@@ -37,7 +37,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -46,16 +45,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cbdonvi = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.listDS = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lbSL = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listNganh = new System.Windows.Forms.ListView();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.txtMaKhoa = new System.Windows.Forms.TextBox();
+            this.cbListNganh = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -166,7 +171,7 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.txtTenNganh);
             this.groupBox1.Controls.Add(this.txtMaNganh);
-            this.groupBox1.Controls.Add(this.txtKhoa);
+            this.groupBox1.Controls.Add(this.txtMaKhoa);
             this.groupBox1.Controls.Add(this.txtMaTruongNganh);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label10);
@@ -183,27 +188,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "THÔNG TIN NGÀNH";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(28, 224);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 24);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Mã khoa:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(220, 215);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(354, 32);
-            this.textBox1.TabIndex = 24;
             // 
             // label4
             // 
@@ -305,26 +289,6 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Mã ngành:";
             // 
-            // listDS
-            // 
-            this.listDS.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4});
-            this.listDS.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.listDS.FullRowSelect = true;
-            this.listDS.GridLines = true;
-            this.listDS.HideSelection = false;
-            this.listDS.Location = new System.Drawing.Point(753, 295);
-            this.listDS.Margin = new System.Windows.Forms.Padding(4);
-            this.listDS.Name = "listDS";
-            this.listDS.OwnerDraw = true;
-            this.listDS.Size = new System.Drawing.Size(612, 210);
-            this.listDS.TabIndex = 108;
-            this.listDS.UseCompatibleStateImageBehavior = false;
-            this.listDS.View = System.Windows.Forms.View.Details;
-            // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "Mã ngành";
@@ -376,38 +340,77 @@
             this.label13.TabIndex = 105;
             this.label13.Text = "Danh sách có:";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(28, 224);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 24);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Mã khoa:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(220, 215);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(354, 32);
-            this.textBox1.TabIndex = 24;
-            // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Mã khoa";
+            // 
+            // listNganh
+            // 
+            this.listNganh.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9,
+            this.columnHeader10});
+            this.listNganh.FullRowSelect = true;
+            this.listNganh.GridLines = true;
+            this.listNganh.HideSelection = false;
+            this.listNganh.Location = new System.Drawing.Point(735, 318);
+            this.listNganh.Name = "listNganh";
+            this.listNganh.Size = new System.Drawing.Size(695, 203);
+            this.listNganh.TabIndex = 111;
+            this.listNganh.UseCompatibleStateImageBehavior = false;
+            this.listNganh.View = System.Windows.Forms.View.Details;
+            this.listNganh.Click += new System.EventHandler(this.listNganh_Click);
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "MaNganh";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "TenNganh";
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Truong Nganh";
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "MaKhoa";
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "MaDV";
+            // 
+            // txtMaKhoa
+            // 
+            this.txtMaKhoa.Enabled = false;
+            this.txtMaKhoa.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaKhoa.Location = new System.Drawing.Point(236, 221);
+            this.txtMaKhoa.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaKhoa.Name = "txtMaKhoa";
+            this.txtMaKhoa.Size = new System.Drawing.Size(354, 32);
+            this.txtMaKhoa.TabIndex = 24;
+            this.txtMaKhoa.TextChanged += new System.EventHandler(this.txtMaTruongNganh_TextChanged);
+            // 
+            // cbListNganh
+            // 
+            this.cbListNganh.FormattingEnabled = true;
+            this.cbListNganh.Location = new System.Drawing.Point(1035, 250);
+            this.cbListNganh.Name = "cbListNganh";
+            this.cbListNganh.Size = new System.Drawing.Size(214, 24);
+            this.cbListNganh.TabIndex = 112;
+            this.cbListNganh.SelectedIndexChanged += new System.EventHandler(this.cbListNganh_SelectedIndexChanged);
             // 
             // QL_Nganh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1442, 583);
-            this.Controls.Add(this.cbKhoa);
-            this.Controls.Add(this.listDSNganh);
+            this.Controls.Add(this.cbListNganh);
+            this.Controls.Add(this.listNganh);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.lbSL);
@@ -455,5 +458,14 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ComboBox cbKhoa;
         public System.Windows.Forms.TextBox txtKhoa;
+        private System.Windows.Forms.ListView listNganh;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.ColumnHeader columnHeader10;
+        public System.Windows.Forms.TextBox txtMaKhoa;
+        private System.Windows.Forms.ComboBox cbListNganh;
     }
 }

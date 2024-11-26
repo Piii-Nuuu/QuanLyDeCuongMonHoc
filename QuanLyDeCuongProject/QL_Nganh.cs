@@ -24,29 +24,27 @@ namespace QuanLyDeCuongProject
 
             DataTable data = nganhQuery.GetAllNganh();
             DataTable danh_sach_khoa = khoaQuery.GetAllKhoa();
-            cbKhoa.DataSource = danh_sach_khoa;
-            cbKhoa.DisplayMember = "TenKhoa";
-            cbKhoa.ValueMember = "MaKhoa";
+            cbListNganh.DataSource = danh_sach_khoa;
+            cbListNganh.DisplayMember = "TenKhoa";
+            cbListNganh.ValueMember = "MaKhoa";
             hien_thi_list_view(data);
         }
 
         public void hien_thi_list_view(DataTable data)
         {
-           listDSNganh.Items.Clear();
+           listNganh.Items.Clear();
             for (int i = 0; i < data.Rows.Count; i++)
             {
-                listDSNganh.Items.Add(data.Rows[i]["MaNganh"].ToString());
-                listDSNganh.Items[i].SubItems.Add(data.Rows[i]["TenNganh"].ToString());
-                listDSNganh.Items[i].SubItems.Add(data.Rows[i]["TruongNganh"].ToString());
-                listDSNganh.Items[i].SubItems.Add(data.Rows[i]["MaKhoa"].ToString());
-                listDSNganh.Items[i].SubItems.Add(data.Rows[i]["MaDV"].ToString());
+                listNganh.Items.Add(data.Rows[i]["MaNganh"].ToString());
+                listNganh.Items[i].SubItems.Add(data.Rows[i]["TenNganh"].ToString());
+                listNganh.Items[i].SubItems.Add(data.Rows[i]["TruongNganh"].ToString());
+                listNganh.Items[i].SubItems.Add(data.Rows[i]["MaKhoa"].ToString());
+                listNganh.Items[i].SubItems.Add(data.Rows[i]["MaDV"].ToString());
             }
         }
         private void cbKhoa_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string makhoa = cbKhoa.SelectedValue.ToString();
-            DataTable data = nganhQuery.LayTheoMaKhoa(makhoa);
-            hien_thi_list_view(data);
+          
         }
 
         private void listDSNganh_SelectedIndexChanged(object sender, EventArgs e)
@@ -61,13 +59,7 @@ namespace QuanLyDeCuongProject
 
         private void listDSNganh_Click(object sender, EventArgs e)
         {
-            string maNganh = listDSNganh.SelectedItems[0].SubItems[0].Text;
-            DataTable data = nganhQuery.LayTheoMaNganh(maNganh);
-       
-            txtMaNganh.Text = data.Rows[0]["MaNganh"].ToString();
-            txtTenNganh.Text = data.Rows[0]["TenNganh"].ToString();
-            txtKhoa.Text = data.Rows[0]["MaKhoa"].ToString();
-            txtMaTruongNganh.Text = data.Rows[0]["TruongNganh"].ToString();
+           
         }
 
         private void listDSNganh_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -78,6 +70,24 @@ namespace QuanLyDeCuongProject
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void listNganh_Click(object sender, EventArgs e)
+        {
+            string maNganh = listNganh.SelectedItems[0].SubItems[0].Text;
+            DataTable data = nganhQuery.LayTheoMaNganh(maNganh);
+
+            txtMaNganh.Text = data.Rows[0]["MaNganh"].ToString();
+            txtTenNganh.Text = data.Rows[0]["TenNganh"].ToString();
+            txtMaKhoa.Text = data.Rows[0]["MaKhoa"].ToString();
+            txtMaTruongNganh.Text = data.Rows[0]["TruongNganh"].ToString();
+        }
+
+        private void cbListNganh_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string makhoa = cbListNganh.SelectedValue.ToString();
+            DataTable data = nganhQuery.LayTheoMaKhoa(makhoa);
+            hien_thi_list_view(data);
         }
     }
 }

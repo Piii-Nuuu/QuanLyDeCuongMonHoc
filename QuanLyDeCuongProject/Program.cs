@@ -19,7 +19,7 @@ namespace QuanLyDeCuongProject
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new SINHVIEN() );
+            Application.Run(new QL_Nganh() );
 
         }
     }
