@@ -19,7 +19,7 @@ namespace QuanLyDeCuongProject
         {
             InitializeComponent();
         }
-        SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-9TCL0NI\SQLEXPRESS;Initial Catalog=QuanLyDeCuong;Integrated Security=True");
+        SqlConnection cn = new SqlConnection(@"");
         public DataTable LayDL(string cm)
         {
             DataTable dt = new DataTable();
