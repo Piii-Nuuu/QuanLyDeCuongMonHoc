@@ -19,7 +19,7 @@ namespace QuanLyDeCuongProject
         {
             InitializeComponent();
         }
-        SqlConnection cn = new SqlConnection(@"");
+        SqlConnection cn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QuanLyDeCuong;Integrated Security=True"); 
         public DataTable LayDL(string cm)
         {
             DataTable dt = new DataTable();
