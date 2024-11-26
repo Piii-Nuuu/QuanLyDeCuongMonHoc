@@ -14,7 +14,7 @@ namespace QuanLyDeCuongProject
 {
     public partial class DangNhap : Form
     {
-        DataBase db;
+        //DataBase db;
         public DangNhap()
         {
             InitializeComponent();
