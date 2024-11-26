@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using QuanLyDeCuongProject.Consts;
 namespace QuanLyDeCuongProject.Data
 {
     internal class DataBase
     {
         SqlConnection connect;
-        public DataBase(string serverName)
+       
+        public DataBase()
         {
-            connect = new SqlConnection(@"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QuanLyDeCuong;Integrated Security=True");
+            connect = new SqlConnection(@"Data Source="+Const.ServerName+";Initial Catalog=QuanLyDeCuong;Integrated Security=True");
         }
 
         public DataTable ExecuteQuery(string sql)

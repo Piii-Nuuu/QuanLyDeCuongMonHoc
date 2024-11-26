@@ -6,19 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLyDeCuongProject.Queries
+namespace QuanLyDeCuongProject.Query
 {
-    internal class QuyenQuery
+    internal class KhoaQuery
     {
         DataBase database = new DataBase();
-        public QuyenQuery()
+        public DataTable GetAllKhoa()
         {
-
-        }
-
-        public DataTable GetAllQuyen()
-        {
-            return database.ExecuteQuery("select * from Quyen");
+            return database.ExecuteQuery("select * from KHOA ");
         }
     }
 }
