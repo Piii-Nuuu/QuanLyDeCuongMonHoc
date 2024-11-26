@@ -13,7 +13,7 @@ namespace QuanLyDeCuongProject
 {
     internal class Modify
     {
-        DataBase db = new DataBase("LAPTOP-ML5IIJFO\\SQLEXPRESS");
+        DataBase db = new DataBase();
         public Modify()
         {
         }
