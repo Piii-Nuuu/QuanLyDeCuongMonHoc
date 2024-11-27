@@ -26,5 +26,9 @@ namespace QuanLyDeCuongProject.Query
         {
             return database.ExecuteQuery($"select * from NGANH where MaNganh='{maNganh}'");
         }
+        public void DeleteNganh(string maNganh)
+        {
+            database.ExecuteNonQuery($"Delete Nganh where MaNganh='{maNganh}'");
+        }
     }
 }

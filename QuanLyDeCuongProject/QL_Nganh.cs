@@ -89,5 +89,20 @@ namespace QuanLyDeCuongProject
             DataTable data = nganhQuery.LayTheoMaKhoa(makhoa);
             hien_thi_list_view(data);
         }
+        public void resetFields()
+        {
+            txtMaNganh.Text = "";
+            txtTenNganh.Text = "";
+            txtMaKhoa.Text = "";
+            txtMaTruongNganh.Text = "";
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string maNganh = txtMaNganh.Text;
+            nganhQuery.DeleteNganh(maNganh);
+            DataTable data = nganhQuery.GetAllNganh();
+            hien_thi_list_view(data);
+            resetFields();
+        }
     }
 }

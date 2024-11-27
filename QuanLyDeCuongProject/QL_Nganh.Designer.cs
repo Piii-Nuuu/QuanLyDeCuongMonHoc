@@ -37,6 +37,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtMaKhoa = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -59,7 +60,6 @@
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.txtMaKhoa = new System.Windows.Forms.TextBox();
             this.cbListNganh = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -79,6 +79,7 @@
             this.button3.TabIndex = 87;
             this.button3.Text = "XÓA";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -188,6 +189,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "THÔNG TIN NGÀNH";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // txtMaKhoa
+            // 
+            this.txtMaKhoa.Enabled = false;
+            this.txtMaKhoa.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaKhoa.Location = new System.Drawing.Point(236, 221);
+            this.txtMaKhoa.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaKhoa.Name = "txtMaKhoa";
+            this.txtMaKhoa.Size = new System.Drawing.Size(354, 32);
+            this.txtMaKhoa.TabIndex = 24;
+            this.txtMaKhoa.TextChanged += new System.EventHandler(this.txtMaTruongNganh_TextChanged);
             // 
             // label4
             // 
@@ -383,17 +395,6 @@
             // columnHeader10
             // 
             this.columnHeader10.Text = "MaDV";
-            // 
-            // txtMaKhoa
-            // 
-            this.txtMaKhoa.Enabled = false;
-            this.txtMaKhoa.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaKhoa.Location = new System.Drawing.Point(236, 221);
-            this.txtMaKhoa.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMaKhoa.Name = "txtMaKhoa";
-            this.txtMaKhoa.Size = new System.Drawing.Size(354, 32);
-            this.txtMaKhoa.TabIndex = 24;
-            this.txtMaKhoa.TextChanged += new System.EventHandler(this.txtMaTruongNganh_TextChanged);
             // 
             // cbListNganh
             // 
