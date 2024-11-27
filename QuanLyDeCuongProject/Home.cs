@@ -19,7 +19,7 @@ namespace QuanLyDeCuongProject
 
         private void Home_Load(object sender, EventArgs e)
         {
-
+            MessageBox.Show(Modify.taiKhoan.name);
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)

@@ -7,25 +7,29 @@ using System.Data.SqlClient;
 using QuanLyDeCuongProject.Data;
 using System.Data;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Security.Cryptography;
 
 
 namespace QuanLyDeCuongProject
 {
     internal class Modify
     {
+        public static Taikhoans taiKhoan;
         DataBase db = new DataBase("LAPTOP-ML5IIJFO\\SQLEXPRESS");
         public Modify()
         {
         }
-        public List<Taikhoans> Taikhoans(string query)
+        public Taikhoans Taikhoans(string query)
         {
-            List<Taikhoans> taikhoans = new List<Taikhoans>();
-            DataTable dataTable= db.ExecuteQuery(query);
-            foreach (DataRow dr in dataTable.Rows)
+            DataTable dt= db.ExecuteQuery(query);
+            if (dt.Rows.Count == 0)
             {
-                taikhoans.Add(new Taikhoans(dr["Email"].ToString(), dr["MatKhau"].ToString()));
+                return null;
             }
-            return taikhoans;
+            int maquyen = int.Parse(dt.Rows[0]["MaQuyen"].ToString());
+            string manguoidung = dt.Rows[0]["MaNguoiDung"].ToString();
+            Taikhoans tk = new Taikhoans(dt.Rows[0]["Email"].ToString(), dt.Rows[0]["Hoten"].ToString(),maquyen,manguoidung);
+            return tk;
         }
     }
 }
