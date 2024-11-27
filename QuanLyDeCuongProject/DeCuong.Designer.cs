@@ -1,6 +1,6 @@
 ﻿namespace QuanLyDeCuongProject
 {
-    partial class S
+    partial class DeCuong
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btTim = new System.Windows.Forms.Button();
+            this.txtSearchmadecuong = new System.Windows.Forms.TextBox();
             this.txtSearchtendecuong = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -53,8 +55,6 @@
             this.btcapnhatdecuong = new System.Windows.Forms.Button();
             this.btthem = new System.Windows.Forms.Button();
             this.btcapnhat = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtSearchmadecuong = new System.Windows.Forms.TextBox();
             this.btxoa = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.lbdc = new System.Windows.Forms.Label();
@@ -87,12 +87,10 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
-
             this.groupBox2.Controls.Add(this.btTim);
             this.groupBox2.Controls.Add(this.txtSearchmadecuong);
             this.groupBox2.Controls.Add(this.txtSearchtendecuong);
             this.groupBox2.Controls.Add(this.label5);
-
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
@@ -122,6 +120,16 @@
             this.btTim.UseVisualStyleBackColor = false;
             this.btTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
+            // txtSearchmadecuong
+            // 
+            this.txtSearchmadecuong.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchmadecuong.Location = new System.Drawing.Point(236, 85);
+            this.txtSearchmadecuong.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearchmadecuong.Name = "txtSearchmadecuong";
+            this.txtSearchmadecuong.Size = new System.Drawing.Size(278, 32);
+            this.txtSearchmadecuong.TabIndex = 18;
+            this.txtSearchmadecuong.TextChanged += new System.EventHandler(this.txtSearchDeCuong_TextChanged);
+            // 
             // txtSearchtendecuong
             // 
             this.txtSearchtendecuong.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -131,6 +139,18 @@
             this.txtSearchtendecuong.Size = new System.Drawing.Size(278, 32);
             this.txtSearchtendecuong.TabIndex = 18;
             this.txtSearchtendecuong.TextChanged += new System.EventHandler(this.txtSearchDeCuong_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(77, 88);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(151, 24);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Mã Đề Cương:";
             // 
             // label3
             // 
@@ -374,28 +394,6 @@
             this.btcapnhat.Text = "CẬP NHẬT";
             this.btcapnhat.UseVisualStyleBackColor = false;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(77, 88);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(151, 24);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Mã Đề Cương:";
-            // 
-            // txtSearchmadecuong
-            // 
-            this.txtSearchmadecuong.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchmadecuong.Location = new System.Drawing.Point(236, 85);
-            this.txtSearchmadecuong.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSearchmadecuong.Name = "txtSearchmadecuong";
-            this.txtSearchmadecuong.Size = new System.Drawing.Size(278, 32);
-            this.txtSearchmadecuong.TabIndex = 18;
-            this.txtSearchmadecuong.TextChanged += new System.EventHandler(this.txtSearchDeCuong_TextChanged);
-            // 
             // btxoa
             // 
             this.btxoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
@@ -441,8 +439,7 @@
             this.label11.TabIndex = 94;
             this.label11.Text = "đề cương";
             // 
-            // S
-
+            // DeCuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -458,7 +455,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label1);
-            this.Name = "S";
+            this.Name = "DeCuong";
             this.Text = "DeCuong";
             this.Load += new System.EventHandler(this.DeCuong_Load);
             this.groupBox2.ResumeLayout(false);

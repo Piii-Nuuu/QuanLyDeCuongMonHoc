@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyDeCuongProject
 {
-    public partial class S : Form
+    public partial class DeCuong : Form
     {
-        public S()
+        public DeCuong()
         {
             InitializeComponent();
         }
