@@ -79,7 +79,6 @@ namespace QuanLyDeCuongProject
 
         private void grB_Enter(object sender, EventArgs e)
         {
-
         }
     }
 }
