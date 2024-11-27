@@ -11,10 +11,10 @@ namespace QuanLyDeCuongProject.Queries
 {
     internal class PermissionQuery
     {
-        DataBase database;
+        DataBase database = new DataBase();
         public PermissionQuery()
         {
-            database = new DataBase(@"MSI\MSSQLSERVER01");
+
         }
 
 

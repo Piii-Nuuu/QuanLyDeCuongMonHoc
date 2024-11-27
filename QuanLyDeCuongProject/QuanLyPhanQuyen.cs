@@ -14,7 +14,7 @@ namespace QuanLyDeCuongProject
 {
     public partial class QuanLyPhanQuyen : Form
     {
-        DataBase database = new DataBase(@"");
+        DataBase database = new DataBase();
         DataTable listPermissions, listQuyen;
         QuyenQuery quyen_query = new QuyenQuery();
         PermissionQuery permission_query = new PermissionQuery();
@@ -28,7 +28,7 @@ namespace QuanLyDeCuongProject
             
 
         }
-       
+    
         private void QuanLyPhanQuyen_Load(object sender, EventArgs e)
         {
             listPermissions = permission_query.GetAllPermisstion();
