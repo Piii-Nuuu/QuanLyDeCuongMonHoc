@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CSDL.cs" />
     <Compile Include="Data\DataBase.cs" />
     <Compile Include="DeCuong.cs">
       <SubType>Form</SubType>
