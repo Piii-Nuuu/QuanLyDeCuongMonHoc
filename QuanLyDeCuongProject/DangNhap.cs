@@ -66,7 +66,10 @@ namespace QuanLyDeCuongProject
                 {
                     Modify.taiKhoan = tk;
                     Home home = new Home();
-                    home.ShowDialog();
+                  
+                    home.Show();
+                    this.Hide();
+
                 }
             }
            
