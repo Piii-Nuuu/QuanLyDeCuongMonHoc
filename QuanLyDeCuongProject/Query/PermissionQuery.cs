@@ -5,15 +5,16 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QuanLyDeCuongProject.Queries
 {
     internal class PermissionQuery
     {
-        DataBase database;
+        DataBase database = new DataBase();
         public PermissionQuery()
         {
-            database = new DataBase(@"MSI\MSSQLSERVER01");
+
         }
 
 
@@ -25,6 +26,10 @@ namespace QuanLyDeCuongProject.Queries
         public DataTable GetAllPermissionByQuyenId(string quyenId)
         {
             return database.ExecuteQuery($"select * from Permission p, Quyen_Permission qp, Quyen q where p.MaPermission = qp.MaPermission and qp.MaQuyen = q.MaQuyen and q.MaQuyen = {quyenId}");
+        }
+        public void CapNhat_Quyen(string mapermission, string maquyen, string maPermissonNew)
+        {
+             database.ExecuteNonQuery("update Quyen_Permission set MaPermission=" + maPermissonNew + " where MaPermission = " + mapermission + " and MaQuyen = " + maquyen + "");
         }
     }
 }

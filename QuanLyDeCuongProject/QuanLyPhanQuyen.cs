@@ -14,7 +14,7 @@ namespace QuanLyDeCuongProject
 {
     public partial class QuanLyPhanQuyen : Form
     {
-        DataBase database = new DataBase(@"");
+        DataBase database = new DataBase();
         DataTable listPermissions, listQuyen;
         QuyenQuery quyen_query = new QuyenQuery();
         PermissionQuery permission_query = new PermissionQuery();
@@ -28,7 +28,7 @@ namespace QuanLyDeCuongProject
             
 
         }
-       
+    
         private void QuanLyPhanQuyen_Load(object sender, EventArgs e)
         {
             listPermissions = permission_query.GetAllPermisstion();
@@ -52,6 +52,7 @@ namespace QuanLyDeCuongProject
         }
         public void displayListViewPermission()
         {
+            listPermissions = permission_query.GetAllPermissionByQuyenId(comboBoxQuyen.SelectedValue.ToString());
             listPermission.Items.Clear();
             for(int i=0; i<listPermissions.Rows.Count; i++)
             {
@@ -63,7 +64,7 @@ namespace QuanLyDeCuongProject
         private void comboBoxQuyen_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBoxQuyen.SelectedValue.ToString() == "System.Data.DataRowView") return;
-            listPermissions = permission_query.GetAllPermissionByQuyenId(comboBoxQuyen.SelectedValue.ToString());
+            
             displayListViewPermission();
         }
 
@@ -90,6 +91,16 @@ namespace QuanLyDeCuongProject
         private void label13_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+
+            string maquyen = comboBoxQuyen.SelectedValue.ToString();
+            string mapermission = listPermission.SelectedItems[0].SubItems[0].Text;
+            string newMaPermisson = comboxPermission.SelectedValue.ToString();
+            permission_query.CapNhat_Quyen(mapermission, maquyen,  newMaPermisson);
+            displayListViewPermission();
         }
 
         private void listPermission_SelectedIndexChanged(object sender, EventArgs e)
