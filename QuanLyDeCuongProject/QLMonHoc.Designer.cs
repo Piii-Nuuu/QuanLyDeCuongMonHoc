@@ -28,16 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnTim = new System.Windows.Forms.Button();
             this.txtTenMon_TimKiem = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cbMaMon_TimKiem = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.listMonHoc = new System.Windows.Forms.ListView();
             this.lbSL = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -51,24 +47,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.listMonHoc = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Mã môn học";
-            this.columnHeader1.Width = 129;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Tên môn học";
-            this.columnHeader2.Width = 243;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Mã ngành học";
-            this.columnHeader3.Width = 199;
             // 
             // btnTim
             // 
@@ -145,26 +130,6 @@
             this.groupBox2.TabIndex = 100;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "THÔNG TIN TÌM KIẾM";
-            // 
-            // listMonHoc
-            // 
-            this.listMonHoc.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
-            this.listMonHoc.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.listMonHoc.FullRowSelect = true;
-            this.listMonHoc.GridLines = true;
-            this.listMonHoc.HideSelection = false;
-            this.listMonHoc.Location = new System.Drawing.Point(717, 280);
-            this.listMonHoc.Margin = new System.Windows.Forms.Padding(4);
-            this.listMonHoc.Name = "listMonHoc";
-            this.listMonHoc.OwnerDraw = true;
-            this.listMonHoc.Size = new System.Drawing.Size(547, 238);
-            this.listMonHoc.TabIndex = 102;
-            this.listMonHoc.UseCompatibleStateImageBehavior = false;
-            this.listMonHoc.View = System.Windows.Forms.View.Details;
-            this.listMonHoc.SelectedIndexChanged += new System.EventHandler(this.listMonHoc_SelectedIndexChanged);
             // 
             // lbSL
             // 
@@ -333,14 +298,44 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Mã môn học:";
             // 
+            // listMonHoc
+            // 
+            this.listMonHoc.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.listMonHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.listMonHoc.FullRowSelect = true;
+            this.listMonHoc.GridLines = true;
+            this.listMonHoc.HideSelection = false;
+            this.listMonHoc.Location = new System.Drawing.Point(717, 296);
+            this.listMonHoc.Name = "listMonHoc";
+            this.listMonHoc.Size = new System.Drawing.Size(613, 251);
+            this.listMonHoc.TabIndex = 105;
+            this.listMonHoc.UseCompatibleStateImageBehavior = false;
+            this.listMonHoc.View = System.Windows.Forms.View.Details;
+            this.listMonHoc.SelectedIndexChanged += new System.EventHandler(this.listMonHoc_SelectedIndexChanged);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "MaMH";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "TenMH";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "MaNganh";
+            // 
             // QLMonHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1442, 583);
+            this.Controls.Add(this.listMonHoc);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.listMonHoc);
             this.Controls.Add(this.lbSL);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label13);
@@ -358,16 +353,12 @@
         }
 
         #endregion
-        public System.Windows.Forms.ColumnHeader columnHeader1;
-        public System.Windows.Forms.ColumnHeader columnHeader2;
-        public System.Windows.Forms.ColumnHeader columnHeader3;
         public System.Windows.Forms.Button btnTim;
         public System.Windows.Forms.TextBox txtTenMon_TimKiem;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.ComboBox cbMaMon_TimKiem;
         public System.Windows.Forms.Label label3;
         public System.Windows.Forms.GroupBox groupBox2;
-        public System.Windows.Forms.ListView listMonHoc;
         public System.Windows.Forms.Label lbSL;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label13;
@@ -381,5 +372,9 @@
         public System.Windows.Forms.Label label10;
         public System.Windows.Forms.Label label7;
         public System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ListView listMonHoc;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }

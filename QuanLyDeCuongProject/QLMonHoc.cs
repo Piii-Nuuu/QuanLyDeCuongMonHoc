@@ -14,11 +14,10 @@ namespace QuanLyDeCuongProject
 {
     public partial class QLMonHoc : Form
     {
-        DataBase db;
+        DataBase db = new DataBase();
         public QLMonHoc()
         {
             InitializeComponent();
-            db = new DataBase(@"Data Source=LAPTOP-1C353TLV;Initial Catalog=QuanLyDeCuong;Integrated Security=True;");
             LoadData();
 
 
@@ -26,13 +25,13 @@ namespace QuanLyDeCuongProject
         private void LoadData()
         {
             listMonHoc.Items.Clear(); 
-            string sql = "SELECT MaMon, TenMon, MaNganh FROM MonHoc";
+            string sql = "select MaMH, TenMH, MaNganh from MONHOC";
             var data = db.ExecuteQuery(sql);
-
+          
             foreach (DataRow row in data.Rows)
             {
-                ListViewItem item = new ListViewItem(row["MaMon"].ToString());
-                item.SubItems.Add(row["TenMon"].ToString());
+                ListViewItem item = new ListViewItem(row["MaMH"].ToString());
+                item.SubItems.Add(row["TenMH"].ToString());
                 item.SubItems.Add(row["MaNganh"].ToString());
                 listMonHoc.Items.Add(item);
             }
@@ -66,7 +65,7 @@ namespace QuanLyDeCuongProject
             string tenMon = txtTenMon.Text;
             string maNganh = txtMaNganh.Text;
 
-            string sql = $"UPDATE MonHoc SET TenMon = N'{tenMon}', MaNganh = N'{maNganh}' WHERE MaMon = N'{maMon}'";
+            string sql = $"UPDATE MONHOC SET TenMH = N'{tenMon}', MaNganh = N'{maNganh}' WHERE MaMH = N'{maMon}'";
 
             try
             {
