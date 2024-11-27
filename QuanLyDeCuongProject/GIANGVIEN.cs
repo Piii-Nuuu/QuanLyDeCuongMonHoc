@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
 namespace QuanLyDeCuongProject
 {
     public partial class GIANGVIEN : Form
     {
+        string mand = "";
         public GIANGVIEN()
         {
             InitializeComponent();
@@ -79,10 +81,10 @@ namespace QuanLyDeCuongProject
             {
                 string txt = listDS.SelectedItems[0].SubItems[0].Text;
 
-                string sql = "select MaGV, HoTen, NgaySinh, GioiTinh, MaDV, HocHam, HocVi, SoDT, MaDV, Email, DiaChi From GIANGVIEN gv, NGUOIDUNG nd where gv.MaND = nd.MaNguoiDung and  MaGV='" + txt + "'";
+                string sql = "select MaGV, HoTen, NgaySinh, GioiTinh, MaDV, HocHam, HocVi, SoDT, MaDV, Email, DiaChi, MaND From GIANGVIEN gv, NGUOIDUNG nd where gv.MaND = nd.MaNguoiDung and  MaGV='" + txt + "'";
                 DataTable dt = new DataTable();
                 dt = CSDL.LayDuLieu(sql);
-
+                mand = dt.Rows[0]["MaND"].ToString();
                 txtGV.Text = dt.Rows[0]["MaGV"].ToString();
                 txtHoten.Text = dt.Rows[0]["HoTen"].ToString();
               d1.Text = dt.Rows[0][2].ToString();
@@ -136,11 +138,13 @@ namespace QuanLyDeCuongProject
             string hocham = txtHH.Text;
             string hocvi = txtHV.Text;
 
-            string sql = $"update GIANGVIEN set MaGV = '{gv}',HoTen = N'{hoten}',NgaySinh = '{ngaysinh}',GioiTinh = N'{gt}',SoDT= '{sdt}',Email = '{email}',DiaChi = N'{diachi}',MaDV = '{dv}',HocHam = N'{hocham}',HocVi = N'{hocvi}' where MaGV ='{gv}'  ";
+            string sqlGV = $"update GIANGVIEN set MaDV = '{dv}',HocHam = N'{hocham}',HocVi = N'{hocvi}' where MaGV ='{gv}'  ";
+            string sqlND = $"update NguoiDung set NgaySinh = '{ngaysinh}', HoTen = '{hoten}', GioiTinh = '{gt}', SoDT = '{sdt}', DiaChi = '{diachi}' where MaNguoiDung = '{mand}' ";
 
             try
             {
-                CSDL.XuLy(sql);
+                CSDL.XuLy(sqlGV);
+                CSDL.XuLy(sqlND);
                 //CSDL.GhiLenhXuLySQL(sql);
                 MessageBox.Show("Đã sửa thông tin giảng viên mới!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

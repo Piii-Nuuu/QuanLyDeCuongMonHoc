@@ -26,7 +26,7 @@ namespace QuanLyDeCuongProject
 
         public static void KetNoi()
         {
-            string sql = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QuanLyDeCuong;Integrated Security=True";
+            string sql = @"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QuanLyDeCuong;Integrated Security=True";
             cn = new SqlConnection(sql);
 
         }
