@@ -14,7 +14,7 @@ namespace QuanLyDeCuongProject
 {
     public partial class DangNhap : Form
     {
-        //DataBase db;
+        Modify m;
         public DangNhap()
         {
             InitializeComponent();
@@ -46,6 +46,8 @@ namespace QuanLyDeCuongProject
         {
             string email = txtEmail.Text;
             string password = txtPassword.Text;
+            email = "nguyenminhkhoa@tgu.edu.vn";
+            password = "12345";
             if (email == "") { MessageBox.Show("Vui lòng nhập email!"); }
             else if (password == "")
             {
@@ -53,10 +55,21 @@ namespace QuanLyDeCuongProject
             }
             else
             {
-
+               
+                m = new Modify();
+                Taikhoans tk =    m.Taikhoans("select Email, Hoten , MaQuyen , MaNguoiDung from NguoiDung where Email='" + email + "' and Makhau ='" + password + "'");
+                if (tk == null)
+                {
+                    MessageBox.Show("Tài Khoản Không Tôn Tại!");
+                }
+                else
+                {
+                    Modify.taiKhoan = tk;
+                    Home home = new Home();
+                    home.ShowDialog();
+                }
             }
-            Home home = new Home();
-            home.ShowDialog();
+           
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -66,7 +79,6 @@ namespace QuanLyDeCuongProject
 
         private void grB_Enter(object sender, EventArgs e)
         {
-
         }
     }
 }

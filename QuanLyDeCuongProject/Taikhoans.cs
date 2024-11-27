@@ -8,17 +8,21 @@ namespace QuanLyDeCuongProject
 {
     internal class Taikhoans
     {
-        private string email;
-        private string password;
+        public string email { get; set; }
+        public string name { get; set; }
+        public int ma_quyen {  get; set; }
+        public string ma_nguoi_dung {  get; set; }
 
         public Taikhoans()
         {
         }
 
-        public Taikhoans(string email, string password)
+        public Taikhoans(string email, string name, int ma_quyen, string ma_nguoi_dung)
         {
             this.email = email;
-            this.password = password;
+            this.name = name;
+            this.ma_quyen = ma_quyen;
+            this.ma_nguoi_dung = ma_nguoi_dung;
         }
 
         //public string Email { get => email; set => email = value; }
