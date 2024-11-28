@@ -55,8 +55,6 @@ C:\Users\M1\Source\Repos\Piii-Nuuu\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\
 C:\Users\M1\Source\Repos\Piii-Nuuu\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.GenerateResource.Cache
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DangNhap.resources
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.SINHVIEN.resources
-D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.S.resources
-<<<<<<< HEAD
 C:\Users\DAT\m\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe.config
 C:\Users\DAT\m\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe
 C:\Users\DAT\m\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.pdb
@@ -75,7 +73,6 @@ C:\Users\DAT\m\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.Genera
 C:\Users\DAT\m\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.CoreCompileInputs.cache
 C:\Users\DAT\m\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.exe
 C:\Users\DAT\m\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.pdb
-=======
 D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe.config
 D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.exe
 D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.pdb
@@ -93,5 +90,4 @@ D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject
 D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QL_Nganh.resources
 D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QuanLyPhanQuyen.resources
 D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.GenerateResource.Cache
->>>>>>> main
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DeCuong.resources
