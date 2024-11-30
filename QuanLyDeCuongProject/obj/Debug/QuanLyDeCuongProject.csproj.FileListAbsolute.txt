@@ -91,3 +91,21 @@ D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject
 D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QuanLyPhanQuyen.resources
 D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.GenerateResource.Cache
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DeCuong.resources
+C:\M\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe.config
+C:\M\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe
+C:\M\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.pdb
+C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.AssemblyReference.cache
+C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DeCuong.resources
+C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Form1.resources
+C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.GIANGVIEN.resources
+C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Home.resources
+C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Properties.Resources.resources
+C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.SINHVIEN.resources
+C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QLMonHoc.resources
+C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DangNhap.resources
+C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QL_Nganh.resources
+C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QuanLyPhanQuyen.resources
+C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.GenerateResource.cache
+C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.CoreCompileInputs.cache
+C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.exe
+C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.pdb

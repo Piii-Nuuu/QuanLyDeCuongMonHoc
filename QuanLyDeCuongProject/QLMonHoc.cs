@@ -9,73 +9,137 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyDeCuongProject.Data;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace QuanLyDeCuongProject
 {
     public partial class QLMonHoc : Form
     {
-        DataBase db = new DataBase();
+        string connectionString = "";
+
+
         public QLMonHoc()
         {
             InitializeComponent();
-            LoadData();
+           
 
 
         }
         private void LoadData()
         {
-            listMonHoc.Items.Clear(); 
-            string sql = "select MaMH, TenMH, MaNganh from MONHOC";
-            var data = db.ExecuteQuery(sql);
-          
-            foreach (DataRow row in data.Rows)
+            listMonHoc.Items.Clear(); // Xóa danh sách cũ
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                ListViewItem item = new ListViewItem(row["MaMH"].ToString());
-                item.SubItems.Add(row["TenMH"].ToString());
-                item.SubItems.Add(row["MaNganh"].ToString());
-                listMonHoc.Items.Add(item);
+                string query = "SELECT MaMH, TenMH, MaNganh FROM MONHOC";
+                SqlCommand cmd = new SqlCommand(query, conn);
+
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    // Thêm dữ liệu vào ListView
+                    ListViewItem item = new ListViewItem(reader["MaMH"].ToString());
+                    item.SubItems.Add(reader["TenMH"].ToString());
+                    item.SubItems.Add(reader["MaNganh"].ToString());
+                    listMonHoc.Items.Add(item);
+                }
             }
         }
 
+
+
         private void QLMonHoc_Load(object sender, EventArgs e)
         {
-
+            LoadData();
         }
 
         private void listMonHoc_SelectedIndexChanged(object sender, EventArgs e)
+
         {
             if (listMonHoc.SelectedItems.Count > 0)
             {
                 ListViewItem selectedItem = listMonHoc.SelectedItems[0];
-                txtMaMon.Text = selectedItem.SubItems[0].Text; 
-                txtTenMon.Text = selectedItem.SubItems[1].Text; 
-                txtMaNganh.Text = selectedItem.SubItems[2].Text; 
+                txtMaMon.Text = selectedItem.SubItems[0].Text; // Mã môn học
+                txtTenMon.Text = selectedItem.SubItems[1].Text; // Tên môn học
+                txtMaNganh.Text = selectedItem.SubItems[2].Text; // Mã ngành
             }
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtMaMon.Text))
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                MessageBox.Show("Vui lòng chọn môn học cần cập nhật.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                string query = "UPDATE MONHOC SET TenMH = @TenMH, MaNganh = @MaNganh WHERE MaMH = @MaMH";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaMH", txtMaMon.Text);
+                cmd.Parameters.AddWithValue("@TenMH", txtTenMon.Text);
+                cmd.Parameters.AddWithValue("@MaNganh", txtMaNganh.Text);
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Cập nhật thành công!");
+                LoadData();
             }
+        }
 
-            string maMon = txtMaMon.Text;
-            string tenMon = txtTenMon.Text;
-            string maNganh = txtMaNganh.Text;
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
-            string sql = $"UPDATE MONHOC SET TenMH = N'{tenMon}', MaNganh = N'{maNganh}' WHERE MaMH = N'{maMon}'";
+        }
 
-            try
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            listMonHoc.Items.Clear();
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                db.ExecuteNonQuery(sql); 
-                MessageBox.Show("Cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadData(); 
+                string query = "SELECT MaMH, TenMH, MaNganh FROM MONHOC WHERE MaMH LIKE @MaMH OR TenMH LIKE @TenMH";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaMH", "%" + txtTenMon_TimKiem.Text + "%");
+                cmd.Parameters.AddWithValue("@TenMH", "%" + txtTenMon_TimKiem.Text + "%");
+
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    ListViewItem item = new ListViewItem(reader["MaMH"].ToString());
+                    item.SubItems.Add(reader["TenMH"].ToString());
+                    item.SubItems.Add(reader["MaNganh"].ToString());
+                    listMonHoc.Items.Add(item);
+                }
             }
-            catch (Exception ex)
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                MessageBox.Show("Cập nhật thất bại: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string query = "DELETE FROM MONHOC WHERE MaMH = @MaMH";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaMH", txtMaMon.Text);
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Xóa môn học thành công!");
+                LoadData();
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string query = "INSERT INTO MONHOC (MaMH, TenMH, MaNganh) VALUES (@MaMH, @TenMH, @MaNganh)";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaMH", txtMaMon.Text);
+                cmd.Parameters.AddWithValue("@TenMH", txtTenMon.Text);
+                cmd.Parameters.AddWithValue("@MaNganh", txtMaNganh.Text);
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Thêm môn học thành công!");
+                LoadData();
             }
         }
     }

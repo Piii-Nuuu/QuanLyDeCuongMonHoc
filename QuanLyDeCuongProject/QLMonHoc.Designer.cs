@@ -69,6 +69,7 @@
             this.btnTim.TabIndex = 27;
             this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = false;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // txtTenMon_TimKiem
             // 
@@ -203,6 +204,7 @@
             this.btnXoa.TabIndex = 87;
             this.btnXoa.Text = "XÓA";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnCapNhat
             // 
@@ -234,6 +236,7 @@
             this.btnThem.TabIndex = 85;
             this.btnThem.Text = "THÊM MỚI";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // txtTenMon
             // 
