@@ -13,6 +13,9 @@ namespace QuanLyDeCuongProject
 {
     public partial class DeCuong : Form
     {
+        // mã môn học chuyển thành combobox
+        // nút duyệt đề cương đâu
+
         DataBase Db  = new DataBase();
 
         public DeCuong()
@@ -182,6 +185,11 @@ namespace QuanLyDeCuongProject
                 }
 
             }
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

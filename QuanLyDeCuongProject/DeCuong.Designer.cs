@@ -446,6 +446,7 @@
             this.label11.Size = new System.Drawing.Size(63, 16);
             this.label11.TabIndex = 94;
             this.label11.Text = "đề cương";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // btThem
             // 
