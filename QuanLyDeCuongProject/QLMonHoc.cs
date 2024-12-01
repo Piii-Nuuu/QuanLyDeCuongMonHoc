@@ -15,6 +15,15 @@ namespace QuanLyDeCuongProject
 {
     public partial class QLMonHoc : Form
     {
+
+
+        // mã môn học không đc nhập, mà cho tự động tăng
+        // thêm text box cho nhập số chính chỉ, số tiết lý thuyết, số tiết thực hành, cái học học phần tiên quyết mặc định null (bàn lại sao).
+        // cái mã ngành chỉnh lại thành combobox 
+        // list view cho hiện số chính chỉ, số tiết lý thuyết, số tiết thực hành 
+        // chức năng update được phép cập nhật số chính chỉ, số tiết lý thuyết, số tiết thực hành
+
+
         string connectionString = "";
 
 

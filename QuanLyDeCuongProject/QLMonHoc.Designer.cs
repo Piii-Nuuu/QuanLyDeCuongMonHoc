@@ -311,7 +311,7 @@
             this.listMonHoc.FullRowSelect = true;
             this.listMonHoc.GridLines = true;
             this.listMonHoc.HideSelection = false;
-            this.listMonHoc.Location = new System.Drawing.Point(717, 296);
+            this.listMonHoc.Location = new System.Drawing.Point(697, 296);
             this.listMonHoc.Name = "listMonHoc";
             this.listMonHoc.Size = new System.Drawing.Size(613, 251);
             this.listMonHoc.TabIndex = 105;
@@ -322,14 +322,17 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "MaMH";
+            this.columnHeader1.Width = 107;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "TenMH";
+            this.columnHeader2.Width = 96;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "MaNganh";
+            this.columnHeader3.Width = 147;
             // 
             // QLMonHoc
             // 
