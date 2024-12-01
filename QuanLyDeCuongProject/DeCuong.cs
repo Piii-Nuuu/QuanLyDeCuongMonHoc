@@ -105,7 +105,7 @@ namespace QuanLyDeCuongProject
 
         private void btthem_Click(object sender, EventArgs e)
         {
-            //Modify.taiKhoan.ma_nguoi_dung;
+       
             string sql_mangdung = "select MaGV from NguoiDung nd, GIANGVIEN gv where nd.MaNguoiDung = gv.MaND and nd.MaNguoiDung = 'ND0001'";
             DataTable dt_laymaGV = Db.ExecuteQuery(sql_mangdung);
 
