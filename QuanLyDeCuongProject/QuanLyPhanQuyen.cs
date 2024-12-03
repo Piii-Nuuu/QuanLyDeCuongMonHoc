@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace QuanLyDeCuongProject
 {
@@ -122,49 +123,69 @@ namespace QuanLyDeCuongProject
                 string newMaPermisson = comboxPermission.SelectedValue.ToString();
                 if(string.IsNullOrEmpty(maquyen) || string.IsNullOrEmpty(mapermission) || string.IsNullOrEmpty(newMaPermisson))
                 {
-                    MessageBox.Show("Vui lòng chọn đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Vui lòng chọn đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
-                permission_query.CapNhat_Quyen(mapermission, maquyen, newMaPermisson);
-                displayListViewPermission();
-                MessageBox.Show("Cập nhật quyền thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                PermissionQuery permissionQuery = new PermissionQuery();
+                if (permissionQuery.Kiemtratrung(maquyen, newMaPermisson))
+                {
+                    MessageBox.Show("Quyền này đã tồn tại trong hệ thống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return; 
+                }
+                DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn cập nhật quyền này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (dialogResult == DialogResult.Yes)
+                {
+                    permission_query.CapNhat_Quyen(mapermission, maquyen, newMaPermisson);
+                    displayListViewPermission(); 
+                    MessageBox.Show("Cập nhật quyền thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Hành động bị hủy bỏ.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 UpdateTotalCounts();
-
             }
-
-            //string maquyen = comboBoxQuyen.SelectedValue.ToString();
-            //string mapermission = listPermission.SelectedItems[0].SubItems[0].Text;
-            //string newMaPermisson = comboxPermission.SelectedValue.ToString();
-            //permission_query.CapNhat_Quyen(mapermission, maquyen, newMaPermisson);
-            //displayListViewPermission();
         } //Cap nhat
-
         private void Button1_Click(object sender, EventArgs e) //Them
-        { 
+        {
             try
             {
                 string selectedPermission = comboxPermission.SelectedValue?.ToString(); 
                 string selectedQuyen = comboBoxQuyen.SelectedValue?.ToString(); 
                 if (string.IsNullOrEmpty(selectedPermission) || string.IsNullOrEmpty(selectedQuyen))
                 {
-                    MessageBox.Show("Vui lòng chọn đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Vui lòng chọn đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
-                }               
-                permission_query.Them_Quyen(selectedQuyen, selectedPermission);
-                displayListViewPermission();
-                MessageBox.Show("Thêm quyền thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                PermissionQuery permissionQuery = new PermissionQuery();
+                if (permissionQuery.Kiemtratrung(selectedQuyen, selectedPermission))
+                {
+                    MessageBox.Show("Quyền này đã tồn tại trong hệ thống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn thêm quyền này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    permission_query.Them_Quyen(selectedQuyen, selectedPermission);
+                    displayListViewPermission();
+                    MessageBox.Show("Thêm quyền thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Hành động bị hủy bỏ.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 UpdateTotalCounts();
-
             }
-
         }
 
         private void Button3_Click(object sender, EventArgs e)
@@ -173,7 +194,7 @@ namespace QuanLyDeCuongProject
                 {
                     if (listPermission.SelectedItems.Count == 0)
                     {
-                        MessageBox.Show("Vui lòng chọn quyền cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Vui lòng chọn quyền cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return;
                     }
                     string maPermission = listPermission.SelectedItems[0].SubItems[0].Text;
@@ -257,6 +278,16 @@ namespace QuanLyDeCuongProject
                 MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             UpdateTotalCounts();
+        }
+
+        private void ListView1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (listView1.SelectedItems.Count > 0)
+            {
+                ListViewItem selectedItem = listView1.SelectedItems[0];
+                string action = selectedItem.SubItems[1].Text;
+                comboxPermission.Text = action;
+            }
         }
 
         private void listPermission_SelectedIndexChanged(object sender, EventArgs e)
