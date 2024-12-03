@@ -17,6 +17,12 @@ namespace QuanLyDeCuongProject
     public partial class QLMonHoc : Form
 
     {
+        // chức năng xóa kiểm tra khóa ngoại
+
+
+
+
+
         string connectionString = "";
 
 
