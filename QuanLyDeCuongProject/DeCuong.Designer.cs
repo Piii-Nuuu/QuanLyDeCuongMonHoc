@@ -139,7 +139,7 @@
             this.txtSearchtendecuong.Name = "txtSearchtendecuong";
             this.txtSearchtendecuong.Size = new System.Drawing.Size(278, 32);
             this.txtSearchtendecuong.TabIndex = 18;
-            this.txtSearchtendecuong.TextChanged += new System.EventHandler(this.txtSearchDeCuong_TextChanged);
+            this.txtSearchtendecuong.TextChanged += new System.EventHandler(this.txtSearchtendecuong_TextChanged);
             // 
             // label5
             // 
