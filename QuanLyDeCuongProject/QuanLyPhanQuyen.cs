@@ -14,6 +14,9 @@ namespace QuanLyDeCuongProject
 {
     public partial class QuanLyPhanQuyen : Form
     {
+        // Thêm, cập nhật kiểm tra permission có trùng không.
+        // Click vào kết quả tìm kiếm, hiện lại trên combobox
+
         DataBase database = new DataBase();
         DataTable listPermissions, listQuyen;
         QuyenQuery quyen_query = new QuyenQuery();
