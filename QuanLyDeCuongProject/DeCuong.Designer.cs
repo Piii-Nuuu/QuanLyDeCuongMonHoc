@@ -256,6 +256,7 @@
             this.groupBox3.TabIndex = 93;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "THÔNG TIN ĐỀ CƯƠNG";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // txttendecuong
             // 

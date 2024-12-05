@@ -84,5 +84,34 @@ namespace QuanLyDeCuongProject
         {
 
         }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+            DoiMatKhau frm_password = new DoiMatKhau();
+            frm_password.ShowDialog();
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+            DialogResult confirmResult = MessageBox.Show(
+                       "Bạn có chắc chắn muốn đăng xuất?",
+                       "Xác nhận đăng xuất",
+                       MessageBoxButtons.YesNo,
+                       MessageBoxIcon.Question);
+            if(confirmResult == DialogResult.Yes)
+            {
+                DangNhap frm_signIn = new DangNhap();
+                frm_signIn.Show();
+                this.Hide();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SuaThongTinCaNhan frm_edit = new SuaThongTinCaNhan();
+            frm_edit.ShowDialog();
+
+        }
     }
 }

@@ -30,21 +30,15 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.MonHoc = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.QLDeCuong = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.QLNganh = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.QLSinhVien = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.QLGiangVien = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.QLPhanQuyen = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -66,19 +60,25 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MonHoc.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.QLDeCuong.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.QLNganh.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.QLSinhVien.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.QLGiangVien.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.QLPhanQuyen.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -105,17 +105,6 @@
             this.MonHoc.Click += new System.EventHandler(this.MonHoc_Click);
             this.MonHoc.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::QuanLyDeCuongProject.Properties.Resources.book_stack;
-            this.pictureBox1.Location = new System.Drawing.Point(18, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(143, 108);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 98;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.MonHoc_Click);
-            // 
             // QLDeCuong
             // 
             this.QLDeCuong.BackColor = System.Drawing.Color.RoyalBlue;
@@ -128,17 +117,6 @@
             this.QLDeCuong.TabIndex = 100;
             this.QLDeCuong.Click += new System.EventHandler(this.QLDeCuong_Click);
             this.QLDeCuong.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::QuanLyDeCuongProject.Properties.Resources.documentation;
-            this.pictureBox2.Location = new System.Drawing.Point(18, 13);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(143, 108);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 98;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.QLDeCuong_Click);
             // 
             // label2
             // 
@@ -165,17 +143,6 @@
             this.QLNganh.Click += new System.EventHandler(this.QLNganh_Click);
             this.QLNganh.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::QuanLyDeCuongProject.Properties.Resources.department;
-            this.pictureBox3.Location = new System.Drawing.Point(21, 16);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(143, 108);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 98;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.QLNganh_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -199,17 +166,6 @@
             this.QLSinhVien.TabIndex = 100;
             this.QLSinhVien.Click += new System.EventHandler(this.QLSinhVien_Click);
             this.QLSinhVien.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::QuanLyDeCuongProject.Properties.Resources.students;
-            this.pictureBox4.Location = new System.Drawing.Point(18, 16);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(143, 108);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 98;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.QLSinhVien_Click);
             // 
             // label4
             // 
@@ -235,16 +191,6 @@
             this.QLGiangVien.Click += new System.EventHandler(this.QLGiangVien_Click);
             this.QLGiangVien.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::QuanLyDeCuongProject.Properties.Resources.teacher;
-            this.pictureBox5.Location = new System.Drawing.Point(18, 13);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(143, 108);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 98;
-            this.pictureBox5.TabStop = false;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -268,17 +214,6 @@
             this.QLPhanQuyen.TabIndex = 100;
             this.QLPhanQuyen.Click += new System.EventHandler(this.QLPhanQuyen_Click);
             this.QLPhanQuyen.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::QuanLyDeCuongProject.Properties.Resources.permission;
-            this.pictureBox6.Location = new System.Drawing.Point(21, 13);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(143, 108);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 98;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.QLPhanQuyen_Click);
             // 
             // label6
             // 
@@ -386,6 +321,7 @@
             this.button2.TabIndex = 104;
             this.button2.Text = "CẬP NHẬT";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label17
             // 
@@ -512,6 +448,7 @@
             this.label12.Size = new System.Drawing.Size(134, 18);
             this.label12.TabIndex = 103;
             this.label12.Text = "Thay Đổi Mật Khẩu";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label13
             // 
@@ -523,6 +460,72 @@
             this.label13.Size = new System.Drawing.Size(77, 18);
             this.label13.TabIndex = 103;
             this.label13.Text = "Đăng Xuất";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::QuanLyDeCuongProject.Properties.Resources.permission;
+            this.pictureBox6.Location = new System.Drawing.Point(21, 13);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(143, 108);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 98;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.QLPhanQuyen_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::QuanLyDeCuongProject.Properties.Resources.teacher;
+            this.pictureBox5.Location = new System.Drawing.Point(18, 13);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(143, 108);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 98;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::QuanLyDeCuongProject.Properties.Resources.students;
+            this.pictureBox4.Location = new System.Drawing.Point(18, 16);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(143, 108);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 98;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.QLSinhVien_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::QuanLyDeCuongProject.Properties.Resources.department;
+            this.pictureBox3.Location = new System.Drawing.Point(21, 16);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(143, 108);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 98;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.QLNganh_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::QuanLyDeCuongProject.Properties.Resources.documentation;
+            this.pictureBox2.Location = new System.Drawing.Point(18, 13);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(143, 108);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 98;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.QLDeCuong_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QuanLyDeCuongProject.Properties.Resources.book_stack;
+            this.pictureBox1.Location = new System.Drawing.Point(18, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(143, 108);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 98;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.MonHoc_Click);
             // 
             // Home
             // 
@@ -544,24 +547,24 @@
             this.Load += new System.EventHandler(this.Home_Load);
             this.MonHoc.ResumeLayout(false);
             this.MonHoc.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.QLDeCuong.ResumeLayout(false);
             this.QLDeCuong.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.QLNganh.ResumeLayout(false);
             this.QLNganh.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.QLSinhVien.ResumeLayout(false);
             this.QLSinhVien.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.QLGiangVien.ResumeLayout(false);
             this.QLGiangVien.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.QLPhanQuyen.ResumeLayout(false);
             this.QLPhanQuyen.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
