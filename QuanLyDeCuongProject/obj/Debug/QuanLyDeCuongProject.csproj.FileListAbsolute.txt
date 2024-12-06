@@ -91,3 +91,4 @@ D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject
 D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QuanLyPhanQuyen.resources
 D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.GenerateResource.Cache
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DeCuong.resources
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DuyetDeCuong.resources

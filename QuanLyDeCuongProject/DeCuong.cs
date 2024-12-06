@@ -212,5 +212,14 @@ namespace QuanLyDeCuongProject
                 listDSdecuong.Items[i].SubItems.Add(dt.Rows[i]["MaMon"].ToString());
             }
         }
+
+        private void label9_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            DuyetDeCuong duyetDeCuong = new DuyetDeCuong();
+            duyetDeCuong.ShowDialog();
+            duyetDeCuong = null;
+            this.Show();
+        }
     }
 }
