@@ -17,7 +17,7 @@ namespace QuanLyDeCuongProject
     public partial class QLMonHoc : Form
 
     {
-        // chức năng xóa kiểm tra khóa ngoại
+       
 
 
 
@@ -196,21 +196,61 @@ namespace QuanLyDeCuongProject
         {
             if (listMonHoc.SelectedItems.Count > 0)
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                if (string.IsNullOrWhiteSpace(txtMaMon.Text))
                 {
-                    string query = "DELETE FROM MONHOC WHERE MaMH = @MaMH";
-                    SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@MaMH", txtMaMon.Text);
+                    MessageBox.Show("Mã môn không được để trống!");
+                    return;
+                }
 
-                    connection.Open();
-                    command.ExecuteNonQuery();
-                    connection.Close();
+                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa môn học này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result != DialogResult.Yes)
+                {
+                    return;
+                }
 
-                    MessageBox.Show("Xóa thành công!");
+                try
+                {
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        connection.Open();
 
+                        // Kiểm tra khóa ngoại trước khi xóa
+                        string checkQuery = "SELECT COUNT(*) FROM TABLE_REFERENCING_MONHOC WHERE MaMH = @MaMH";
+                        using (SqlCommand checkCommand = new SqlCommand(checkQuery, connection))
+                        {
+                            checkCommand.Parameters.AddWithValue("@MaMH", txtMaMon.Text);
+                            int referenceCount = (int)checkCommand.ExecuteScalar();
 
-                    LoadListView();
-                    ClearInputFields();
+                            if (referenceCount > 0)
+                            {
+                                MessageBox.Show("Không thể xóa vì môn học này đang được tham chiếu bởi bảng khác!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                return;
+                            }
+                        }
+
+                        // Thực hiện xóa nếu không bị khóa ngoại
+                        string deleteQuery = "DELETE FROM MONHOC WHERE MaMH = @MaMH";
+                        using (SqlCommand deleteCommand = new SqlCommand(deleteQuery, connection))
+                        {
+                            deleteCommand.Parameters.AddWithValue("@MaMH", txtMaMon.Text);
+                            int rowsAffected = deleteCommand.ExecuteNonQuery();
+
+                            if (rowsAffected > 0)
+                            {
+                                MessageBox.Show("Xóa thành công!");
+                                LoadListView();
+                                ClearInputFields();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Không tìm thấy mã môn để xóa.");
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}");
                 }
             }
             else
