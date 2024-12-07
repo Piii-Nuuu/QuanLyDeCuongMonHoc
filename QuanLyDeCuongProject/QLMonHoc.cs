@@ -23,7 +23,7 @@ namespace QuanLyDeCuongProject
 
 
 
-        string connectionString = "";
+        string connectionString = "Data Source=LAPTOP-1C353TLV\\SQLEXPRESS;Initial Catalog=QuanLyDeCuong;Integrated Security=True";
 
 
         private void ClearInputFields()
@@ -126,11 +126,20 @@ namespace QuanLyDeCuongProject
 
         }
 
+        private void UpdateTotalCounts()
+        {
 
+            int totalPermissions = listMonHoc.Items.Count;
+            lbSL.Text = $"{totalPermissions} hiện có";
+
+            int totalActions = listMonHoc.Items.Count;
+            lbSL.Text = $" {totalActions}  môn học";
+        }
 
         private void QLMonHoc_Load(object sender, EventArgs e)
         {
             LoadData(); LoadComboBoxMaNganh();
+            UpdateTotalCounts();
 
         }
 
@@ -145,7 +154,10 @@ namespace QuanLyDeCuongProject
                 cbbMaNganh.SelectedItem = item.SubItems[2].Text;
                 txtSoTinChi.Text = item.SubItems[3].Text;
                 txtSoTietLyThuyet.Text = item.SubItems[4].Text;
-                txtSoTietThucHanh.Text = item.SubItems[5].Text;
+                if (item.SubItems.Count > 5)  // Kiểm tra có đủ số cột không
+                {
+                    txtSoTietThucHanh.Text = item.SubItems[5].Text;
+                }
             }
         }
 
@@ -155,14 +167,14 @@ namespace QuanLyDeCuongProject
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    string query = "UPDATE MONHOC SET TenMH = @TenMH, MaNganh = @MaNganh, SoTinChi = @SoTinChi, SoTietLyThuyet = @SoTietLyThuyet, SoTietThucHanh = @SoTietThucHanh WHERE MaMH = @MaMH";
+                    string query = "UPDATE MONHOC SET TenMH = @TenMH, MaNganh = @MaNganh, SoTC = @SoTinChi, SoTietLT = @SoTietLT, SoTietTH = @SoTietTH WHERE MaMH = @MaMH";
                     SqlCommand command = new SqlCommand(query, connection);
                     command.Parameters.AddWithValue("@MaMH", txtMaMon.Text);
                     command.Parameters.AddWithValue("@TenMH", txtTenMon.Text);
                     command.Parameters.AddWithValue("@MaNganh", cbbMaNganh.SelectedItem.ToString());
                     command.Parameters.AddWithValue("@SoTinChi", txtSoTinChi.Text);
-                    command.Parameters.AddWithValue("@SoTietLyThuyet", txtSoTietLyThuyet.Text);
-                    command.Parameters.AddWithValue("@SoTietThucHanh", txtSoTietThucHanh.Text);
+                    command.Parameters.AddWithValue("@SoTietLT", txtSoTietLyThuyet.Text);
+                    command.Parameters.AddWithValue("@SoTietTH", txtSoTietThucHanh.Text);
 
                     connection.Open();
                     command.ExecuteNonQuery();
@@ -215,20 +227,22 @@ namespace QuanLyDeCuongProject
                         connection.Open();
 
                         // Kiểm tra khóa ngoại trước khi xóa
-                        string checkQuery = "SELECT COUNT(*) FROM TABLE_REFERENCING_MONHOC WHERE MaMH = @MaMH";
-                        using (SqlCommand checkCommand = new SqlCommand(checkQuery, connection))
-                        {
-                            checkCommand.Parameters.AddWithValue("@MaMH", txtMaMon.Text);
-                            int referenceCount = (int)checkCommand.ExecuteScalar();
 
-                            if (referenceCount > 0)
-                            {
-                                MessageBox.Show("Không thể xóa vì môn học này đang được tham chiếu bởi bảng khác!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                return;
-                            }
-                        }
 
                         // Thực hiện xóa nếu không bị khóa ngoại
+                        string deleteMH = $"Delete DeCuong where MaMon='{txtMaMon.Text}'";
+                        using (SqlCommand deleteCommand = new SqlCommand(deleteMH, connection))
+                        {
+                    
+                           deleteCommand.ExecuteNonQuery();
+
+                           
+                        }
+
+
+
+
+
                         string deleteQuery = "DELETE FROM MONHOC WHERE MaMH = @MaMH";
                         using (SqlCommand deleteCommand = new SqlCommand(deleteQuery, connection))
                         {
@@ -267,14 +281,14 @@ namespace QuanLyDeCuongProject
                 string newMaMH = GenerateNewMaMH(connection);
 
 
-                string query = "INSERT INTO MONHOC (MaMH, TenMH, MaNganh, SoTinChi, SoTietLyThuyet, SoTietThucHanh) VALUES (@MaMH, @TenMH, @MaNganh, @SoTinChi, @SoTietLyThuyet, @SoTietThucHanh)";
+                string query = "INSERT INTO MONHOC (MaMH, TenMH, MaNganh, SoTC, SoTietLT, SoTietTH) VALUES (@MaMH, @TenMH, @MaNganh, @SoTC, @SoTietLT, @SoTietTH)";
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@MaMH", newMaMH);
                 command.Parameters.AddWithValue("@TenMH", txtTenMon.Text);
                 command.Parameters.AddWithValue("@MaNganh", cbbMaNganh.SelectedItem.ToString());
-                command.Parameters.AddWithValue("@SoTinChi", txtSoTinChi.Text);
-                command.Parameters.AddWithValue("@SoTietLyThuyet", txtSoTietLyThuyet.Text);
-                command.Parameters.AddWithValue("@SoTietThucHanh", txtSoTietThucHanh.Text);
+                command.Parameters.AddWithValue("@SoTC", txtSoTinChi.Text);
+                command.Parameters.AddWithValue("@SoTietLT", txtSoTietLyThuyet.Text);
+                command.Parameters.AddWithValue("@SoTietTH", txtSoTietThucHanh.Text);
 
                 connection.Open();
                 command.ExecuteNonQuery();
@@ -308,6 +322,32 @@ namespace QuanLyDeCuongProject
                     item.SubItems.Add(reader["MaNganh"].ToString());
                     listMonHoc.Items.Add(item);
                 }
+            }
+        }
+
+        private void txtTenMon_TimKiem_TextChanged(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string query = $"SELECT MaMH, TenMH, SoTC, SoTietLT, SoTietTH FROM MONHOC WHERE TenMH LIKE N'%{txtTenMon_TimKiem.Text}%'";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                listMonHoc.Items.Clear();
+                int count = 0;
+                while (reader.Read())
+                {
+                    count++;
+                    ListViewItem item = new ListViewItem(reader["MaMH"].ToString());
+                    item.SubItems.Add(reader["TenMH"].ToString());
+                    item.SubItems.Add(reader["SoTC"].ToString());
+                    item.SubItems.Add(reader["SoTietLT"].ToString());
+                    item.SubItems.Add(reader["SoTietTH"].ToString());
+                    listMonHoc.Items.Add(item);
+                }
+                lbSL.Text = count.ToString();
             }
         }
     }
