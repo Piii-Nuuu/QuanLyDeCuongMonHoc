@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyDeCuongProject.Consts;
 using QuanLyDeCuongProject.Data;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
