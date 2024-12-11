@@ -60,6 +60,7 @@
             this.lbdc = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btThem = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -139,7 +140,7 @@
             this.txtSearchtendecuong.Name = "txtSearchtendecuong";
             this.txtSearchtendecuong.Size = new System.Drawing.Size(278, 32);
             this.txtSearchtendecuong.TabIndex = 18;
-            this.txtSearchtendecuong.TextChanged += new System.EventHandler(this.txtSearchDeCuong_TextChanged);
+            this.txtSearchtendecuong.TextChanged += new System.EventHandler(this.txtSearchtendecuong_TextChanged);
             // 
             // label5
             // 
@@ -430,7 +431,7 @@
             // lbdc
             // 
             this.lbdc.AutoSize = true;
-            this.lbdc.Location = new System.Drawing.Point(988, 549);
+            this.lbdc.Location = new System.Drawing.Point(1016, 549);
             this.lbdc.Name = "lbdc";
             this.lbdc.Size = new System.Drawing.Size(16, 16);
             this.lbdc.TabIndex = 95;
@@ -441,11 +442,12 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(1010, 549);
+            this.label11.Location = new System.Drawing.Point(1053, 549);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(63, 16);
             this.label11.TabIndex = 94;
             this.label11.Text = "đề cương";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // btThem
             // 
@@ -461,11 +463,24 @@
             this.btThem.UseVisualStyleBackColor = false;
             this.btThem.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(1173, 11);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(186, 21);
+            this.label9.TabIndex = 98;
+            this.label9.Text = "->DUYỆT ĐỀ CƯƠNG";
+            this.label9.Click += new System.EventHandler(this.label9_Click_1);
+            // 
             // DeCuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1442, 583);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.btThem);
             this.Controls.Add(this.lbdc);
             this.Controls.Add(this.label11);
@@ -526,5 +541,6 @@
         private System.Windows.Forms.Label lbdc;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btThem;
+        private System.Windows.Forms.Label label9;
     }
 }
