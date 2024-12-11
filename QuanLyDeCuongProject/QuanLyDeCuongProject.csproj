@@ -79,6 +79,12 @@
     <Compile Include="DuyetDeCuong.Designer.cs">
       <DependentUpon>DuyetDeCuong.cs</DependentUpon>
     </Compile>
+    <Compile Include="DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,12 @@
     <Compile Include="SINHVIEN.Designer.cs">
       <DependentUpon>SINHVIEN.cs</DependentUpon>
     </Compile>
+    <Compile Include="SuaThongTinCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaThongTinCaNhan.Designer.cs">
+      <DependentUpon>SuaThongTinCaNhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Taikhoans.cs" />
     <Compile Include="QL_Nganh.cs">
       <SubType>Form</SubType>
@@ -145,6 +157,9 @@
     </Compile>
     <EmbeddedResource Include="DuyetDeCuong.resx">
       <DependentUpon>DuyetDeCuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoiMatKhau.resx">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -162,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SINHVIEN.resx">
       <DependentUpon>SINHVIEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuaThongTinCaNhan.resx">
+      <DependentUpon>SuaThongTinCaNhan.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <EmbeddedResource Include="QLMonHoc.resx">
@@ -203,6 +221,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\gradient-5812_256.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\education.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\book-stack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\documentation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\permission.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\students.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\teacher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\department.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

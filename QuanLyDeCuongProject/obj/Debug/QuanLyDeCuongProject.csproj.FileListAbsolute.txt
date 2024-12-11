@@ -91,6 +91,8 @@ D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject
 D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QuanLyPhanQuyen.resources
 D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.GenerateResource.Cache
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DeCuong.resources
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DoiMatKhau.resources
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.SuaThongTinCaNhan.resources
 C:\Users\nguye\Source\Repos\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe.config
 C:\Users\nguye\Source\Repos\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe
 C:\Users\nguye\Source\Repos\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.pdb

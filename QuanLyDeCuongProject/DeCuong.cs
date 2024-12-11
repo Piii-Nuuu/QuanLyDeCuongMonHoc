@@ -221,5 +221,10 @@ namespace QuanLyDeCuongProject
             duyetDeCuong = null;
             this.Show();
         }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
