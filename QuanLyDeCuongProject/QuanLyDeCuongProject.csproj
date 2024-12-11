@@ -73,6 +73,12 @@
     <Compile Include="DeCuong.Designer.cs">
       <DependentUpon>DeCuong.cs</DependentUpon>
     </Compile>
+    <Compile Include="DuyetDeCuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DuyetDeCuong.Designer.cs">
+      <DependentUpon>DuyetDeCuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="DoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +155,9 @@
     <Compile Include="QL_Nganh.Designer.cs">
       <DependentUpon>QL_Nganh.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DuyetDeCuong.resx">
+      <DependentUpon>DuyetDeCuong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DoiMatKhau.resx">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
