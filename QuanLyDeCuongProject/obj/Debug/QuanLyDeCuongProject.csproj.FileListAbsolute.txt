@@ -36,7 +36,6 @@ D:\ad\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.fr
 D:\ad\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.GIANGVIEN.resources
 D:\ad\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QL_Nganh.resources
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.GIANGVIEN.resources
-D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QL_Nganh.resources
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QLMonHoc.resources
 C:\Users\M1\Source\Repos\Piii-Nuuu\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe.config
 C:\Users\M1\Source\Repos\Piii-Nuuu\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.exe
@@ -112,3 +111,4 @@ C:\Users\nguye\Source\Repos\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\Q
 C:\Users\nguye\Source\Repos\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.exe
 C:\Users\nguye\Source\Repos\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.pdb
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DuyetDeCuong.resources
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QL_Nganh.resources
