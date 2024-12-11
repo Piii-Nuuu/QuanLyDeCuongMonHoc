@@ -33,11 +33,13 @@
             this.btncapnhat = new System.Windows.Forms.Button();
             this.btnthem = new System.Windows.Forms.Button();
             this.txtDiachi = new System.Windows.Forms.TextBox();
-            this.cblop = new System.Windows.Forms.ComboBox();
             this.dtns = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.ranu = new System.Windows.Forms.RadioButton();
-            this.ranam = new System.Windows.Forms.RadioButton();
+            this.cbLOP = new System.Windows.Forms.ComboBox();
+            this.cbhtdt = new System.Windows.Forms.ComboBox();
+            this.cbbgt = new System.Windows.Forms.ComboBox();
+            this.cbnganh = new System.Windows.Forms.ComboBox();
+            this.btghi = new System.Windows.Forms.Button();
             this.txtMssv = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -53,13 +55,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.cbloptimkiem = new System.Windows.Forms.ComboBox();
             this.lbSL = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnTim = new System.Windows.Forms.Button();
-            this.txtmssvtimkiem = new System.Windows.Forms.TextBox();
+            this.txttimkiem = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.listSV = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -71,10 +70,6 @@
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cbloc = new System.Windows.Forms.ComboBox();
-            this.cbnganh = new System.Windows.Forms.ComboBox();
-            this.cbhtdt = new System.Windows.Forms.ComboBox();
-            this.btghi = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -118,6 +113,7 @@
             this.btncapnhat.TabIndex = 86;
             this.btncapnhat.Text = "CẬP NHẬT";
             this.btncapnhat.UseVisualStyleBackColor = false;
+            this.btncapnhat.Click += new System.EventHandler(this.btncapnhat_Click);
             // 
             // btnthem
             // 
@@ -143,16 +139,6 @@
             this.txtDiachi.Size = new System.Drawing.Size(248, 26);
             this.txtDiachi.TabIndex = 32;
             // 
-            // cblop
-            // 
-            this.cblop.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cblop.FormattingEnabled = true;
-            this.cblop.Location = new System.Drawing.Point(507, 197);
-            this.cblop.Name = "cblop";
-            this.cblop.Size = new System.Drawing.Size(248, 32);
-            this.cblop.TabIndex = 28;
-            this.cblop.SelectedIndexChanged += new System.EventHandler(this.cblop_SelectedIndexChanged);
-            // 
             // dtns
             // 
             this.dtns.CustomFormat = "dd/MM/yyyy";
@@ -165,16 +151,15 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbLOP);
             this.groupBox1.Controls.Add(this.cbhtdt);
+            this.groupBox1.Controls.Add(this.cbbgt);
             this.groupBox1.Controls.Add(this.cbnganh);
-            this.groupBox1.Controls.Add(this.ranu);
-            this.groupBox1.Controls.Add(this.ranam);
             this.groupBox1.Controls.Add(this.btnxoa);
             this.groupBox1.Controls.Add(this.btghi);
             this.groupBox1.Controls.Add(this.btncapnhat);
             this.groupBox1.Controls.Add(this.btnthem);
             this.groupBox1.Controls.Add(this.txtDiachi);
-            this.groupBox1.Controls.Add(this.cblop);
             this.groupBox1.Controls.Add(this.dtns);
             this.groupBox1.Controls.Add(this.txtMssv);
             this.groupBox1.Controls.Add(this.txtSDT);
@@ -199,34 +184,62 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "THÔNG TIN SINH VIÊN";
             // 
-            // ranu
+            // cbLOP
             // 
-            this.ranu.AutoSize = true;
-            this.ranu.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ranu.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.ranu.Location = new System.Drawing.Point(589, 90);
-            this.ranu.Name = "ranu";
-            this.ranu.Size = new System.Drawing.Size(60, 28);
-            this.ranu.TabIndex = 88;
-            this.ranu.TabStop = true;
-            this.ranu.Text = "Nữ";
-            this.ranu.UseVisualStyleBackColor = true;
+            this.cbLOP.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.cbLOP.FormattingEnabled = true;
+            this.cbLOP.Location = new System.Drawing.Point(506, 198);
+            this.cbLOP.Name = "cbLOP";
+            this.cbLOP.Size = new System.Drawing.Size(249, 32);
+            this.cbLOP.TabIndex = 91;
+            this.cbLOP.SelectedIndexChanged += new System.EventHandler(this.cbLOP_SelectedIndexChanged);
             // 
-            // ranam
+            // cbhtdt
             // 
-            this.ranam.AutoSize = true;
-            this.ranam.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ranam.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.ranam.Location = new System.Drawing.Point(506, 90);
-            this.ranam.Name = "ranam";
-            this.ranam.Size = new System.Drawing.Size(77, 28);
-            this.ranam.TabIndex = 88;
-            this.ranam.TabStop = true;
-            this.ranam.Text = "Nam";
-            this.ranam.UseVisualStyleBackColor = true;
+            this.cbhtdt.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbhtdt.FormattingEnabled = true;
+            this.cbhtdt.Location = new System.Drawing.Point(507, 244);
+            this.cbhtdt.Name = "cbhtdt";
+            this.cbhtdt.Size = new System.Drawing.Size(248, 32);
+            this.cbhtdt.TabIndex = 90;
+            // 
+            // cbbgt
+            // 
+            this.cbbgt.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbgt.FormattingEnabled = true;
+            this.cbbgt.Location = new System.Drawing.Point(505, 96);
+            this.cbbgt.Name = "cbbgt";
+            this.cbbgt.Size = new System.Drawing.Size(248, 32);
+            this.cbbgt.TabIndex = 89;
+            this.cbbgt.SelectedIndexChanged += new System.EventHandler(this.cbbgt_SelectedIndexChanged);
+            // 
+            // cbnganh
+            // 
+            this.cbnganh.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbnganh.FormattingEnabled = true;
+            this.cbnganh.Location = new System.Drawing.Point(507, 148);
+            this.cbnganh.Name = "cbnganh";
+            this.cbnganh.Size = new System.Drawing.Size(248, 32);
+            this.cbnganh.TabIndex = 89;
+            // 
+            // btghi
+            // 
+            this.btghi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btghi.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btghi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btghi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btghi.ForeColor = System.Drawing.Color.White;
+            this.btghi.Location = new System.Drawing.Point(231, 314);
+            this.btghi.Name = "btghi";
+            this.btghi.Size = new System.Drawing.Size(143, 40);
+            this.btghi.TabIndex = 86;
+            this.btghi.Text = "GHI";
+            this.btghi.UseVisualStyleBackColor = false;
+            this.btghi.Click += new System.EventHandler(this.btghi_Click);
             // 
             // txtMssv
             // 
+            this.txtMssv.Enabled = false;
             this.txtMssv.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMssv.Location = new System.Drawing.Point(126, 40);
             this.txtMssv.Name = "txtMssv";
@@ -378,15 +391,6 @@
             this.label13.TabIndex = 98;
             this.label13.Text = "Danh sách có:";
             // 
-            // cbloptimkiem
-            // 
-            this.cbloptimkiem.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbloptimkiem.FormattingEnabled = true;
-            this.cbloptimkiem.Location = new System.Drawing.Point(107, 28);
-            this.cbloptimkiem.Name = "cbloptimkiem";
-            this.cbloptimkiem.Size = new System.Drawing.Size(248, 32);
-            this.cbloptimkiem.TabIndex = 11;
-            // 
             // lbSL
             // 
             this.lbSL.AutoSize = true;
@@ -400,11 +404,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnTim);
-            this.groupBox2.Controls.Add(this.txtmssvtimkiem);
+            this.groupBox2.Controls.Add(this.txttimkiem);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.cbloptimkiem);
-            this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.groupBox2.Location = new System.Drawing.Point(784, 18);
@@ -414,28 +415,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "THÔNG TIN TÌM KIẾM";
             // 
-            // btnTim
+            // txttimkiem
             // 
-            this.btnTim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnTim.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.btnTim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTim.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTim.ForeColor = System.Drawing.Color.White;
-            this.btnTim.Location = new System.Drawing.Point(291, 126);
-            this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(143, 40);
-            this.btnTim.TabIndex = 27;
-            this.btnTim.Text = "Tìm";
-            this.btnTim.UseVisualStyleBackColor = false;
-            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
-            // 
-            // txtmssvtimkiem
-            // 
-            this.txtmssvtimkiem.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmssvtimkiem.Location = new System.Drawing.Point(108, 81);
-            this.txtmssvtimkiem.Name = "txtmssvtimkiem";
-            this.txtmssvtimkiem.Size = new System.Drawing.Size(248, 32);
-            this.txtmssvtimkiem.TabIndex = 18;
+            this.txttimkiem.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttimkiem.Location = new System.Drawing.Point(153, 86);
+            this.txttimkiem.Name = "txttimkiem";
+            this.txttimkiem.Size = new System.Drawing.Size(248, 32);
+            this.txttimkiem.TabIndex = 18;
+            this.txttimkiem.TextChanged += new System.EventHandler(this.txtmssvtimkiem_TextChanged);
             // 
             // label2
             // 
@@ -444,20 +431,9 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(6, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 24);
+            this.label2.Size = new System.Drawing.Size(151, 24);
             this.label2.TabIndex = 12;
-            this.label2.Text = "MSSV:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(6, 40);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 24);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Lớp:";
+            this.label2.Text = "Tên sinh viên:";
             // 
             // listSV
             // 
@@ -528,54 +504,11 @@
             // 
             this.columnHeader10.Text = "Ten";
             // 
-            // cbloc
-            // 
-            this.cbloc.FormattingEnabled = true;
-            this.cbloc.Location = new System.Drawing.Point(1090, 208);
-            this.cbloc.Name = "cbloc";
-            this.cbloc.Size = new System.Drawing.Size(155, 24);
-            this.cbloc.TabIndex = 105;
-            this.cbloc.SelectedIndexChanged += new System.EventHandler(this.cbloc_SelectedIndexChanged);
-            // 
-            // cbnganh
-            // 
-            this.cbnganh.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbnganh.FormattingEnabled = true;
-            this.cbnganh.Location = new System.Drawing.Point(507, 148);
-            this.cbnganh.Name = "cbnganh";
-            this.cbnganh.Size = new System.Drawing.Size(248, 32);
-            this.cbnganh.TabIndex = 89;
-            // 
-            // cbhtdt
-            // 
-            this.cbhtdt.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbhtdt.FormattingEnabled = true;
-            this.cbhtdt.Location = new System.Drawing.Point(507, 244);
-            this.cbhtdt.Name = "cbhtdt";
-            this.cbhtdt.Size = new System.Drawing.Size(248, 32);
-            this.cbhtdt.TabIndex = 90;
-            // 
-            // btghi
-            // 
-            this.btghi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btghi.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.btghi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btghi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btghi.ForeColor = System.Drawing.Color.White;
-            this.btghi.Location = new System.Drawing.Point(231, 314);
-            this.btghi.Name = "btghi";
-            this.btghi.Size = new System.Drawing.Size(143, 40);
-            this.btghi.TabIndex = 86;
-            this.btghi.Text = "GHI";
-            this.btghi.UseVisualStyleBackColor = false;
-            this.btghi.Click += new System.EventHandler(this.btghi_Click);
-            // 
             // SINHVIEN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1278, 459);
-            this.Controls.Add(this.cbloc);
             this.Controls.Add(this.listSV);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
@@ -602,8 +535,6 @@
         private System.Windows.Forms.Button btncapnhat;
         private System.Windows.Forms.Button btnthem;
         private System.Windows.Forms.TextBox txtDiachi;
-        private System.Windows.Forms.ComboBox cblop;
-        private System.Windows.Forms.DateTimePicker dtns;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtMssv;
         private System.Windows.Forms.TextBox txtSDT;
@@ -619,13 +550,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox cbloptimkiem;
         private System.Windows.Forms.Label lbSL;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnTim;
-        private System.Windows.Forms.TextBox txtmssvtimkiem;
+        private System.Windows.Forms.TextBox txttimkiem;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ListView listSV;
         private System.Windows.Forms.ColumnHeader columnHeader1;
@@ -638,11 +566,11 @@
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.ColumnHeader columnHeader10;
-        private System.Windows.Forms.ComboBox cbloc;
-        private System.Windows.Forms.RadioButton ranam;
-        private System.Windows.Forms.RadioButton ranu;
         private System.Windows.Forms.ComboBox cbhtdt;
         private System.Windows.Forms.ComboBox cbnganh;
         private System.Windows.Forms.Button btghi;
+        private System.Windows.Forms.ComboBox cbLOP;
+        private System.Windows.Forms.ComboBox cbbgt;
+        public System.Windows.Forms.DateTimePicker dtns;
     }
 }
