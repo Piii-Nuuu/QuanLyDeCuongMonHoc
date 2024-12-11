@@ -109,3 +109,39 @@ C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.GenerateResource
 C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.CoreCompileInputs.cache
 C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.exe
 C:\M\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.pdb
+C:\New folder (2)\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe.config
+C:\New folder (2)\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe
+C:\New folder (2)\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.pdb
+C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.AssemblyReference.cache
+C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DeCuong.resources
+C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Form1.resources
+C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.GIANGVIEN.resources
+C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Home.resources
+C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Properties.Resources.resources
+C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.SINHVIEN.resources
+C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QLMonHoc.resources
+C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DangNhap.resources
+C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QL_Nganh.resources
+C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QuanLyPhanQuyen.resources
+C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.GenerateResource.cache
+C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.CoreCompileInputs.cache
+C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.exe
+C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.pdb
+C:\New folder (5)\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe.config
+C:\New folder (5)\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe
+C:\New folder (5)\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.pdb
+C:\New folder (5)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.AssemblyReference.cache
+C:\New folder (5)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DeCuong.resources
+C:\New folder (5)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Form1.resources
+C:\New folder (5)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.GIANGVIEN.resources
+C:\New folder (5)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Home.resources
+C:\New folder (5)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Properties.Resources.resources
+C:\New folder (5)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.SINHVIEN.resources
+C:\New folder (5)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QLMonHoc.resources
+C:\New folder (5)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DangNhap.resources
+C:\New folder (5)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QL_Nganh.resources
+C:\New folder (5)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QuanLyPhanQuyen.resources
+C:\New folder (5)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.GenerateResource.cache
+C:\New folder (5)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.CoreCompileInputs.cache
+C:\New folder (5)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.exe
+C:\New folder (5)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.pdb
