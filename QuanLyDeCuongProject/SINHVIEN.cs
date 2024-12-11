@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyDeCuongProject.Consts;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +25,7 @@ namespace QuanLyDeCuongProject
             InitializeComponent();
         }
         string maND;
-        SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-9TCL0NI\SQLEXPRESS;Initial Catalog=QuanLyDeCuong11;Integrated Security=True"); 
+        SqlConnection cn = new SqlConnection($@"Data Source={Const.ServerName};Initial Catalog=QuanLyDeCuong;Integrated Security=True"); 
         public DataTable LayDL(string cm)
         {
             DataTable dt = new DataTable();
@@ -281,19 +282,19 @@ namespace QuanLyDeCuongProject
             }
         }
 
-            string malop = cbloc.SelectedValue.ToString();
-            if(malop != "System.Data.DataRowView")
-            {
-               
-                string sql = $"select MaSV, HoTen, Email, SoDT,DiaChi, NgaySinh, GioiTinh, TenLop, TenNganh, Ten from SINHVIEN sv, NguoiDung nd, LOP l, NGANH n, HINHTHUCDAOTAO dt where sv.MaND = nd.MaNguoiDung and l.MaLop = sv.MaLop and n.MaNganh = sv.MaNganh and sv.HinhThucDaoTao = dt.Ma and l.MaLop = '{malop}'";
-                DataTable dt = LayDL(sql);
-                hienthi(dt);
-            }
+          
         }
 
-        private void cbbgt_SelectedIndexChanged(object sender, EventArgs e)
+    /*private void cbbgt_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        string malop = cbloc.SelectedValue.ToString();
+        if (malop != "System.Data.DataRowView")
         {
 
+            string sql = $"select MaSV, HoTen, Email, SoDT,DiaChi, NgaySinh, GioiTinh, TenLop, TenNganh, Ten from SINHVIEN sv, NguoiDung nd, LOP l, NGANH n, HINHTHUCDAOTAO dt where sv.MaND = nd.MaNguoiDung and l.MaLop = sv.MaLop and n.MaNganh = sv.MaNganh and sv.HinhThucDaoTao = dt.Ma and l.MaLop = '{malop}'";
+            DataTable dt = LayDL(sql);
+            hienthi(dt);
         }
-    }
+    }*/
+    
 }

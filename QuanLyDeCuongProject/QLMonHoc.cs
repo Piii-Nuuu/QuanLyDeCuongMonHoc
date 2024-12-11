@@ -7,19 +7,19 @@ using System.Windows.Forms;
 using QuanLyDeCuongProject.Consts;
 using QuanLyDeCuongProject.Data;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
+using System.Data.SqlClient;
 namespace QuanLyDeCuongProject
 {
     public partial class QLMonHoc : Form
 
     {
-       
 
 
 
 
 
-        string connectionString = "Data Source=LAPTOP-1C353TLV\\SQLEXPRESS;Initial Catalog=QuanLyDeCuong;Integrated Security=True";
+
+        string connectionString = $@"Data Source={Const.ServerName};Initial Catalog=QuanLyDeCuong;Integrated Security=True";
 
 
         private void ClearInputFields()
@@ -147,7 +147,7 @@ namespace QuanLyDeCuongProject
                 ListViewItem item = listMonHoc.SelectedItems[0];
                 txtMaMon.Text = item.SubItems[0].Text;
                 txtTenMon.Text = item.SubItems[1].Text;
-                cbbMaNganh.SelectedItem = item.SubItems[2].Text;
+                cbbMaNganh.Text = item.SubItems[2].Text;
                 txtSoTinChi.Text = item.SubItems[3].Text;
                 txtSoTietLyThuyet.Text = item.SubItems[4].Text;
                 if (item.SubItems.Count > 5)  // Kiểm tra có đủ số cột không
