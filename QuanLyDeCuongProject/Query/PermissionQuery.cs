@@ -14,7 +14,6 @@ namespace QuanLyDeCuongProject.Queries
         DataBase database = new DataBase();
         public PermissionQuery()
         {
-
         }
 
 
@@ -42,6 +41,16 @@ namespace QuanLyDeCuongProject.Queries
         public DataTable TimKiem(string value)
         {
             return database.ExecuteQuery($"select * from Permission where Actions LIKE N'%{value}%'");
+        }
+        public bool Kiemtratrung(string maquyen, string mapermission)
+        {
+            string query = $"SELECT COUNT(*) FROM Quyen_Permission WHERE MaQuyen = '{maquyen}' AND MaPermission = '{mapermission}'";
+            object result = database.ExecuteScalar(query);
+            if (result != null && Convert.ToInt32(result) > 0)
+            {
+                return true; 
+            }
+            return false; 
         }
     }
 }
