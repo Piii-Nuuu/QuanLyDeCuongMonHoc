@@ -70,8 +70,9 @@ namespace QuanLyDeCuongProject
 
         private void QLSinhVien_Click(object sender, EventArgs e)
         {
+            this.Hide();
             SINHVIEN sinh_vien_frm = new SINHVIEN();
-            sinh_vien_frm.Show();
+            sinh_vien_frm.ShowDialog();
             this.Show();
         }
 
@@ -101,9 +102,9 @@ namespace QuanLyDeCuongProject
                        MessageBoxIcon.Question);
             if(confirmResult == DialogResult.Yes)
             {
+                this.Hide();
                 DangNhap frm_signIn = new DangNhap();
                 frm_signIn.Show();
-                this.Hide();
             }
         }
 
@@ -111,6 +112,8 @@ namespace QuanLyDeCuongProject
         {
             SuaThongTinCaNhan frm_edit = new SuaThongTinCaNhan();
             frm_edit.ShowDialog();
+
+
 
         }
     }
