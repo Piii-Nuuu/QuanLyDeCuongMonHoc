@@ -281,16 +281,10 @@ namespace QuanLyDeCuongProject
             }
         }
 
-        private void listSV_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cbLOP_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string malop = cbLOP.SelectedValue.ToString();
-            if (malop != "System.Data.DataRowView")
+            string malop = cbloc.SelectedValue.ToString();
+            if(malop != "System.Data.DataRowView")
             {
+               
                 string sql = $"select MaSV, HoTen, Email, SoDT,DiaChi, NgaySinh, GioiTinh, TenLop, TenNganh, Ten from SINHVIEN sv, NguoiDung nd, LOP l, NGANH n, HINHTHUCDAOTAO dt where sv.MaND = nd.MaNguoiDung and l.MaLop = sv.MaLop and n.MaNganh = sv.MaNganh and sv.HinhThucDaoTao = dt.Ma and l.MaLop = '{malop}'";
                 DataTable dt = LayDL(sql);
                 hienthi(dt);

@@ -53,12 +53,14 @@
             this.label14 = new System.Windows.Forms.Label();
             this.btxoadecuong = new System.Windows.Forms.Button();
             this.btcapnhatdecuong = new System.Windows.Forms.Button();
-            this.btthem = new System.Windows.Forms.Button();
+            this.btludecuong = new System.Windows.Forms.Button();
             this.btcapnhat = new System.Windows.Forms.Button();
             this.btxoa = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.lbdc = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.btThem = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -138,7 +140,7 @@
             this.txtSearchtendecuong.Name = "txtSearchtendecuong";
             this.txtSearchtendecuong.Size = new System.Drawing.Size(278, 32);
             this.txtSearchtendecuong.TabIndex = 18;
-            this.txtSearchtendecuong.TextChanged += new System.EventHandler(this.txtSearchDeCuong_TextChanged);
+            this.txtSearchtendecuong.TextChanged += new System.EventHandler(this.txtSearchtendecuong_TextChanged);
             // 
             // label5
             // 
@@ -192,6 +194,7 @@
             // 
             // listDSdecuong
             // 
+            this.listDSdecuong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listDSdecuong.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -208,6 +211,7 @@
             this.listDSdecuong.UseCompatibleStateImageBehavior = false;
             this.listDSdecuong.View = System.Windows.Forms.View.Details;
             this.listDSdecuong.SelectedIndexChanged += new System.EventHandler(this.List_DS_De_Cuong_SelectedIndexChanged);
+            this.listDSdecuong.Click += new System.EventHandler(this.listDSdecuong_Click);
             // 
             // columnHeader1
             // 
@@ -256,6 +260,7 @@
             this.groupBox3.TabIndex = 93;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "THÔNG TIN ĐỀ CƯƠNG";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // txttendecuong
             // 
@@ -269,10 +274,12 @@
             // 
             // txtmadecuong
             // 
+            this.txtmadecuong.Enabled = false;
             this.txtmadecuong.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmadecuong.Location = new System.Drawing.Point(237, 67);
             this.txtmadecuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtmadecuong.Name = "txtmadecuong";
+            this.txtmadecuong.ReadOnly = true;
             this.txtmadecuong.Size = new System.Drawing.Size(278, 32);
             this.txtmadecuong.TabIndex = 25;
             this.txtmadecuong.TextChanged += new System.EventHandler(this.txtGV_TextChanged);
@@ -364,20 +371,21 @@
             this.btcapnhatdecuong.Text = "CẬP NHẬT";
             this.btcapnhatdecuong.UseVisualStyleBackColor = false;
             // 
-            // btthem
+            // btludecuong
             // 
-            this.btthem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btthem.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.btthem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btthem.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btthem.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btthem.Location = new System.Drawing.Point(133, 371);
-            this.btthem.Margin = new System.Windows.Forms.Padding(4);
-            this.btthem.Name = "btthem";
-            this.btthem.Size = new System.Drawing.Size(161, 50);
-            this.btthem.TabIndex = 85;
-            this.btthem.Text = "THÊM MỚI";
-            this.btthem.UseVisualStyleBackColor = false;
+            this.btludecuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btludecuong.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btludecuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btludecuong.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btludecuong.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btludecuong.Location = new System.Drawing.Point(191, 371);
+            this.btludecuong.Margin = new System.Windows.Forms.Padding(4);
+            this.btludecuong.Name = "btludecuong";
+            this.btludecuong.Size = new System.Drawing.Size(161, 50);
+            this.btludecuong.TabIndex = 85;
+            this.btludecuong.Text = "LƯU";
+            this.btludecuong.UseVisualStyleBackColor = false;
+            this.btludecuong.Click += new System.EventHandler(this.btthem_Click);
             // 
             // btcapnhat
             // 
@@ -386,13 +394,14 @@
             this.btcapnhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btcapnhat.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.btcapnhat.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btcapnhat.Location = new System.Drawing.Point(313, 371);
+            this.btcapnhat.Location = new System.Drawing.Point(375, 371);
             this.btcapnhat.Margin = new System.Windows.Forms.Padding(4);
             this.btcapnhat.Name = "btcapnhat";
             this.btcapnhat.Size = new System.Drawing.Size(161, 50);
             this.btcapnhat.TabIndex = 85;
             this.btcapnhat.Text = "CẬP NHẬT";
             this.btcapnhat.UseVisualStyleBackColor = false;
+            this.btcapnhat.Click += new System.EventHandler(this.btcapnhat_Click);
             // 
             // btxoa
             // 
@@ -401,13 +410,14 @@
             this.btxoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btxoa.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.btxoa.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btxoa.Location = new System.Drawing.Point(494, 371);
+            this.btxoa.Location = new System.Drawing.Point(558, 371);
             this.btxoa.Margin = new System.Windows.Forms.Padding(4);
             this.btxoa.Name = "btxoa";
             this.btxoa.Size = new System.Drawing.Size(161, 50);
             this.btxoa.TabIndex = 85;
             this.btxoa.Text = "XÓA";
             this.btxoa.UseVisualStyleBackColor = false;
+            this.btxoa.Click += new System.EventHandler(this.btxoa_Click);
             // 
             // label8
             // 
@@ -422,7 +432,7 @@
             // lbdc
             // 
             this.lbdc.AutoSize = true;
-            this.lbdc.Location = new System.Drawing.Point(988, 549);
+            this.lbdc.Location = new System.Drawing.Point(1016, 549);
             this.lbdc.Name = "lbdc";
             this.lbdc.Size = new System.Drawing.Size(16, 16);
             this.lbdc.TabIndex = 95;
@@ -433,24 +443,53 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(1010, 549);
+            this.label11.Location = new System.Drawing.Point(1053, 549);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(63, 16);
             this.label11.TabIndex = 94;
             this.label11.Text = "đề cương";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // btThem
+            // 
+            this.btThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btThem.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btThem.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btThem.Location = new System.Drawing.Point(6, 371);
+            this.btThem.Name = "btThem";
+            this.btThem.Size = new System.Drawing.Size(161, 50);
+            this.btThem.TabIndex = 97;
+            this.btThem.Text = "THÊM";
+            this.btThem.UseVisualStyleBackColor = false;
+            this.btThem.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(1173, 11);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(186, 21);
+            this.label9.TabIndex = 98;
+            this.label9.Text = "->DUYỆT ĐỀ CƯƠNG";
+            this.label9.Click += new System.EventHandler(this.label9_Click_1);
             // 
             // DeCuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1442, 583);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.btThem);
             this.Controls.Add(this.lbdc);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btxoa);
             this.Controls.Add(this.btcapnhat);
-            this.Controls.Add(this.btthem);
+            this.Controls.Add(this.btludecuong);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox2);
@@ -487,7 +526,7 @@
         public System.Windows.Forms.GroupBox groupBox3;
         public System.Windows.Forms.Button btxoadecuong;
         public System.Windows.Forms.Button btcapnhatdecuong;
-        public System.Windows.Forms.Button btthem;
+        public System.Windows.Forms.Button btludecuong;
         public System.Windows.Forms.TextBox txttendecuong;
         public System.Windows.Forms.TextBox txtmadecuong;
         public System.Windows.Forms.TextBox txtmamonhoc;
@@ -502,5 +541,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lbdc;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btThem;
+        private System.Windows.Forms.Label label9;
     }
 }

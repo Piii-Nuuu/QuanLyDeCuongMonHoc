@@ -15,7 +15,7 @@ namespace QuanLyDeCuongProject.Data
        
         public DataBase()
         {
-            connect = new SqlConnection(@"Data Source="+Const.ServerName+";Initial Catalog=QuanLyDeCuong;Integrated Security=True");
+            connect = new SqlConnection($@"Data Source={Const.ServerName};Initial Catalog=QuanLyDeCuong;Integrated Security=True");
         }
 
         public DataTable ExecuteQuery(string sql)
@@ -47,7 +47,22 @@ namespace QuanLyDeCuongProject.Data
             {
                 MessageBox.Show("Lỗi Kết Nối" + ex.Message);
             }
-     
+        }
+        public object ExecuteScalar(string sql)
+        {
+            object result = null;
+            try
+            {
+                connect.Open();
+                SqlCommand cm = new SqlCommand(sql, connect);
+                result = cm.ExecuteScalar();  
+                connect.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi Kết Nối: " + ex.Message);
+            }
+            return result;
         }
     }
 }

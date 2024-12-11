@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.IO;
 using System.Diagnostics;
+using QuanLyDeCuongProject.Consts;
 namespace QuanLyDeCuongProject
 {
    
@@ -26,7 +27,7 @@ namespace QuanLyDeCuongProject
 
         public static void KetNoi()
         {
-            string sql = @"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QuanLyDeCuong;Integrated Security=True";
+            string sql = $@"Data Source={Const.ServerName};Initial Catalog=QuanLyDeCuong;Integrated Security=True";
             cn = new SqlConnection(sql);
 
         }
