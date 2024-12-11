@@ -58,11 +58,11 @@
             // 
             this.comboxPermission.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.comboxPermission.FormattingEnabled = true;
-            this.comboxPermission.ItemHeight = 29;
-            this.comboxPermission.Location = new System.Drawing.Point(28, 508);
+            this.comboxPermission.ItemHeight = 25;
+            this.comboxPermission.Location = new System.Drawing.Point(25, 406);
             this.comboxPermission.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboxPermission.Name = "comboxPermission";
-            this.comboxPermission.Size = new System.Drawing.Size(628, 37);
+            this.comboxPermission.Size = new System.Drawing.Size(559, 33);
             this.comboxPermission.TabIndex = 0;
             this.comboxPermission.SelectedIndexChanged += new System.EventHandler(this.comboxPermission_SelectedIndexChanged);
             // 
@@ -75,10 +75,10 @@
             this.listPermission.FullRowSelect = true;
             this.listPermission.GridLines = true;
             this.listPermission.HideSelection = false;
-            this.listPermission.Location = new System.Drawing.Point(27, 201);
+            this.listPermission.Location = new System.Drawing.Point(24, 161);
             this.listPermission.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listPermission.Name = "listPermission";
-            this.listPermission.Size = new System.Drawing.Size(652, 483);
+            this.listPermission.Size = new System.Drawing.Size(580, 387);
             this.listPermission.TabIndex = 1;
             this.listPermission.UseCompatibleStateImageBehavior = false;
             this.listPermission.View = System.Windows.Forms.View.Details;
@@ -101,10 +101,9 @@
             // 
             this.comboBoxQuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.comboBoxQuyen.FormattingEnabled = true;
-            this.comboBoxQuyen.Location = new System.Drawing.Point(27, 119);
-            this.comboBoxQuyen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBoxQuyen.Location = new System.Drawing.Point(24, 95);
             this.comboBoxQuyen.Name = "comboBoxQuyen";
-            this.comboBoxQuyen.Size = new System.Drawing.Size(652, 37);
+            this.comboBoxQuyen.Size = new System.Drawing.Size(580, 33);
             this.comboBoxQuyen.TabIndex = 2;
             this.comboBoxQuyen.SelectedIndexChanged += new System.EventHandler(this.comboBoxQuyen_SelectedIndexChanged);
             // 
@@ -114,10 +113,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(39, 572);
+            this.button1.Location = new System.Drawing.Point(35, 458);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 42);
+            this.button1.Size = new System.Drawing.Size(160, 34);
             this.button1.TabIndex = 3;
             this.button1.Text = "Thêm";
             this.button1.UseVisualStyleBackColor = false;
@@ -129,10 +128,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(255, 572);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Location = new System.Drawing.Point(227, 458);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(180, 42);
+            this.button2.Size = new System.Drawing.Size(160, 34);
             this.button2.TabIndex = 3;
             this.button2.Text = "Sửa";
             this.button2.UseVisualStyleBackColor = false;
@@ -144,10 +142,9 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(474, 572);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button3.Location = new System.Drawing.Point(421, 458);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(180, 42);
+            this.button3.Size = new System.Drawing.Size(160, 34);
             this.button3.TabIndex = 3;
             this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = false;
@@ -159,9 +156,9 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label3.Location = new System.Drawing.Point(21, 64);
+            this.label3.Location = new System.Drawing.Point(19, 51);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(266, 35);
+            this.label3.Size = new System.Drawing.Size(216, 29);
             this.label3.TabIndex = 4;
             this.label3.Text = "Danh sách quyền";
             // 
@@ -180,11 +177,11 @@
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.groupBox2.Location = new System.Drawing.Point(854, 14);
+            this.groupBox2.Location = new System.Drawing.Point(759, 11);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(684, 645);
+            this.groupBox2.Size = new System.Drawing.Size(608, 516);
             this.groupBox2.TabIndex = 101;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Action";
@@ -194,9 +191,9 @@
             this.labelTotalActions.AutoSize = true;
             this.labelTotalActions.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotalActions.ForeColor = System.Drawing.Color.Black;
-            this.labelTotalActions.Location = new System.Drawing.Point(205, 461);
+            this.labelTotalActions.Location = new System.Drawing.Point(182, 369);
             this.labelTotalActions.Name = "labelTotalActions";
-            this.labelTotalActions.Size = new System.Drawing.Size(29, 29);
+            this.labelTotalActions.Size = new System.Drawing.Size(22, 24);
             this.labelTotalActions.TabIndex = 104;
             this.labelTotalActions.Text = "..";
             this.labelTotalActions.Click += new System.EventHandler(this.label13_Click);
@@ -206,9 +203,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(24, 461);
+            this.label5.Location = new System.Drawing.Point(21, 369);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(175, 29);
+            this.label5.Size = new System.Drawing.Size(145, 24);
             this.label5.TabIndex = 104;
             this.label5.Text = "Tổng actions:";
             // 
@@ -217,9 +214,9 @@
             this.lbactions.AutoSize = true;
             this.lbactions.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbactions.ForeColor = System.Drawing.Color.Black;
-            this.lbactions.Location = new System.Drawing.Point(194, 461);
+            this.lbactions.Location = new System.Drawing.Point(172, 369);
             this.lbactions.Name = "lbactions";
-            this.lbactions.Size = new System.Drawing.Size(0, 29);
+            this.lbactions.Size = new System.Drawing.Size(0, 24);
             this.lbactions.TabIndex = 105;
             this.lbactions.Click += new System.EventHandler(this.label4_Click);
             // 
@@ -232,10 +229,10 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(26, 119);
+            this.listView1.Location = new System.Drawing.Point(23, 95);
             this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(630, 325);
+            this.listView1.Size = new System.Drawing.Size(560, 261);
             this.listView1.TabIndex = 5;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -255,10 +252,10 @@
             // 
             // txttimkiem
             // 
-            this.txttimkiem.Location = new System.Drawing.Point(26, 50);
-            this.txttimkiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txttimkiem.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txttimkiem.Location = new System.Drawing.Point(23, 40);
             this.txttimkiem.Name = "txttimkiem";
-            this.txttimkiem.Size = new System.Drawing.Size(436, 42);
+            this.txttimkiem.Size = new System.Drawing.Size(388, 32);
             this.txttimkiem.TabIndex = 105;
             this.txttimkiem.TextChanged += new System.EventHandler(this.Txttimkiem_TextChanged);
             // 
@@ -267,9 +264,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(21, 58);
+            this.label6.Location = new System.Drawing.Point(19, 46);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 29);
+            this.label6.Size = new System.Drawing.Size(0, 24);
             this.label6.TabIndex = 104;
             // 
             // button4
@@ -278,10 +275,10 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(476, 51);
+            this.button4.Location = new System.Drawing.Point(423, 41);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(180, 42);
+            this.button4.Size = new System.Drawing.Size(160, 34);
             this.button4.TabIndex = 3;
             this.button4.Text = "Tìm kiếm";
             this.button4.UseVisualStyleBackColor = false;
@@ -294,11 +291,11 @@
             this.groupBox1.Controls.Add(this.comboBoxQuyen);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.groupBox1.Location = new System.Drawing.Point(37, 14);
+            this.groupBox1.Location = new System.Drawing.Point(33, 11);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(722, 690);
+            this.groupBox1.Size = new System.Drawing.Size(642, 552);
             this.groupBox1.TabIndex = 102;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách permission";
@@ -308,9 +305,9 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(849, 675);
+            this.label13.Location = new System.Drawing.Point(755, 540);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(348, 29);
+            this.label13.Size = new System.Drawing.Size(294, 24);
             this.label13.TabIndex = 104;
             this.label13.Text = "Tổng permission của quyền:";
             this.label13.Click += new System.EventHandler(this.label13_Click);
@@ -320,17 +317,17 @@
             this.lbSL.AutoSize = true;
             this.lbSL.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSL.ForeColor = System.Drawing.Color.Black;
-            this.lbSL.Location = new System.Drawing.Point(1203, 675);
+            this.lbSL.Location = new System.Drawing.Point(1069, 540);
             this.lbSL.Name = "lbSL";
-            this.lbSL.Size = new System.Drawing.Size(27, 29);
+            this.lbSL.Size = new System.Drawing.Size(22, 24);
             this.lbSL.TabIndex = 105;
             this.lbSL.Text = "..";
             // 
             // QuanLyPhanQuyen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1622, 729);
+            this.ClientSize = new System.Drawing.Size(1442, 583);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.lbSL);
             this.Controls.Add(this.groupBox1);

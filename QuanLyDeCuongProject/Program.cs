@@ -18,7 +18,7 @@ namespace QuanLyDeCuongProject
         {   
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DeCuong());
+            Application.Run(new QuanLyPhanQuyen());
 
         }
     }
