@@ -192,7 +192,7 @@
             this.cbLOP.Name = "cbLOP";
             this.cbLOP.Size = new System.Drawing.Size(249, 32);
             this.cbLOP.TabIndex = 91;
-            this.cbLOP.SelectedIndexChanged += new System.EventHandler(this.cbLOP_SelectedIndexChanged);
+//            this.cbLOP.SelectedIndexChanged += new System.EventHandler(this.cbLOP_SelectedIndexChanged);
             // 
             // cbhtdt
             // 
@@ -211,7 +211,7 @@
             this.cbbgt.Name = "cbbgt";
             this.cbbgt.Size = new System.Drawing.Size(248, 32);
             this.cbbgt.TabIndex = 89;
-            this.cbbgt.SelectedIndexChanged += new System.EventHandler(this.cbbgt_SelectedIndexChanged);
+//            this.cbbgt.SelectedIndexChanged += new System.EventHandler(this.cbbgt_SelectedIndexChanged);
             // 
             // cbnganh
             // 
@@ -458,7 +458,7 @@
             this.listSV.TabIndex = 104;
             this.listSV.UseCompatibleStateImageBehavior = false;
             this.listSV.View = System.Windows.Forms.View.Details;
-            this.listSV.SelectedIndexChanged += new System.EventHandler(this.listSV_SelectedIndexChanged);
+//            this.listSV.SelectedIndexChanged += new System.EventHandler(this.listSV_SelectedIndexChanged);
             this.listSV.Click += new System.EventHandler(this.listSV_Click);
             // 
             // columnHeader1
