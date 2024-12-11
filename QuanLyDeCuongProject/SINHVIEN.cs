@@ -19,7 +19,7 @@ namespace QuanLyDeCuongProject
         {
             InitializeComponent();
         }
-        SqlConnection cn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QuanLyDeCuong;Integrated Security=True"); 
+        SqlConnection cn = new SqlConnection(@"Data Source=BAOVY\SQLEXPRESS;Initial Catalog=QuanLyDeCuong;Integrated Security=True"); 
         public DataTable LayDL(string cm)
         {
             DataTable dt = new DataTable();
@@ -93,7 +93,6 @@ namespace QuanLyDeCuongProject
             string malop = cbloc.SelectedValue.ToString();
             if(malop != "System.Data.DataRowView")
             {
-               
                 string sql = $"select MaSV, HoTen, Email, SoDT,DiaChi, NgaySinh, GioiTinh, TenLop, TenNganh, Ten from SINHVIEN sv, NguoiDung nd, LOP l, NGANH n, HINHTHUCDAOTAO dt where sv.MaND = nd.MaNguoiDung and l.MaLop = sv.MaLop and n.MaNganh = sv.MaNganh and sv.HinhThucDaoTao = dt.Ma and l.MaLop = '{malop}'";
                 DataTable dt = LayDL(sql);
                 hienthi(dt);
