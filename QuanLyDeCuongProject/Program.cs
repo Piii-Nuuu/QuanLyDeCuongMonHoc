@@ -18,7 +18,7 @@ namespace QuanLyDeCuongProject
         {   
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QLMonHoc());
+            Application.Run(new SINHVIEN());
 
         }
     }

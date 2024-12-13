@@ -41,16 +41,7 @@ namespace QuanLyDeCuongProject
             {
                 listSV.Items.Add(dt.Rows[i]["MaSV"].ToString());
                 listSV.Items[i].SubItems.Add(dt.Rows[i]["Hoten"].ToString());
-                listSV.Items[i].SubItems.Add(dt.Rows[i]["Email"].ToString());
-                listSV.Items[i].SubItems.Add(dt.Rows[i]["SoDT"].ToString());
-                listSV.Items[i].SubItems.Add(dt.Rows[i]["DiaChi"].ToString());
-                listSV.Items[i].SubItems.Add(dt.Rows[i]["NgaySinh"].ToString());
-
-                listSV.Items[i].SubItems.Add(dt.Rows[i]["GioiTinh"].ToString());
-
-                listSV.Items[i].SubItems.Add(dt.Rows[i]["TenLop"].ToString());
-                listSV.Items[i].SubItems.Add(dt.Rows[i]["TenNganh"].ToString());
-                listSV.Items[i].SubItems.Add(dt.Rows[i]["Ten"].ToString());
+            
             }
             lbSL.Text = $"{dt.Rows.Count} Sinh viên";
         }
@@ -81,19 +72,20 @@ namespace QuanLyDeCuongProject
         private void listSV_Click(object sender, EventArgs e)
         {
             int vt = listSV.SelectedItems[0].Index;
-         
-            txtMssv.Text = listSV.Items[vt].SubItems[0].Text;
-            txtHoten.Text = listSV.Items[vt].SubItems[1].Text;
-            txtEmail.Text = listSV.Items[vt].SubItems[2].Text;
-            txtSDT.Text = listSV.Items[vt].SubItems[3].Text;
-            txtDiachi.Text = listSV.Items[vt].SubItems[4].Text;
-            dtns.Value = DateTime.Parse(listSV.Items[vt].SubItems[5].Text);
+            string sql = $"select MaSV, HoTen, Email, SoDT,DiaChi, NgaySinh, GioiTinh, TenLop, TenNganh, Ten  from SINHVIEN sv, NguoiDung nd, LOP l, NGANH n, HINHTHUCDAOTAO dt where sv.MaND = nd.MaNguoiDung and l.MaLop = sv.MaLop and n.MaNganh = sv.MaNganh and sv.HinhThucDaoTao = dt.Ma and sv.MaSV='{listSV.Items[vt].SubItems[0].Text}'";
+            DataTable dt = LayDL(sql);
+            txtMssv.Text = dt.Rows[0]["MaSV"].ToString();
+            txtHoten.Text = dt.Rows[0]["HoTen"].ToString();
+            txtEmail.Text = dt.Rows[0]["Email"].ToString();
+            txtSDT.Text = dt.Rows[0]["SoDT"].ToString();
+            txtDiachi.Text = dt.Rows[0]["DiaChi"].ToString();
+            dtns.Value = DateTime.Parse(dt.Rows[0]["NgaySinh"].ToString());
 
-            cbbgt.Text = listSV.Items[vt].SubItems[6].Text;
+            cbbgt.Text = dt.Rows[0]["GioiTinh"].ToString();
 
-            cbnganh.Text = listSV.Items[vt].SubItems[8].Text;
-            cbhtdt.Text = listSV.Items[vt].SubItems[9].Text;
-            cbLOP.Text = listSV.Items[vt].SubItems[7].Text;
+            cbnganh.Text = dt.Rows[0]["TenNganh"].ToString();
+            cbhtdt.Text = dt.Rows[0]["Ten"].ToString();
+            cbLOP.Text = dt.Rows[0]["TenLop"].ToString();
 
         }
         public void reset()
@@ -140,7 +132,7 @@ namespace QuanLyDeCuongProject
         {
            
             string mssv = txtMssv.Text, hoten = txtHoten.Text, ngay = dtns.Value.ToString("MM/dd/yyyy"), sdt = txtSDT.Text, nganh = cbnganh.SelectedValue.ToString(), email = txtEmail.Text, lop = cbLOP.SelectedValue.ToString(), diachi = txtDiachi.Text, htdt = cbhtdt.SelectedValue.ToString();
-            int gt = cbbgt.SelectedIndex;
+            string gt = cbbgt.SelectedItem.ToString();
             try
             {
                 if (maND.Length != 0)
@@ -159,8 +151,9 @@ namespace QuanLyDeCuongProject
 
 
                     MessageBox.Show("Ghi Thành Công");
+                    DataTable dt1 = LayDL("select MaSV, HoTen, Email, SoDT,DiaChi, NgaySinh, GioiTinh, TenLop, TenNganh, Ten  from SINHVIEN sv, NguoiDung nd, LOP l, NGANH n, HINHTHUCDAOTAO dt where sv.MaND = nd.MaNguoiDung and l.MaLop = sv.MaLop and n.MaNganh = sv.MaNganh and sv.HinhThucDaoTao = dt.Ma");
+                    hienthi(dt1);
                     reset();
-                   
                 }
             }
             catch (Exception ex)
@@ -187,7 +180,7 @@ namespace QuanLyDeCuongProject
             {
                 string sqltl = $"select truonglop from Lop";
                 DataTable dttl = LayDL(sqltl);
-                MessageBox.Show("SV này là Trưởng lớp" + txtMssv.Text);
+          
                 for (int i = 0; i < dttl.Rows.Count; i++)
                 {
                     if (dttl.Rows[i][0].ToString().Equals(txtMssv.Text))
@@ -256,8 +249,7 @@ namespace QuanLyDeCuongProject
             string lop = cbLOP.SelectedValue.ToString();
             string htdt = cbhtdt.SelectedValue.ToString();
             DateTime ngaysinh = dtns.Value;
-            int gt = cbbgt.SelectedIndex;
-            MessageBox.Show(gt.ToString());
+            string gt = cbbgt.SelectedItem.ToString();
             try
             { 
                 string sqlNguoiDung = $@"UPDATE NguoiDung SET HoTen = '{hoten}', NgaySinh = '{ngaysinh.ToString("MM/dd/yyyy")}', GioiTinh = '{gt}', SoDT = '{sdt}', Email = '{email}', DiaChi = N'{diachi}' WHERE MaNguoiDung = (SELECT MaND FROM SINHVIEN WHERE MaSV = '{mssv}')";

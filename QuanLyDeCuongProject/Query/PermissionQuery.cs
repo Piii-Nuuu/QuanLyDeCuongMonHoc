@@ -40,7 +40,7 @@ namespace QuanLyDeCuongProject.Queries
         }
         public DataTable TimKiem(string value)
         {
-            return database.ExecuteQuery($"select * from Permission where Actions LIKE N'%{value}%'");
+            return database.ExecuteQuery($@"select * from Permission where Actions LIKE N'%{value}%'");
         }
         public bool Kiemtratrung(string maquyen, string mapermission)
         {
