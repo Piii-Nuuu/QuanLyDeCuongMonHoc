@@ -282,8 +282,11 @@ namespace QuanLyDeCuongProject
             }
         }
 
-          
+        private void listSV_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
+    }
 
     /*private void cbbgt_SelectedIndexChanged(object sender, EventArgs e)
     {

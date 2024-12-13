@@ -90,7 +90,7 @@
             this.button3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(471, 280);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(121, 41);
             this.button3.TabIndex = 87;
@@ -106,7 +106,7 @@
             this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(308, 280);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(121, 41);
             this.button2.TabIndex = 86;
@@ -118,7 +118,7 @@
             // 
             this.txtDiachi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiachi.Location = new System.Drawing.Point(410, 210);
-            this.txtDiachi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDiachi.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiachi.Multiline = true;
             this.txtDiachi.Name = "txtDiachi";
             this.txtDiachi.Size = new System.Drawing.Size(210, 27);
@@ -129,7 +129,7 @@
             this.cbdonvi1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbdonvi1.FormattingEnabled = true;
             this.cbdonvi1.Location = new System.Drawing.Point(410, 164);
-            this.cbdonvi1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbdonvi1.Margin = new System.Windows.Forms.Padding(2);
             this.cbdonvi1.Name = "cbdonvi1";
             this.cbdonvi1.Size = new System.Drawing.Size(210, 27);
             this.cbdonvi1.TabIndex = 28;
@@ -140,7 +140,7 @@
             this.d1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.d1.Location = new System.Drawing.Point(110, 76);
-            this.d1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.d1.Margin = new System.Windows.Forms.Padding(2);
             this.d1.Name = "d1";
             this.d1.Size = new System.Drawing.Size(210, 27);
             this.d1.TabIndex = 31;
@@ -150,7 +150,7 @@
             this.cbGioi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbGioi.FormattingEnabled = true;
             this.cbGioi.Location = new System.Drawing.Point(410, 82);
-            this.cbGioi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbGioi.Margin = new System.Windows.Forms.Padding(2);
             this.cbGioi.Name = "cbGioi";
             this.cbGioi.Size = new System.Drawing.Size(210, 27);
             this.cbGioi.TabIndex = 28;
@@ -171,7 +171,7 @@
             // 
             this.txtGV.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGV.Location = new System.Drawing.Point(110, 35);
-            this.txtGV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGV.Margin = new System.Windows.Forms.Padding(2);
             this.txtGV.Name = "txtGV";
             this.txtGV.Size = new System.Drawing.Size(210, 27);
             this.txtGV.TabIndex = 25;
@@ -206,9 +206,9 @@
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.groupBox1.Location = new System.Drawing.Point(2, 9);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(640, 410);
             this.groupBox1.TabIndex = 99;
             this.groupBox1.TabStop = false;
@@ -250,7 +250,7 @@
             this.button4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(9, 280);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(121, 41);
             this.button4.TabIndex = 85;
@@ -262,7 +262,7 @@
             // 
             this.txtSDT.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSDT.Location = new System.Drawing.Point(110, 164);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(2);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(210, 27);
             this.txtSDT.TabIndex = 24;
@@ -367,7 +367,7 @@
             // 
             this.txtEmail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(110, 206);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(210, 27);
             this.txtEmail.TabIndex = 15;
@@ -376,7 +376,7 @@
             // 
             this.txtHoten.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoten.Location = new System.Drawing.Point(410, 37);
-            this.txtHoten.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtHoten.Margin = new System.Windows.Forms.Padding(2);
             this.txtHoten.Name = "txtHoten";
             this.txtHoten.Size = new System.Drawing.Size(210, 27);
             this.txtHoten.TabIndex = 14;
@@ -427,9 +427,9 @@
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.groupBox2.Location = new System.Drawing.Point(650, 9);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(410, 167);
             this.groupBox2.TabIndex = 100;
             this.groupBox2.TabStop = false;
@@ -443,7 +443,7 @@
             this.btnTim.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTim.ForeColor = System.Drawing.Color.White;
             this.btnTim.Location = new System.Drawing.Point(138, 117);
-            this.btnTim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTim.Margin = new System.Windows.Forms.Padding(2);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(121, 41);
             this.btnTim.TabIndex = 27;
@@ -455,7 +455,7 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(81, 24);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(210, 27);
             this.textBox1.TabIndex = 18;
@@ -465,7 +465,7 @@
             // 
             this.txtMaGv.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaGv.Location = new System.Drawing.Point(81, 66);
-            this.txtMaGv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMaGv.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaGv.Name = "txtMaGv";
             this.txtMaGv.Size = new System.Drawing.Size(210, 27);
             this.txtMaGv.TabIndex = 18;
@@ -530,7 +530,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1103, 457);
+            this.ClientSize = new System.Drawing.Size(1202, 472);
             this.Controls.Add(this.listDS);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label13);

@@ -325,7 +325,7 @@
             this.listNganh.Location = new System.Drawing.Point(625, 183);
             this.listNganh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listNganh.Name = "listNganh";
-            this.listNganh.Size = new System.Drawing.Size(438, 190);
+            this.listNganh.Size = new System.Drawing.Size(404, 190);
             this.listNganh.TabIndex = 111;
             this.listNganh.UseCompatibleStateImageBehavior = false;
             this.listNganh.View = System.Windows.Forms.View.Details;
@@ -334,29 +334,29 @@
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "MaNganh";
+            this.columnHeader5.Text = "Mã Ngành";
             this.columnHeader5.Width = 76;
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "TenNganh";
+            this.columnHeader6.Text = "Tên Ngành";
             this.columnHeader6.Width = 79;
             // 
             // columnHeader8
             // 
-            this.columnHeader8.Text = "Truong Nganh";
+            this.columnHeader8.Text = "Trưởng Ngành";
             this.columnHeader8.Width = 102;
             // 
             // columnHeader9
             // 
-            this.columnHeader9.Text = "Ma Khoa";
+            this.columnHeader9.Text = "Mã Khoa";
             this.columnHeader9.Width = 88;
             // 
             // QL_Nganh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1103, 457);
+            this.ClientSize = new System.Drawing.Size(1202, 472);
             this.Controls.Add(this.listNganh);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);

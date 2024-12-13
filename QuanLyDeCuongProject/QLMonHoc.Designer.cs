@@ -332,7 +332,7 @@
             this.listMonHoc.Location = new System.Drawing.Point(564, 178);
             this.listMonHoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listMonHoc.Name = "listMonHoc";
-            this.listMonHoc.Size = new System.Drawing.Size(476, 205);
+            this.listMonHoc.Size = new System.Drawing.Size(565, 205);
             this.listMonHoc.TabIndex = 105;
             this.listMonHoc.UseCompatibleStateImageBehavior = false;
             this.listMonHoc.View = System.Windows.Forms.View.Details;
@@ -340,17 +340,17 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "MaMH";
-            this.columnHeader1.Width = 84;
+            this.columnHeader1.Text = "Mã Môn Học";
+            this.columnHeader1.Width = 85;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "TenMH";
+            this.columnHeader2.Text = "Tên Môn Học";
             this.columnHeader2.Width = 96;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "MaNganh";
+            this.columnHeader3.Text = "Mã Ngành";
             this.columnHeader3.Width = 109;
             // 
             // columnHeader4
@@ -372,7 +372,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1103, 457);
+            this.ClientSize = new System.Drawing.Size(1202, 472);
             this.Controls.Add(this.listMonHoc);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);

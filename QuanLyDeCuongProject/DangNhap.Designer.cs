@@ -123,7 +123,7 @@
             this.grB.Margin = new System.Windows.Forms.Padding(5, 0, 5, 5);
             this.grB.Name = "grB";
             this.grB.Padding = new System.Windows.Forms.Padding(4, 0, 4, 4);
-            this.grB.Size = new System.Drawing.Size(964, 466);
+            this.grB.Size = new System.Drawing.Size(1063, 481);
             this.grB.TabIndex = 4;
             this.grB.TabStop = false;
             this.grB.Enter += new System.EventHandler(this.grB_Enter);
@@ -167,7 +167,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1103, 457);
+            this.ClientSize = new System.Drawing.Size(1202, 472);
             this.Controls.Add(this.grB);
             this.Controls.Add(this.ckHienMatKhau);
             this.Controls.Add(this.label1);
