@@ -346,5 +346,15 @@ namespace QuanLyDeCuongProject
                 lbSL.Text = count.ToString();
             }
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSoTietThucHanh_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -49,10 +49,10 @@
             this.btSIGNIn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.btSIGNIn.ForeColor = System.Drawing.Color.White;
             this.btSIGNIn.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btSIGNIn.Location = new System.Drawing.Point(215, 470);
-            this.btSIGNIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btSIGNIn.Location = new System.Drawing.Point(161, 382);
+            this.btSIGNIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btSIGNIn.Name = "btSIGNIn";
-            this.btSIGNIn.Size = new System.Drawing.Size(215, 62);
+            this.btSIGNIn.Size = new System.Drawing.Size(161, 50);
             this.btSIGNIn.TabIndex = 0;
             this.btSIGNIn.Text = "Đăng Nhập";
             this.btSIGNIn.UseVisualStyleBackColor = false;
@@ -63,10 +63,10 @@
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.txtEmail.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtEmail.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtEmail.Location = new System.Drawing.Point(123, 245);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtEmail.Location = new System.Drawing.Point(92, 199);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(369, 22);
+            this.txtEmail.Size = new System.Drawing.Size(278, 19);
             this.txtEmail.TabIndex = 1;
             // 
             // txtPassword
@@ -74,10 +74,10 @@
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtPassword.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtPassword.Location = new System.Drawing.Point(123, 354);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.txtPassword.Location = new System.Drawing.Point(92, 288);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(369, 22);
+            this.txtPassword.Size = new System.Drawing.Size(278, 19);
             this.txtPassword.TabIndex = 1;
             this.txtPassword.UseSystemPasswordChar = true;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
@@ -87,9 +87,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(147, 122);
+            this.label1.Location = new System.Drawing.Point(110, 99);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(309, 29);
+            this.label1.Size = new System.Drawing.Size(247, 23);
             this.label1.TabIndex = 2;
             this.label1.Text = "THÔNG TIN ĐĂNG NHẬP";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -99,11 +100,11 @@
             this.ckHienMatKhau.AutoSize = true;
             this.ckHienMatKhau.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ckHienMatKhau.Font = new System.Drawing.Font("Tahoma", 7.8F);
-            this.ckHienMatKhau.Location = new System.Drawing.Point(152, 410);
-            this.ckHienMatKhau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ckHienMatKhau.Location = new System.Drawing.Point(114, 333);
+            this.ckHienMatKhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ckHienMatKhau.Name = "ckHienMatKhau";
             this.ckHienMatKhau.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ckHienMatKhau.Size = new System.Drawing.Size(107, 20);
+            this.ckHienMatKhau.Size = new System.Drawing.Size(91, 17);
             this.ckHienMatKhau.TabIndex = 3;
             this.ckHienMatKhau.Text = "Hiện mật khẩu";
             this.ckHienMatKhau.UseVisualStyleBackColor = true;
@@ -118,11 +119,11 @@
             this.grB.Controls.Add(this.label3);
             this.grB.Controls.Add(this.label2);
             this.grB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.grB.Location = new System.Drawing.Point(596, 86);
-            this.grB.Margin = new System.Windows.Forms.Padding(7, 0, 7, 6);
+            this.grB.Location = new System.Drawing.Point(495, 4);
+            this.grB.Margin = new System.Windows.Forms.Padding(5, 0, 5, 5);
             this.grB.Name = "grB";
-            this.grB.Padding = new System.Windows.Forms.Padding(5, 0, 5, 5);
-            this.grB.Size = new System.Drawing.Size(1251, 574);
+            this.grB.Padding = new System.Windows.Forms.Padding(4, 0, 4, 4);
+            this.grB.Size = new System.Drawing.Size(964, 466);
             this.grB.TabIndex = 4;
             this.grB.TabStop = false;
             this.grB.Enter += new System.EventHandler(this.grB_Enter);
@@ -133,10 +134,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(391, 510);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(293, 414);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(375, 16);
+            this.label3.Size = new System.Drawing.Size(309, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "119 Ấp Bắc - Phường 05 - Thành phố Mỹ Tho - Tỉnh Tiền Giang";
             // 
@@ -151,12 +151,11 @@
             this.label2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(423, 46);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(317, 37);
             this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(5, 0, 5, 5);
+            this.label2.Padding = new System.Windows.Forms.Padding(4, 0, 4, 4);
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(303, 34);
+            this.label2.Size = new System.Drawing.Size(245, 27);
             this.label2.TabIndex = 0;
             this.label2.Text = "THÔNG BÁO MỚI NHẤT";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -164,11 +163,11 @@
             // 
             // DangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1924, 729);
+            this.ClientSize = new System.Drawing.Size(1103, 457);
             this.Controls.Add(this.grB);
             this.Controls.Add(this.ckHienMatKhau);
             this.Controls.Add(this.label1);
@@ -178,9 +177,9 @@
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "DangNhap";
-            this.Padding = new System.Windows.Forms.Padding(11, 5, 5, 10);
+            this.Padding = new System.Windows.Forms.Padding(8, 4, 4, 8);
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.RightToLeftLayout = true;
             this.Text = " ";
