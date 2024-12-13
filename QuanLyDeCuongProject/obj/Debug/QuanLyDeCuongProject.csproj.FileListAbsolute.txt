@@ -166,3 +166,20 @@ C:\Users\nguye\Source\Repos\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\Q
 C:\Users\nguye\Source\Repos\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.pdb
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DuyetDeCuong.resources
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QL_Nganh.resources
+D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe.config
+D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.exe
+D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.pdb
+D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csprojResolveAssemblyReference.cache
+D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DeCuong.resources
+D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DuyetDeCuong.resources
+D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DoiMatKhau.resources
+D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Form1.resources
+D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.GIANGVIEN.resources
+D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.Home.resources
+D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.SINHVIEN.resources
+D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.SuaThongTinCaNhan.resources
+D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QLMonHoc.resources
+D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DangNhap.resources
+D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QL_Nganh.resources
+D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QuanLyPhanQuyen.resources
+D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.GenerateResource.Cache
