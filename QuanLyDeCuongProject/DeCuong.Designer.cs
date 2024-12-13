@@ -124,7 +124,7 @@
             this.txtSearchmadecuong.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchmadecuong.Location = new System.Drawing.Point(177, 69);
             this.txtSearchmadecuong.Name = "txtSearchmadecuong";
-            this.txtSearchmadecuong.Size = new System.Drawing.Size(210, 27);
+            this.txtSearchmadecuong.Size = new System.Drawing.Size(259, 27);
             this.txtSearchmadecuong.TabIndex = 18;
             this.txtSearchmadecuong.TextChanged += new System.EventHandler(this.txtSearchDeCuong_TextChanged);
             // 
@@ -133,7 +133,7 @@
             this.txtSearchtendecuong.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchtendecuong.Location = new System.Drawing.Point(177, 38);
             this.txtSearchtendecuong.Name = "txtSearchtendecuong";
-            this.txtSearchtendecuong.Size = new System.Drawing.Size(210, 27);
+            this.txtSearchtendecuong.Size = new System.Drawing.Size(259, 27);
             this.txtSearchtendecuong.TabIndex = 18;
             this.txtSearchtendecuong.TextChanged += new System.EventHandler(this.txtSearchtendecuong_TextChanged);
             // 
@@ -259,7 +259,7 @@
             this.txttendecuong.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttendecuong.Location = new System.Drawing.Point(178, 99);
             this.txttendecuong.Name = "txttendecuong";
-            this.txttendecuong.Size = new System.Drawing.Size(210, 27);
+            this.txttendecuong.Size = new System.Drawing.Size(259, 27);
             this.txttendecuong.TabIndex = 30;
             this.txttendecuong.TextChanged += new System.EventHandler(this.txtHH_TextChanged);
             // 
@@ -271,7 +271,7 @@
             this.txtmadecuong.Location = new System.Drawing.Point(178, 54);
             this.txtmadecuong.Name = "txtmadecuong";
             this.txtmadecuong.ReadOnly = true;
-            this.txtmadecuong.Size = new System.Drawing.Size(210, 27);
+            this.txtmadecuong.Size = new System.Drawing.Size(259, 27);
             this.txtmadecuong.TabIndex = 25;
             this.txtmadecuong.TextChanged += new System.EventHandler(this.txtGV_TextChanged);
             // 
@@ -280,7 +280,7 @@
             this.txtmamonhoc.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmamonhoc.Location = new System.Drawing.Point(178, 139);
             this.txtmamonhoc.Name = "txtmamonhoc";
-            this.txtmamonhoc.Size = new System.Drawing.Size(210, 27);
+            this.txtmamonhoc.Size = new System.Drawing.Size(259, 27);
             this.txtmamonhoc.TabIndex = 24;
             this.txtmamonhoc.TextChanged += new System.EventHandler(this.txtSDT_TextChanged);
             // 
@@ -468,7 +468,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1202, 472);
+            this.ClientSize = new System.Drawing.Size(1335, 469);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.lbdc);
             this.Controls.Add(this.label8);

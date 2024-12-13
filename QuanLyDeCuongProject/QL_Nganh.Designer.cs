@@ -110,7 +110,7 @@
             this.txtTenNganh.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenNganh.Location = new System.Drawing.Point(166, 92);
             this.txtTenNganh.Name = "txtTenNganh";
-            this.txtTenNganh.Size = new System.Drawing.Size(210, 27);
+            this.txtTenNganh.Size = new System.Drawing.Size(259, 27);
             this.txtTenNganh.TabIndex = 30;
             // 
             // txtMaNganh
@@ -118,7 +118,7 @@
             this.txtMaNganh.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNganh.Location = new System.Drawing.Point(166, 43);
             this.txtMaNganh.Name = "txtMaNganh";
-            this.txtMaNganh.Size = new System.Drawing.Size(210, 27);
+            this.txtMaNganh.Size = new System.Drawing.Size(259, 27);
             this.txtMaNganh.TabIndex = 25;
             // 
             // label10
@@ -174,7 +174,7 @@
             this.cbmakhoa.Location = new System.Drawing.Point(166, 195);
             this.cbmakhoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbmakhoa.Name = "cbmakhoa";
-            this.cbmakhoa.Size = new System.Drawing.Size(210, 25);
+            this.cbmakhoa.Size = new System.Drawing.Size(259, 25);
             this.cbmakhoa.TabIndex = 88;
             this.cbmakhoa.SelectedIndexChanged += new System.EventHandler(this.cbmakhoa_SelectedIndexChanged);
             // 
@@ -185,7 +185,7 @@
             this.cbmatn.Location = new System.Drawing.Point(166, 146);
             this.cbmatn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbmatn.Name = "cbmatn";
-            this.cbmatn.Size = new System.Drawing.Size(210, 25);
+            this.cbmatn.Size = new System.Drawing.Size(259, 25);
             this.cbmatn.TabIndex = 88;
             this.cbmatn.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -235,7 +235,7 @@
             this.groupBox2.ForeColor = System.Drawing.Color.RoyalBlue;
             this.groupBox2.Location = new System.Drawing.Point(625, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(466, 142);
+            this.groupBox2.Size = new System.Drawing.Size(548, 145);
             this.groupBox2.TabIndex = 106;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "THÔNG TIN TÌM KIẾM";
@@ -245,7 +245,7 @@
             this.txtTenNgSearch.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenNgSearch.Location = new System.Drawing.Point(237, 64);
             this.txtTenNgSearch.Name = "txtTenNgSearch";
-            this.txtTenNgSearch.Size = new System.Drawing.Size(210, 27);
+            this.txtTenNgSearch.Size = new System.Drawing.Size(259, 27);
             this.txtTenNgSearch.TabIndex = 18;
             this.txtTenNgSearch.TextChanged += new System.EventHandler(this.txtMaGv_TextChanged);
             // 
@@ -280,7 +280,7 @@
             this.lbSL.AutoSize = true;
             this.lbSL.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSL.ForeColor = System.Drawing.Color.Black;
-            this.lbSL.Location = new System.Drawing.Point(783, 392);
+            this.lbSL.Location = new System.Drawing.Point(783, 377);
             this.lbSL.Name = "lbSL";
             this.lbSL.Size = new System.Drawing.Size(73, 19);
             this.lbSL.TabIndex = 109;
@@ -302,7 +302,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(621, 392);
+            this.label13.Location = new System.Drawing.Point(631, 377);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(121, 19);
             this.label13.TabIndex = 105;
@@ -319,13 +319,14 @@
             this.columnHeader6,
             this.columnHeader8,
             this.columnHeader9});
+            this.listNganh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listNganh.FullRowSelect = true;
             this.listNganh.GridLines = true;
             this.listNganh.HideSelection = false;
             this.listNganh.Location = new System.Drawing.Point(625, 183);
             this.listNganh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listNganh.Name = "listNganh";
-            this.listNganh.Size = new System.Drawing.Size(404, 190);
+            this.listNganh.Size = new System.Drawing.Size(539, 174);
             this.listNganh.TabIndex = 111;
             this.listNganh.UseCompatibleStateImageBehavior = false;
             this.listNganh.View = System.Windows.Forms.View.Details;
@@ -356,7 +357,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1202, 472);
+            this.ClientSize = new System.Drawing.Size(1335, 469);
             this.Controls.Add(this.listNganh);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);

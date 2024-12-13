@@ -87,7 +87,7 @@
             this.comboGender.Location = new System.Drawing.Point(174, 253);
             this.comboGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboGender.Name = "comboGender";
-            this.comboGender.Size = new System.Drawing.Size(284, 25);
+            this.comboGender.Size = new System.Drawing.Size(259, 25);
             this.comboGender.TabIndex = 106;
             // 
             // textBox7
@@ -96,7 +96,7 @@
             this.textBox7.Location = new System.Drawing.Point(669, 210);
             this.textBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(284, 24);
+            this.textBox7.Size = new System.Drawing.Size(259, 24);
             this.textBox7.TabIndex = 105;
             // 
             // textBox3
@@ -105,7 +105,7 @@
             this.textBox3.Location = new System.Drawing.Point(173, 181);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(284, 24);
+            this.textBox3.Size = new System.Drawing.Size(259, 24);
             this.textBox3.TabIndex = 105;
             // 
             // textBox6
@@ -114,7 +114,7 @@
             this.textBox6.Location = new System.Drawing.Point(669, 139);
             this.textBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(284, 24);
+            this.textBox6.Size = new System.Drawing.Size(259, 24);
             this.textBox6.TabIndex = 105;
             // 
             // textBox2
@@ -123,7 +123,7 @@
             this.textBox2.Location = new System.Drawing.Point(173, 125);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(284, 24);
+            this.textBox2.Size = new System.Drawing.Size(259, 24);
             this.textBox2.TabIndex = 105;
             // 
             // textBox5
@@ -132,7 +132,7 @@
             this.textBox5.Location = new System.Drawing.Point(669, 72);
             this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(284, 24);
+            this.textBox5.Size = new System.Drawing.Size(259, 24);
             this.textBox5.TabIndex = 105;
             // 
             // textBox1
@@ -141,7 +141,7 @@
             this.textBox1.Location = new System.Drawing.Point(173, 67);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(284, 24);
+            this.textBox1.Size = new System.Drawing.Size(259, 24);
             this.textBox1.TabIndex = 105;
             // 
             // button1
@@ -274,7 +274,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1202, 472);
+            this.ClientSize = new System.Drawing.Size(1335, 469);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "SuaThongTinCaNhan";

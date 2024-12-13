@@ -66,7 +66,7 @@
             this.txtTenMon_TimKiem.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenMon_TimKiem.Location = new System.Drawing.Point(237, 45);
             this.txtTenMon_TimKiem.Name = "txtTenMon_TimKiem";
-            this.txtTenMon_TimKiem.Size = new System.Drawing.Size(210, 27);
+            this.txtTenMon_TimKiem.Size = new System.Drawing.Size(259, 27);
             this.txtTenMon_TimKiem.TabIndex = 18;
             this.txtTenMon_TimKiem.TextChanged += new System.EventHandler(this.txtTenMon_TimKiem_TextChanged);
             // 
@@ -161,7 +161,7 @@
             this.cbbMaNganh.Location = new System.Drawing.Point(210, 133);
             this.cbbMaNganh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbbMaNganh.Name = "cbbMaNganh";
-            this.cbbMaNganh.Size = new System.Drawing.Size(210, 27);
+            this.cbbMaNganh.Size = new System.Drawing.Size(259, 27);
             this.cbbMaNganh.TabIndex = 88;
             // 
             // btnXoa
@@ -214,7 +214,7 @@
             this.txtSoTietThucHanh.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoTietThucHanh.Location = new System.Drawing.Point(210, 270);
             this.txtSoTietThucHanh.Name = "txtSoTietThucHanh";
-            this.txtSoTietThucHanh.Size = new System.Drawing.Size(210, 27);
+            this.txtSoTietThucHanh.Size = new System.Drawing.Size(259, 27);
             this.txtSoTietThucHanh.TabIndex = 30;
             this.txtSoTietThucHanh.TextChanged += new System.EventHandler(this.txtSoTietThucHanh_TextChanged);
             // 
@@ -223,7 +223,7 @@
             this.txtSoTietLyThuyet.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoTietLyThuyet.Location = new System.Drawing.Point(210, 224);
             this.txtSoTietLyThuyet.Name = "txtSoTietLyThuyet";
-            this.txtSoTietLyThuyet.Size = new System.Drawing.Size(210, 27);
+            this.txtSoTietLyThuyet.Size = new System.Drawing.Size(259, 27);
             this.txtSoTietLyThuyet.TabIndex = 30;
             // 
             // txtSoTinChi
@@ -231,7 +231,7 @@
             this.txtSoTinChi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoTinChi.Location = new System.Drawing.Point(210, 176);
             this.txtSoTinChi.Name = "txtSoTinChi";
-            this.txtSoTinChi.Size = new System.Drawing.Size(210, 27);
+            this.txtSoTinChi.Size = new System.Drawing.Size(259, 27);
             this.txtSoTinChi.TabIndex = 30;
             // 
             // txtTenMon
@@ -239,7 +239,7 @@
             this.txtTenMon.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenMon.Location = new System.Drawing.Point(210, 91);
             this.txtTenMon.Name = "txtTenMon";
-            this.txtTenMon.Size = new System.Drawing.Size(210, 27);
+            this.txtTenMon.Size = new System.Drawing.Size(259, 27);
             this.txtTenMon.TabIndex = 30;
             // 
             // txtMaMon
@@ -247,7 +247,7 @@
             this.txtMaMon.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaMon.Location = new System.Drawing.Point(210, 44);
             this.txtMaMon.Name = "txtMaMon";
-            this.txtMaMon.Size = new System.Drawing.Size(210, 27);
+            this.txtMaMon.Size = new System.Drawing.Size(259, 27);
             this.txtMaMon.TabIndex = 25;
             // 
             // label8
@@ -372,7 +372,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1202, 472);
+            this.ClientSize = new System.Drawing.Size(1335, 469);
             this.Controls.Add(this.listMonHoc);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);

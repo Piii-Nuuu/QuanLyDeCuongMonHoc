@@ -84,7 +84,7 @@
             this.txtDuyetDC_tendecuong.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDuyetDC_tendecuong.Location = new System.Drawing.Point(178, 99);
             this.txtDuyetDC_tendecuong.Name = "txtDuyetDC_tendecuong";
-            this.txtDuyetDC_tendecuong.Size = new System.Drawing.Size(210, 27);
+            this.txtDuyetDC_tendecuong.Size = new System.Drawing.Size(259, 27);
             this.txtDuyetDC_tendecuong.TabIndex = 30;
             // 
             // txtDuyetDC_madecuong
@@ -95,7 +95,7 @@
             this.txtDuyetDC_madecuong.Location = new System.Drawing.Point(178, 54);
             this.txtDuyetDC_madecuong.Name = "txtDuyetDC_madecuong";
             this.txtDuyetDC_madecuong.ReadOnly = true;
-            this.txtDuyetDC_madecuong.Size = new System.Drawing.Size(210, 27);
+            this.txtDuyetDC_madecuong.Size = new System.Drawing.Size(259, 27);
             this.txtDuyetDC_madecuong.TabIndex = 25;
             // 
             // txtDuyetDC_mamonhoc
@@ -103,7 +103,7 @@
             this.txtDuyetDC_mamonhoc.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDuyetDC_mamonhoc.Location = new System.Drawing.Point(178, 139);
             this.txtDuyetDC_mamonhoc.Name = "txtDuyetDC_mamonhoc";
-            this.txtDuyetDC_mamonhoc.Size = new System.Drawing.Size(210, 27);
+            this.txtDuyetDC_mamonhoc.Size = new System.Drawing.Size(259, 27);
             this.txtDuyetDC_mamonhoc.TabIndex = 24;
             // 
             // label10
@@ -283,7 +283,7 @@
             this.txtDuyet_Searchmadecuong.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDuyet_Searchmadecuong.Location = new System.Drawing.Point(177, 77);
             this.txtDuyet_Searchmadecuong.Name = "txtDuyet_Searchmadecuong";
-            this.txtDuyet_Searchmadecuong.Size = new System.Drawing.Size(210, 27);
+            this.txtDuyet_Searchmadecuong.Size = new System.Drawing.Size(259, 27);
             this.txtDuyet_Searchmadecuong.TabIndex = 18;
             this.txtDuyet_Searchmadecuong.TextChanged += new System.EventHandler(this.txtDuyet_Searchmadecuong_TextChanged);
             // 
@@ -292,7 +292,7 @@
             this.txtDuyet_Searchtendecuong.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDuyet_Searchtendecuong.Location = new System.Drawing.Point(177, 38);
             this.txtDuyet_Searchtendecuong.Name = "txtDuyet_Searchtendecuong";
-            this.txtDuyet_Searchtendecuong.Size = new System.Drawing.Size(210, 27);
+            this.txtDuyet_Searchtendecuong.Size = new System.Drawing.Size(259, 27);
             this.txtDuyet_Searchtendecuong.TabIndex = 18;
             this.txtDuyet_Searchtendecuong.TextChanged += new System.EventHandler(this.txtDuyet_Searchtendecuong_TextChanged);
             // 
@@ -362,7 +362,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1202, 472);
+            this.ClientSize = new System.Drawing.Size(1335, 469);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);

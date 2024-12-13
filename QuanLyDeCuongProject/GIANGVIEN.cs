@@ -265,6 +265,16 @@ namespace QuanLyDeCuongProject
         {
 
         }
+
+        private void cbGioi_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbhocvi_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
