@@ -223,25 +223,7 @@
     <None Include="Resources\gradient-5812_256.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\education.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\book-stack.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\documentation.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\permission.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\students.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\teacher.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\department.png" />
+    <Folder Include="bin\Debug\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

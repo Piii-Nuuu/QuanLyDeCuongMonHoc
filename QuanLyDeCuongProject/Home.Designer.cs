@@ -57,19 +57,19 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
             this.MonHoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.QLDeCuong.SuspendLayout();
@@ -104,7 +104,7 @@
             this.MonHoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.MonHoc.Controls.Add(this.pictureBox1);
             this.MonHoc.Controls.Add(this.label1);
-            this.MonHoc.Location = new System.Drawing.Point(40, 195);
+            this.MonHoc.Location = new System.Drawing.Point(85, 186);
             this.MonHoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MonHoc.Name = "MonHoc";
             this.MonHoc.Size = new System.Drawing.Size(183, 183);
@@ -130,7 +130,7 @@
             this.QLDeCuong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.QLDeCuong.Controls.Add(this.pictureBox2);
             this.QLDeCuong.Controls.Add(this.label2);
-            this.QLDeCuong.Location = new System.Drawing.Point(364, 197);
+            this.QLDeCuong.Location = new System.Drawing.Point(409, 188);
             this.QLDeCuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.QLDeCuong.Name = "QLDeCuong";
             this.QLDeCuong.Size = new System.Drawing.Size(183, 183);
@@ -168,7 +168,7 @@
             this.QLNganh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.QLNganh.Controls.Add(this.pictureBox3);
             this.QLNganh.Controls.Add(this.label3);
-            this.QLNganh.Location = new System.Drawing.Point(697, 195);
+            this.QLNganh.Location = new System.Drawing.Point(742, 186);
             this.QLNganh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.QLNganh.Name = "QLNganh";
             this.QLNganh.Size = new System.Drawing.Size(183, 183);
@@ -205,7 +205,7 @@
             this.QLSinhVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.QLSinhVien.Controls.Add(this.pictureBox4);
             this.QLSinhVien.Controls.Add(this.label4);
-            this.QLSinhVien.Location = new System.Drawing.Point(40, 449);
+            this.QLSinhVien.Location = new System.Drawing.Point(85, 440);
             this.QLSinhVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.QLSinhVien.Name = "QLSinhVien";
             this.QLSinhVien.Size = new System.Drawing.Size(183, 183);
@@ -242,7 +242,7 @@
             this.QLGiangVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.QLGiangVien.Controls.Add(this.pictureBox5);
             this.QLGiangVien.Controls.Add(this.label5);
-            this.QLGiangVien.Location = new System.Drawing.Point(364, 451);
+            this.QLGiangVien.Location = new System.Drawing.Point(409, 442);
             this.QLGiangVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.QLGiangVien.Name = "QLGiangVien";
             this.QLGiangVien.Size = new System.Drawing.Size(183, 183);
@@ -278,7 +278,7 @@
             this.QLPhanQuyen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.QLPhanQuyen.Controls.Add(this.pictureBox6);
             this.QLPhanQuyen.Controls.Add(this.label6);
-            this.QLPhanQuyen.Location = new System.Drawing.Point(697, 451);
+            this.QLPhanQuyen.Location = new System.Drawing.Point(742, 442);
             this.QLPhanQuyen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.QLPhanQuyen.Name = "QLPhanQuyen";
             this.QLPhanQuyen.Size = new System.Drawing.Size(183, 183);
@@ -438,6 +438,17 @@
             this.label19.TabIndex = 101;
             this.label19.Text = "label7";
             // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label26.Location = new System.Drawing.Point(36, 303);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(103, 21);
+            this.label26.TabIndex = 101;
+            this.label26.Text = "Ngày Sinh:";
+            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -502,6 +513,17 @@
             this.label18.Size = new System.Drawing.Size(0, 20);
             this.label18.TabIndex = 101;
             // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label25.Location = new System.Drawing.Point(36, 59);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(106, 21);
+            this.label25.TabIndex = 101;
+            this.label25.Text = "Tài Khoản: ";
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -560,28 +582,6 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label25.Location = new System.Drawing.Point(36, 59);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(106, 21);
-            this.label25.TabIndex = 101;
-            this.label25.Text = "Tài Khoản: ";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label26.Location = new System.Drawing.Point(36, 303);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(103, 21);
-            this.label26.TabIndex = 101;
-            this.label26.Text = "Ngày Sinh:";
             // 
             // Home
             // 
