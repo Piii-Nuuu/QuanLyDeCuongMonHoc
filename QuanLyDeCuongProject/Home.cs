@@ -84,18 +84,11 @@ namespace QuanLyDeCuongProject
         private void QLDeCuong_Click(object sender, EventArgs e)
         {
 
-            if (Modify.taiKhoan.ma_quyen != 4)
-            {
-                this.Hide();
-                DeCuong de_cuong_frm = new DeCuong();
-                de_cuong_frm.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            
-         
+            this.Hide();
+            DeCuong de_cuong_frm = new DeCuong();
+            de_cuong_frm.ShowDialog();
+
+
         }
 
         private void QLNganh_Click(object sender, EventArgs e)

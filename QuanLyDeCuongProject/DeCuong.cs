@@ -17,6 +17,7 @@ namespace QuanLyDeCuongProject
         // nút duyệt đề cương đâu
 
         DataBase Db  = new DataBase();
+        Helpers helper = new Helpers();
 
         public DeCuong()
         {
@@ -25,7 +26,9 @@ namespace QuanLyDeCuongProject
 
         private void DeCuong_Load(object sender, EventArgs e)
         {
-            hienthilsdanhsach();
+            helper.XulySangToi(true, btThem, btcapnhat, btxoa, btludecuong);
+            string sql = "select TenDeCuong , MaDeCuong , MaMon from DeCuong where isAccept = '1'";
+            hienthilsdanhsach(sql);
             lbdc.Text = listDSdecuong.Items.Count.ToString();
         }
 
@@ -33,7 +36,10 @@ namespace QuanLyDeCuongProject
         {
             lbdc.Text = listDSdecuong.Items.Count.ToString();
         }
-
+        void laysldc()
+        {
+            lbdc.Text = listDSdecuong.Items.Count.ToString();
+        }
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -41,21 +47,17 @@ namespace QuanLyDeCuongProject
 
         private void btnTim_Click(object sender, EventArgs e)
         {
-            listDSdecuong.Items.Clear();
+            
             string sql = "select TenDeCuong , MaDeCuong , MaMon from DeCuong where MaDeCuong= '"+txtSearchmadecuong+"' or TenDeCuong = N'"+txtSearchtendecuong.Text+ "' and isAccept = '1'";
             DataTable dt = Db.ExecuteQuery(sql);
             //MessageBox.Show(dt.Rows.Count.ToString());
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                listDSdecuong.Items.Add(dt.Rows[i]["MaDeCuong"].ToString());
-                listDSdecuong.Items[i].SubItems.Add(dt.Rows[i]["TenDeCuong"].ToString());
-                listDSdecuong.Items[i].SubItems.Add(dt.Rows[i]["MaMon"].ToString());    
-            }
+            hienthilsdanhsach(sql);
+            laysldc();
         }
-        void hienthilsdanhsach()
+        void hienthilsdanhsach(string sql)
         {
             listDSdecuong.Items.Clear();
-            string sql = "select TenDeCuong , MaDeCuong , MaMon from DeCuong where isAccept = '1'";
+            //string sql = "select TenDeCuong , MaDeCuong , MaMon from DeCuong where isAccept = '1'";
             DataTable dt = Db.ExecuteQuery(sql);
             for (int i = 0; i < dt.Rows.Count; i++)
             {
@@ -66,15 +68,10 @@ namespace QuanLyDeCuongProject
         }
         private void txtSearchDeCuong_TextChanged(object sender, EventArgs e)
         {
-            listDSdecuong.Items.Clear ();
+           
             string sql_MaDecuong = "select TenDeCuong , MaDeCuong , MaMon  from DeCuong where  MaDeCuong like N'%" + txtSearchmadecuong.Text+"%'  and isAccept = '1'";
-            DataTable dt = Db.ExecuteQuery(sql_MaDecuong);
-            for (int i = 0;i < dt.Rows.Count;i++)
-            {
-                listDSdecuong.Items.Add(dt.Rows[i]["MaDeCuong"].ToString());
-                listDSdecuong.Items[i].SubItems.Add(dt.Rows[i]["TenDeCuong"].ToString());
-                listDSdecuong.Items[i].SubItems.Add(dt.Rows[i]["MaMon"].ToString());
-            }
+            hienthilsdanhsach(sql_MaDecuong);
+            laysldc() ;
         }
 
         private void txtGV_TextChanged(object sender, EventArgs e)
@@ -112,23 +109,24 @@ namespace QuanLyDeCuongProject
             txtmadecuong.Text = listDSdecuong.SelectedItems[0].SubItems[0].Text;
             txttendecuong.Text = listDSdecuong.SelectedItems[0].SubItems[1].Text;
             txtmamonhoc.Text = listDSdecuong.SelectedItems[0].SubItems[2].Text;
+            laysldc();
         }
 
         private void btthem_Click(object sender, EventArgs e)
         {
-       
             string sql_mangdung = "select MaGV from NguoiDung nd, GIANGVIEN gv where nd.MaNguoiDung = gv.MaND and nd.MaNguoiDung = 'ND0001'";
             DataTable dt_laymaGV = Db.ExecuteQuery(sql_mangdung);
 
-            DialogResult kq = MessageBox.Show("Xác Nhận Thêm Mới", "Thông Báo!",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            DialogResult kq = MessageBox.Show("Xác nhận thêm mới đề cương", "Thông Báo!",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
             if (kq == DialogResult.Yes)
             {
                 try
                 {
                     string sql = "insert into DeCuong (MaDeCuong, TenDeCuong, MaMon, MaGV, isAccept) values ('" + txtmadecuong.Text + "', N'" + txttendecuong.Text + "', '" + txtmamonhoc.Text + "', '" + dt_laymaGV.Rows[0][0].ToString() + "', 1)";
                     Db.ExecuteNonQuery(sql);
+                    helper.XulySangToi(true, btThem, btcapnhat, btxoa, btludecuong);
                     MessageBox.Show("Thêm thành công!");
-                    hienthilsdanhsach();
+                    hienthilsdanhsach(sql);
 
                 }
                 catch (Exception)
@@ -142,7 +140,13 @@ namespace QuanLyDeCuongProject
 
         private void btcapnhat_Click(object sender, EventArgs e)
         {
-            DialogResult kq = MessageBox.Show("Xác Nhận Cập Nhật!", "Thông Báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (!helper.checkPermission(23, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            helper.XulySangToi(true, btThem, btcapnhat, btxoa, btludecuong);
+            DialogResult kq = MessageBox.Show("Bạn có chắc chắn cập nhật đề cương này!", "Thông Báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (kq == DialogResult.Yes)
             {
                 try
@@ -151,7 +155,7 @@ namespace QuanLyDeCuongProject
                     string sql = "update DeCuong set TenDeCuong = N'" + txttendecuong.Text + "' , MaMon = '" + txtmamonhoc.Text + "' where MaDeCuong = '" + txtmadecuong.Text + "'";
                     Db.ExecuteNonQuery(sql);
                     MessageBox.Show("Cập nhật thành công!");
-                    hienthilsdanhsach();
+                    hienthilsdanhsach(sql);
 
                 }
                 catch (Exception)
@@ -165,16 +169,30 @@ namespace QuanLyDeCuongProject
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
+            if (!helper.checkPermission(22, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            helper.XulySangToi(false, btThem, btcapnhat, btxoa, btludecuong);
             string sql = "select top 1 MaDeCuong  from DeCuong order by MaDeCuong desc";
             DataTable dt = Db.ExecuteQuery(sql);
             int madc =int.Parse( dt.Rows[0][0].ToString().Substring(dt.Rows[0][0].ToString().Length - 3));
             //MessageBox.Show(madc.ToString());
             txtmadecuong.Text = "DC"+(madc+1).ToString("00#") ;
+            laysldc();
         }
 
         private void btxoa_Click(object sender, EventArgs e)
         {
-            DialogResult kq = MessageBox.Show("Xác Nhận!", "Thông Báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (!helper.checkPermission(24, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            DialogResult kq = MessageBox.Show("Bạn có chắc chắn xóa đề cương này!", "Thông Báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            helper.XulySangToi(true, btThem, btcapnhat, btxoa, btludecuong);
             if (kq == DialogResult.Yes)
             {
                 try
@@ -183,12 +201,14 @@ namespace QuanLyDeCuongProject
                     string sql = "delete from DeCuong where MaDeCuong = '"+txtmadecuong.Text+"'";
                     Db.ExecuteNonQuery(sql);
                     MessageBox.Show("Xóa thành công!");
-                    hienthilsdanhsach();
+                    hienthilsdanhsach(sql);
+                    laysldc();
 
                 }
                 catch (Exception)
                 {
                     MessageBox.Show("Không thể xóa!");
+                    laysldc();
                     throw;
                 }
 
@@ -202,15 +222,10 @@ namespace QuanLyDeCuongProject
 
         private void txtSearchtendecuong_TextChanged(object sender, EventArgs e)
         {
-            listDSdecuong.Items.Clear();
+           
             string sql_TenDecuong = "select TenDeCuong , MaDeCuong , MaMon  from DeCuong where  TenDeCuong like N'%" + txtSearchtendecuong.Text + "%'  and isAccept = '1'";
-            DataTable dt = Db.ExecuteQuery(sql_TenDecuong);
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                listDSdecuong.Items.Add(dt.Rows[i]["MaDeCuong"].ToString());
-                listDSdecuong.Items[i].SubItems.Add(dt.Rows[i]["TenDeCuong"].ToString());
-                listDSdecuong.Items[i].SubItems.Add(dt.Rows[i]["MaMon"].ToString());
-            }
+            hienthilsdanhsach(sql_TenDecuong);
+            laysldc();
         }
 
         private void label9_Click_1(object sender, EventArgs e)
@@ -241,5 +256,6 @@ namespace QuanLyDeCuongProject
             Home h = new Home();
             h.Show();
         }
+
     }
 }

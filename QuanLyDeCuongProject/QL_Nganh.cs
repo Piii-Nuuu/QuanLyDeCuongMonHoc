@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,6 +18,7 @@ namespace QuanLyDeCuongProject
 {
     public partial class QL_Nganh : Form
     {
+        Helpers helper = new Helpers();
         public QL_Nganh()
         {
             InitializeComponent();
@@ -134,6 +136,12 @@ namespace QuanLyDeCuongProject
         }
         private void button3_Click(object sender, EventArgs e)
         {
+            if (!helper.checkPermission(16, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            helper.XulySangToi(true, btthem, btcapnhat, btxoa, button1);
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 string checkForeignKeySinhVienQuery = "SELECT COUNT(*) FROM SinhVien WHERE MaNganh = @MaNganh";
@@ -168,10 +176,22 @@ namespace QuanLyDeCuongProject
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (!helper.checkPermission(14, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            helper.XulySangToi(false, btthem, btcapnhat, btxoa, button1);
             resetFields();
         }
         private void button2_Click(object sender, EventArgs e)
         {
+            if (!helper.checkPermission(15, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            helper.XulySangToi(true, btthem, btcapnhat, btxoa, button1);
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 string query = "UPDATE NGANH SET TenNganh = @TenNganh, TruongNganh = @TruongNganh, MaKhoa = @MaKhoa WHERE MaNganh = @MaNganh";
@@ -235,6 +255,7 @@ namespace QuanLyDeCuongProject
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Thêm ngành thành công!");
                 LoadData();
+                helper.XulySangToi(true, btthem, btcapnhat, btxoa, button1);
             }
         }
 
