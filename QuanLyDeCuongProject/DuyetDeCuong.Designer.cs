@@ -78,9 +78,9 @@
             this.groupBox3.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
             this.groupBox3.ForeColor = System.Drawing.Color.RoyalBlue;
             this.groupBox3.Location = new System.Drawing.Point(29, 155);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(688, 391);
             this.groupBox3.TabIndex = 95;
             this.groupBox3.TabStop = false;
@@ -94,7 +94,7 @@
             this.btDuyetDC_Xoa.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.btDuyetDC_Xoa.ForeColor = System.Drawing.Color.AliceBlue;
             this.btDuyetDC_Xoa.Location = new System.Drawing.Point(396, 270);
-            this.btDuyetDC_Xoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btDuyetDC_Xoa.Margin = new System.Windows.Forms.Padding(4);
             this.btDuyetDC_Xoa.Name = "btDuyetDC_Xoa";
             this.btDuyetDC_Xoa.Size = new System.Drawing.Size(161, 50);
             this.btDuyetDC_Xoa.TabIndex = 99;
@@ -106,7 +106,7 @@
             // 
             this.txtDuyetDC_tendecuong.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDuyetDC_tendecuong.Location = new System.Drawing.Point(237, 122);
-            this.txtDuyetDC_tendecuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDuyetDC_tendecuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtDuyetDC_tendecuong.Name = "txtDuyetDC_tendecuong";
             this.txtDuyetDC_tendecuong.Size = new System.Drawing.Size(402, 32);
             this.txtDuyetDC_tendecuong.TabIndex = 30;
@@ -119,7 +119,7 @@
             this.btDuyetDC_capnhat.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.btDuyetDC_capnhat.ForeColor = System.Drawing.Color.AliceBlue;
             this.btDuyetDC_capnhat.Location = new System.Drawing.Point(79, 270);
-            this.btDuyetDC_capnhat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btDuyetDC_capnhat.Margin = new System.Windows.Forms.Padding(4);
             this.btDuyetDC_capnhat.Name = "btDuyetDC_capnhat";
             this.btDuyetDC_capnhat.Size = new System.Drawing.Size(161, 50);
             this.btDuyetDC_capnhat.TabIndex = 98;
@@ -133,7 +133,7 @@
             this.txtDuyetDC_madecuong.Enabled = false;
             this.txtDuyetDC_madecuong.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDuyetDC_madecuong.Location = new System.Drawing.Point(237, 66);
-            this.txtDuyetDC_madecuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDuyetDC_madecuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtDuyetDC_madecuong.Name = "txtDuyetDC_madecuong";
             this.txtDuyetDC_madecuong.ReadOnly = true;
             this.txtDuyetDC_madecuong.Size = new System.Drawing.Size(402, 32);
@@ -143,7 +143,7 @@
             // 
             this.txtDuyetDC_mamonhoc.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDuyetDC_mamonhoc.Location = new System.Drawing.Point(237, 171);
-            this.txtDuyetDC_mamonhoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDuyetDC_mamonhoc.Margin = new System.Windows.Forms.Padding(4);
             this.txtDuyetDC_mamonhoc.Name = "txtDuyetDC_mamonhoc";
             this.txtDuyetDC_mamonhoc.Size = new System.Drawing.Size(402, 32);
             this.txtDuyetDC_mamonhoc.TabIndex = 24;
@@ -214,9 +214,9 @@
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
             this.groupBox1.ForeColor = System.Drawing.Color.RoyalBlue;
             this.groupBox1.Location = new System.Drawing.Point(794, 334);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(739, 408);
             this.groupBox1.TabIndex = 96;
             this.groupBox1.TabStop = false;
@@ -317,9 +317,9 @@
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
             this.groupBox2.ForeColor = System.Drawing.Color.RoyalBlue;
             this.groupBox2.Location = new System.Drawing.Point(801, 155);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(739, 155);
             this.groupBox2.TabIndex = 97;
             this.groupBox2.TabStop = false;
@@ -329,7 +329,7 @@
             // 
             this.txtDuyet_Searchmadecuong.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDuyet_Searchmadecuong.Location = new System.Drawing.Point(254, 104);
-            this.txtDuyet_Searchmadecuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDuyet_Searchmadecuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtDuyet_Searchmadecuong.Name = "txtDuyet_Searchmadecuong";
             this.txtDuyet_Searchmadecuong.Size = new System.Drawing.Size(398, 32);
             this.txtDuyet_Searchmadecuong.TabIndex = 18;
@@ -339,7 +339,7 @@
             // 
             this.txtDuyet_Searchtendecuong.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDuyet_Searchtendecuong.Location = new System.Drawing.Point(252, 41);
-            this.txtDuyet_Searchtendecuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDuyet_Searchtendecuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtDuyet_Searchtendecuong.Name = "txtDuyet_Searchtendecuong";
             this.txtDuyet_Searchtendecuong.Size = new System.Drawing.Size(398, 32);
             this.txtDuyet_Searchtendecuong.TabIndex = 18;
@@ -401,6 +401,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // DuyetDeCuong
             // 

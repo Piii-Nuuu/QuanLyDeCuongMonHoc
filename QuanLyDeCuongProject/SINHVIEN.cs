@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.Remoting.Contexts;
@@ -20,6 +21,7 @@ namespace QuanLyDeCuongProject
 {
     public partial class SINHVIEN : Form
     {
+        Helpers helper = new Helpers();
         public SINHVIEN()
         {
             InitializeComponent();
@@ -105,6 +107,12 @@ namespace QuanLyDeCuongProject
         }
         private void btnthem_Click(object sender, EventArgs e)
         {
+            MessageBox.Show(helper.checkPermission(6, Modify.taiKhoan.ma_quyen).ToString());
+            if (!helper.checkPermission(6, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             string sql = "select top 1 MaSV from SINHVIEN ORDER BY MaSV DESC";
             DataTable dt = LayDL(sql);
             string newMaSV = (int.Parse(dt.Rows[0][0].ToString()) + 1).ToString();
@@ -277,6 +285,13 @@ namespace QuanLyDeCuongProject
         private void listSV_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home h = new Home();
+            h.Show();
         }
     }
 

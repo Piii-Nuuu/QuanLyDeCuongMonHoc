@@ -224,7 +224,7 @@
             this.btluu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btluu.ForeColor = System.Drawing.Color.White;
             this.btluu.Location = new System.Drawing.Point(294, 356);
-            this.btluu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btluu.Margin = new System.Windows.Forms.Padding(4);
             this.btluu.Name = "btluu";
             this.btluu.Size = new System.Drawing.Size(161, 50);
             this.btluu.TabIndex = 89;
@@ -236,7 +236,7 @@
             // 
             this.cbhocvi.FormattingEnabled = true;
             this.cbhocvi.Location = new System.Drawing.Point(566, 152);
-            this.cbhocvi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbhocvi.Margin = new System.Windows.Forms.Padding(4);
             this.cbhocvi.Name = "cbhocvi";
             this.cbhocvi.Size = new System.Drawing.Size(275, 37);
             this.cbhocvi.TabIndex = 28;
@@ -246,7 +246,7 @@
             // 
             this.cbhocham.FormattingEnabled = true;
             this.cbhocham.Location = new System.Drawing.Point(147, 144);
-            this.cbhocham.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbhocham.Margin = new System.Windows.Forms.Padding(4);
             this.cbhocham.Name = "cbhocham";
             this.cbhocham.Size = new System.Drawing.Size(286, 37);
             this.cbhocham.TabIndex = 88;
@@ -484,7 +484,7 @@
             this.listDS.GridLines = true;
             this.listDS.HideSelection = false;
             this.listDS.Location = new System.Drawing.Point(984, 418);
-            this.listDS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listDS.Margin = new System.Windows.Forms.Padding(4);
             this.listDS.Name = "listDS";
             this.listDS.Size = new System.Drawing.Size(512, 276);
             this.listDS.TabIndex = 104;
@@ -528,6 +528,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // GIANGVIEN
             // 
@@ -541,7 +542,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lbSL);
             this.Controls.Add(this.groupBox2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GIANGVIEN";
             this.Text = "GIANGVIEN";
             this.Load += new System.EventHandler(this.GIANGVIEN_Load);

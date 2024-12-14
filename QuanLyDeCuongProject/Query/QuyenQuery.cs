@@ -16,6 +16,11 @@ namespace QuanLyDeCuongProject.Queries
 
         }
 
+
+        public DataTable getPermissionByUser(int per)
+        {
+            return database.ExecuteQuery($"select MaPermission from Quyen q, Quyen_Permission pq where pq.MaQuyen = q.MaQuyen and q.MaQuyen={per}");
+        }
         public DataTable GetAllQuyen()
         {
             return database.ExecuteQuery("select * from Quyen");

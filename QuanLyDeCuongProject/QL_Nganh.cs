@@ -278,5 +278,12 @@ namespace QuanLyDeCuongProject
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home h = new Home();
+            h.Show();
+        }
     }
 }

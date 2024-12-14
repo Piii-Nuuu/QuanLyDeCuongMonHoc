@@ -42,17 +42,17 @@
             this.labelTotalActions = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lbactions = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.txttimkiem = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.lbSL = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -193,6 +193,7 @@
             this.groupBox2.TabIndex = 101;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Permission";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // labelTotalActions
             // 
@@ -227,6 +228,18 @@
             this.lbactions.Size = new System.Drawing.Size(0, 24);
             this.lbactions.TabIndex = 105;
             this.lbactions.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(19, 63);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 24);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Tìm kiếm";
             // 
             // listView1
             // 
@@ -296,6 +309,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách permission";
             // 
+            // lbSL
+            // 
+            this.lbSL.AutoSize = true;
+            this.lbSL.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSL.ForeColor = System.Drawing.Color.Black;
+            this.lbSL.Location = new System.Drawing.Point(321, 554);
+            this.lbSL.Name = "lbSL";
+            this.lbSL.Size = new System.Drawing.Size(22, 24);
+            this.lbSL.TabIndex = 105;
+            this.lbSL.Text = "..";
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -307,17 +331,6 @@
             this.label13.TabIndex = 104;
             this.label13.Text = "Tổng permission của quyền:";
             this.label13.Click += new System.EventHandler(this.label13_Click);
-            // 
-            // lbSL
-            // 
-            this.lbSL.AutoSize = true;
-            this.lbSL.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSL.ForeColor = System.Drawing.Color.Black;
-            this.lbSL.Location = new System.Drawing.Point(321, 554);
-            this.lbSL.Name = "lbSL";
-            this.lbSL.Size = new System.Drawing.Size(22, 24);
-            this.lbSL.TabIndex = 105;
-            this.lbSL.Text = "..";
             // 
             // panel1
             // 
@@ -340,18 +353,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(19, 63);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 24);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Tìm kiếm";
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // QuanLyPhanQuyen
             // 
