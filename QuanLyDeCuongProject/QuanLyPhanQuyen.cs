@@ -290,6 +290,18 @@ namespace QuanLyDeCuongProject
             }
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home h = new Home();
+            h.Show();
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
         private void listPermission_SelectedIndexChanged(object sender, EventArgs e)
         {
 

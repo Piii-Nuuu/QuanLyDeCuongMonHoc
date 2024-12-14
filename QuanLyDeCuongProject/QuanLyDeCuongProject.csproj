@@ -97,12 +97,14 @@
     <Compile Include="GIANGVIEN.Designer.cs">
       <DependentUpon>GIANGVIEN.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\NguoiDung.cs" />
     <Compile Include="Modify.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -111,6 +113,7 @@
     </Compile>
     <Compile Include="Query\KhoaQuery.cs" />
     <Compile Include="Query\NganhQuery.cs" />
+    <Compile Include="Query\NguoiDungQuery.cs" />
     <Compile Include="Query\PermissionQuery.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

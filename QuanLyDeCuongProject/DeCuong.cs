@@ -215,16 +215,31 @@ namespace QuanLyDeCuongProject
 
         private void label9_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            DuyetDeCuong duyetDeCuong = new DuyetDeCuong();
-            duyetDeCuong.ShowDialog();
-            duyetDeCuong = null;
-            this.Show();
+            if (Modify.taiKhoan.ma_quyen == 3 )
+            {
+                this.Hide();
+                DuyetDeCuong duyetDeCuong = new DuyetDeCuong();
+                duyetDeCuong.ShowDialog();
+                duyetDeCuong = null;
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
         }
 
         private void groupBox3_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home h = new Home();
+            h.Show();
         }
     }
 }

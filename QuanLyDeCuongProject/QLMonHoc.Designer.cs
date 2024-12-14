@@ -70,7 +70,7 @@
             // 
             this.txtTenMon_TimKiem.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenMon_TimKiem.Location = new System.Drawing.Point(109, 92);
-            this.txtTenMon_TimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenMon_TimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenMon_TimKiem.Name = "txtTenMon_TimKiem";
             this.txtTenMon_TimKiem.Size = new System.Drawing.Size(548, 32);
             this.txtTenMon_TimKiem.TabIndex = 18;
@@ -95,9 +95,9 @@
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.groupBox2.Location = new System.Drawing.Point(716, 151);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(752, 175);
             this.groupBox2.TabIndex = 100;
             this.groupBox2.TabStop = false;
@@ -159,9 +159,9 @@
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.groupBox1.Location = new System.Drawing.Point(26, 151);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(637, 524);
             this.groupBox1.TabIndex = 104;
             this.groupBox1.TabStop = false;
@@ -186,7 +186,7 @@
             this.btnXoa.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Location = new System.Drawing.Point(445, 417);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(161, 50);
             this.btnXoa.TabIndex = 87;
@@ -202,7 +202,7 @@
             this.btnCapNhat.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCapNhat.ForeColor = System.Drawing.Color.White;
             this.btnCapNhat.Location = new System.Drawing.Point(234, 417);
-            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(4);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(161, 50);
             this.btnCapNhat.TabIndex = 86;
@@ -218,7 +218,7 @@
             this.btnThem.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.Location = new System.Drawing.Point(18, 417);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(161, 50);
             this.btnThem.TabIndex = 85;
@@ -230,7 +230,7 @@
             // 
             this.txtSoTietThucHanh.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoTietThucHanh.Location = new System.Drawing.Point(221, 339);
-            this.txtSoTietThucHanh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoTietThucHanh.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoTietThucHanh.Name = "txtSoTietThucHanh";
             this.txtSoTietThucHanh.Size = new System.Drawing.Size(344, 32);
             this.txtSoTietThucHanh.TabIndex = 30;
@@ -240,7 +240,7 @@
             // 
             this.txtSoTietLyThuyet.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoTietLyThuyet.Location = new System.Drawing.Point(221, 283);
-            this.txtSoTietLyThuyet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoTietLyThuyet.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoTietLyThuyet.Name = "txtSoTietLyThuyet";
             this.txtSoTietLyThuyet.Size = new System.Drawing.Size(344, 32);
             this.txtSoTietLyThuyet.TabIndex = 30;
@@ -249,7 +249,7 @@
             // 
             this.txtSoTinChi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoTinChi.Location = new System.Drawing.Point(221, 224);
-            this.txtSoTinChi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoTinChi.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoTinChi.Name = "txtSoTinChi";
             this.txtSoTinChi.Size = new System.Drawing.Size(344, 32);
             this.txtSoTinChi.TabIndex = 30;
@@ -258,7 +258,7 @@
             // 
             this.txtTenMon.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenMon.Location = new System.Drawing.Point(221, 119);
-            this.txtTenMon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenMon.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenMon.Name = "txtTenMon";
             this.txtTenMon.Size = new System.Drawing.Size(344, 32);
             this.txtTenMon.TabIndex = 30;
@@ -267,7 +267,7 @@
             // 
             this.txtMaMon.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaMon.Location = new System.Drawing.Point(221, 61);
-            this.txtMaMon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaMon.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaMon.Name = "txtMaMon";
             this.txtMaMon.Size = new System.Drawing.Size(344, 32);
             this.txtMaMon.TabIndex = 25;
@@ -417,6 +417,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // QLMonHoc
             // 
