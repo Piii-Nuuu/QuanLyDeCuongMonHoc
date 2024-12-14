@@ -14,6 +14,7 @@ namespace QuanLyDeCuongProject
     public partial class DuyetDeCuong : Form
     {
         DataBase Db = new DataBase();
+        Helpers helper = new Helpers();
         public DuyetDeCuong()
         {
             InitializeComponent();
@@ -107,7 +108,12 @@ namespace QuanLyDeCuongProject
 
         private void btDuyetDC_capnhat_Click(object sender, EventArgs e)
         {
-            DialogResult kq = MessageBox.Show("Xác Nhận!", "Thông Báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (!helper.checkPermission(25, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            DialogResult kq = MessageBox.Show("Xác nhận!", "Thông Báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (kq == DialogResult.Yes)
             {
                 try
@@ -115,13 +121,13 @@ namespace QuanLyDeCuongProject
 
                     string sql = "update DeCuong set isAccept = '1' where MaDeCuong = '" + txtDuyetDC_madecuong.Text + "'";
                     Db.ExecuteNonQuery(sql);
-                    MessageBox.Show("ĐÃ DUYỆT THÀNH CÔNG!");
+                    MessageBox.Show("Đã duyệt thành công!");
                     hienthilsdanhsach();
 
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("DUYỆT KHÔNG THÀNH CÔNG!");
+                    MessageBox.Show("Duyệt không thành công!");
                     throw;
                 }
 

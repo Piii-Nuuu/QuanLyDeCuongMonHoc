@@ -8,6 +8,7 @@ using QuanLyDeCuongProject.Consts;
 using QuanLyDeCuongProject.Data;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Data.SqlClient;
+using System.Runtime.Remoting.Messaging;
 namespace QuanLyDeCuongProject
 {
     public partial class QLMonHoc : Form
@@ -18,7 +19,7 @@ namespace QuanLyDeCuongProject
 
 
 
-
+        Helpers helper = new Helpers();
         string connectionString = $@"Data Source={Const.ServerName};Initial Catalog=QuanLyDeCuong;Integrated Security=True";
 
 
@@ -159,6 +160,12 @@ namespace QuanLyDeCuongProject
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
+            if (!helper.checkPermission(19, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            helper.XulySangToi(true, btnThem, btnCapNhat, btnXoa, null);
             if (listMonHoc.SelectedItems.Count > 0)
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
@@ -202,6 +209,12 @@ namespace QuanLyDeCuongProject
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            if (!helper.checkPermission(20, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            helper.XulySangToi(true, btnThem, btnCapNhat, btnXoa, null);
             if (listMonHoc.SelectedItems.Count > 0)
             {
                 if (string.IsNullOrWhiteSpace(txtMaMon.Text))
@@ -271,6 +284,12 @@ namespace QuanLyDeCuongProject
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            if (!helper.checkPermission(18, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            helper.XulySangToi(false, btnThem, btnCapNhat, btnXoa, null);
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
 

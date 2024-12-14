@@ -16,16 +16,23 @@ namespace QuanLyDeCuongProject
         {
             
             DataTable dt = quyenQuery.getPermissionByUser(permissonUser);
-
+           
             for(int i=0; i<dt.Rows.Count; i++)
             {
-              
-                if (int.Parse(dt.Rows[0][i].ToString()) == permission)
+               
+                if (int.Parse(dt.Rows[i][0].ToString()) == permission)
                 {
                     return true;
                 }
             }
             return false;
+        }
+         public void XulySangToi(bool check,Button btnAdd, Button btnEdit, Button btnDelete, Button btnSave = null)
+        {
+            btnAdd.Enabled = check;
+            btnEdit.Enabled = check;
+            btnDelete.Enabled = check;
+            btnSave.Enabled = !check;
         }
     }
 }
