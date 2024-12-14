@@ -8,6 +8,7 @@ using QuanLyDeCuongProject.Data;
 using System.Data;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Security.Cryptography;
+using QuanLyDeCuongProject.Modals;
 
 
 namespace QuanLyDeCuongProject
@@ -15,6 +16,7 @@ namespace QuanLyDeCuongProject
     internal class Modify
     {
         public static Taikhoans taiKhoan;
+        public static NguoiDung user;
         DataBase db = new DataBase();
         public Modify()
         {

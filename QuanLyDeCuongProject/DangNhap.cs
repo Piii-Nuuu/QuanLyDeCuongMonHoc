@@ -46,8 +46,8 @@ namespace QuanLyDeCuongProject
         {
             string email = txtEmail.Text;
             string password = txtPassword.Text;
-            email = "nguyenminhkhoa@tgu.edu.vn";
-            password = "12345";
+            /*email = "nguyenminhkhoa@tgu.edu.vn";
+            password = "123456";*/
             if (email == "") { MessageBox.Show("Vui lòng nhập email!"); }
             else if (password == "")
             {
@@ -57,10 +57,10 @@ namespace QuanLyDeCuongProject
             {
                
                 m = new Modify();
-                Taikhoans tk =    m.Taikhoans("select Email, Hoten , MaQuyen , MaNguoiDung from NguoiDung where Email='" + email + "' and Makhau ='" + password + "'");
+                Taikhoans tk =   m.Taikhoans("select Email, Hoten , MaQuyen , MaNguoiDung from NguoiDung where Email='" + email + "' and Makhau ='" + password + "'");
                 if (tk == null)
                 {
-                    MessageBox.Show("Tài Khoản Không Tôn Tại!");
+                    MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng!");
                 }
                 else
                 {

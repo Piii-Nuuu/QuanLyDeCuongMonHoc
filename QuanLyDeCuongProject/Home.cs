@@ -20,10 +20,17 @@ namespace QuanLyDeCuongProject
             InitializeComponent();
         }
         NguoiDungQuery userQuery = new  NguoiDungQuery();
-        NguoiDung user;
+        
         private void Home_Load(object sender, EventArgs e)
         {
 
+            refershUser();
+
+
+        }
+
+        public void refershUser()
+        {
             DataTable dt = userQuery.getDetailUser(Modify.taiKhoan.ma_nguoi_dung);
             string hoten = dt.Rows[0]["HoTen"].ToString(),
                 ngaySinh = dt.Rows[0]["NgaySinh"].ToString(),
@@ -32,13 +39,11 @@ namespace QuanLyDeCuongProject
                 dc = dt.Rows[0]["DiaChi"].ToString(),
                 quyen = dt.Rows[0]["TenQuyen"].ToString(),
                 email = dt.Rows[0]["Email"].ToString();
-            user = new NguoiDung(hoten, ngaySinh, gioitinh, sdt, email, dc, quyen);
+            Modify.user = new NguoiDung(hoten, ngaySinh, gioitinh, sdt, email, dc, quyen);
 
 
 
-            displayDetailUser(user);
-
-
+            displayDetailUser(Modify.user);
         }
          void displayDetailUser(NguoiDung user)
         {
@@ -171,7 +176,8 @@ namespace QuanLyDeCuongProject
         private void label12_Click(object sender, EventArgs e)
         {
             DoiMatKhau frm_password = new DoiMatKhau();
-            frm_password.ShowDialog();
+            frm_password.Show();
+            this.Hide();
 
         }
 
@@ -193,10 +199,12 @@ namespace QuanLyDeCuongProject
         private void button2_Click(object sender, EventArgs e)
         {
             SuaThongTinCaNhan frm_edit = new SuaThongTinCaNhan();
-            frm_edit.ShowDialog();
-
+            frm_edit.Show();
+            this.Hide();
 
 
         }
+
+      
     }
 }

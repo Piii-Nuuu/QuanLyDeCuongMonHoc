@@ -31,12 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoiMatKhau));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNewPassword = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtGV = new System.Windows.Forms.TextBox();
+            this.txtCurrentPassword = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ckHienMatKhau = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -44,11 +45,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.ckHienMatKhau);
             this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtNewPassword);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtGV);
+            this.groupBox1.Controls.Add(this.txtCurrentPassword);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.groupBox1.Location = new System.Drawing.Point(20, 153);
@@ -74,15 +76,16 @@
             this.button3.TabIndex = 88;
             this.button3.Text = "Gửi";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox1
+            // txtNewPassword
             // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(284, 156);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(344, 32);
-            this.textBox1.TabIndex = 29;
+            this.txtNewPassword.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewPassword.Location = new System.Drawing.Point(284, 156);
+            this.txtNewPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNewPassword.Name = "txtNewPassword";
+            this.txtNewPassword.Size = new System.Drawing.Size(344, 32);
+            this.txtNewPassword.TabIndex = 29;
             // 
             // label6
             // 
@@ -106,14 +109,14 @@
             this.label1.TabIndex = 28;
             this.label1.Text = "Mật khẩu mới:";
             // 
-            // txtGV
+            // txtCurrentPassword
             // 
-            this.txtGV.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGV.Location = new System.Drawing.Point(284, 94);
-            this.txtGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtGV.Name = "txtGV";
-            this.txtGV.Size = new System.Drawing.Size(344, 32);
-            this.txtGV.TabIndex = 27;
+            this.txtCurrentPassword.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurrentPassword.Location = new System.Drawing.Point(284, 94);
+            this.txtCurrentPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCurrentPassword.Name = "txtCurrentPassword";
+            this.txtCurrentPassword.Size = new System.Drawing.Size(344, 32);
+            this.txtCurrentPassword.TabIndex = 27;
             // 
             // panel1
             // 
@@ -138,6 +141,21 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // ckHienMatKhau
+            // 
+            this.ckHienMatKhau.AutoSize = true;
+            this.ckHienMatKhau.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ckHienMatKhau.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            this.ckHienMatKhau.Location = new System.Drawing.Point(284, 213);
+            this.ckHienMatKhau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ckHienMatKhau.Name = "ckHienMatKhau";
+            this.ckHienMatKhau.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ckHienMatKhau.Size = new System.Drawing.Size(107, 20);
+            this.ckHienMatKhau.TabIndex = 89;
+            this.ckHienMatKhau.Text = "Hiện mật khẩu";
+            this.ckHienMatKhau.UseVisualStyleBackColor = true;
+            this.ckHienMatKhau.CheckedChanged += new System.EventHandler(this.ckHienMatKhau_CheckedChanged);
+            // 
             // DoiMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -148,6 +166,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DoiMatKhau";
             this.Text = "DoiMatKhau";
+            this.Load += new System.EventHandler(this.DoiMatKhau_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -160,11 +179,12 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNewPassword;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtGV;
+        private System.Windows.Forms.TextBox txtCurrentPassword;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox ckHienMatKhau;
     }
 }
