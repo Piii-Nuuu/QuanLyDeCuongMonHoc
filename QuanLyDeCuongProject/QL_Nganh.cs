@@ -228,6 +228,22 @@ namespace QuanLyDeCuongProject
 
         private void QL_Nganh_Load(object sender, EventArgs e)
         {
+            if (Modify.taiKhoan == null)
+            {
+                MessageBox.Show("Error");
+                this.Close();
+
+                return;
+            }
+            if (!helper.checkPermission(13, Modify.taiKhoan.ma_quyen))
+            {
+                Home h = new Home();
+                h.Show();
+                this.Close();
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            helper.XulySangToi(true, btthem, btcapnhat, btxoa, button1);
             LoadData();
         }
 
@@ -302,9 +318,14 @@ namespace QuanLyDeCuongProject
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             Home h = new Home();
             h.Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

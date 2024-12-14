@@ -49,6 +49,23 @@ namespace QuanLyDeCuongProject
         }
         private void SINHVIEN_Load(object sender, EventArgs e)
         {
+            if (Modify.taiKhoan == null)
+            {
+                MessageBox.Show("Error");
+                this.Close();
+
+                return;
+            }
+            if (!helper.checkPermission(5, Modify.taiKhoan.ma_quyen))
+            {
+                Home h = new Home();
+                h.Show();
+                this.Close();
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            helper.XulySangToi(true, btnthem, btncapnhat, btnxoa, btghi);
+            // +++++++ PHÂN QUYỀN ++++++++++++
             cbbgt.Items.Add("Nu");
             cbbgt.Items.Add("Nam");
 
@@ -112,6 +129,10 @@ namespace QuanLyDeCuongProject
                 MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            helper.XulySangToi(false, btnthem, btncapnhat, btnxoa, btghi);
+
+            // +++++++ PHÂN QUYỀN ++++++++++++
+
             string sql = "select top 1 MaSV from SINHVIEN ORDER BY MaSV DESC";
             DataTable dt = LayDL(sql);
             string newMaSV = (int.Parse(dt.Rows[0][0].ToString()) + 1).ToString();
@@ -137,7 +158,7 @@ namespace QuanLyDeCuongProject
 
         private void btghi_Click(object sender, EventArgs e)
         {
-           
+            helper.XulySangToi(true, btnthem, btncapnhat, btnxoa, btghi);
             string mssv = txtMssv.Text, hoten = txtHoten.Text, ngay = dtns.Value.ToString("MM/dd/yyyy"), sdt = txtSDT.Text, nganh = cbnganh.SelectedValue.ToString(), email = txtEmail.Text, lop = cbLOP.SelectedValue.ToString(), diachi = txtDiachi.Text, htdt = cbhtdt.SelectedValue.ToString();
             string gt = cbbgt.SelectedItem.ToString();
             try

@@ -23,7 +23,13 @@ namespace QuanLyDeCuongProject
         
         private void Home_Load(object sender, EventArgs e)
         {
-
+            if(Modify.taiKhoan == null )
+            {
+                MessageBox.Show("Error");
+                this.Close();
+                
+                return;
+            }
             refershUser();
 
 
@@ -183,6 +189,7 @@ namespace QuanLyDeCuongProject
                        MessageBoxIcon.Question);
             if(confirmResult == DialogResult.Yes)
             {
+                Modify.taiKhoan = null;
                 this.Hide();
                 DangNhap frm_signIn = new DangNhap();
                 frm_signIn.Show();

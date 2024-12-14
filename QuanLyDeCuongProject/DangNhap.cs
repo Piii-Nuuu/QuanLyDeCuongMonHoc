@@ -47,7 +47,7 @@ namespace QuanLyDeCuongProject
             string email = txtEmail.Text;
             string password = txtPassword.Text;
             email = "admin@gmail.com";
-            password = "12345";
+            password = "123456";
             if (email == "") { MessageBox.Show("Vui lòng nhập email!"); }
             else if (password == "")
             {

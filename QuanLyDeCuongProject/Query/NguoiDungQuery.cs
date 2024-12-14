@@ -16,9 +16,10 @@ namespace QuanLyDeCuongProject.Query
 
         public void UpdateUser(NguoiDung user, string maND)
         {
+
             try
             {
-                 db.ExecuteNonQuery($"update NguoiDung set HoTen='{user.HoTen}', NgaySinh='{DateTime.Parse(user.NgaySinh).ToString("MM/dd/yyyy")}', GioiTinh='{user.GioiTinh}', SoDT='{user.SoDT}', DiaChi='{user.DiaChi}' where MaNguoiDung='{maND}'");
+                 db.ExecuteNonQuery($"update NguoiDung set HoTen='{user.HoTen}', NgaySinh='{user.NgaySinh}', GioiTinh=N'{user.GioiTinh}', SoDT='{user.SoDT}', DiaChi='{user.DiaChi}' where MaNguoiDung='{maND}'");
 
             }catch(Exception ex)
             {

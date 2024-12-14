@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,6 +23,7 @@ namespace QuanLyDeCuongProject
         DataTable listPermissions, listQuyen;
         QuyenQuery quyen_query = new QuyenQuery();
         PermissionQuery permission_query = new PermissionQuery();
+        Helpers helpers = new Helpers();
         public QuanLyPhanQuyen()
         {
             InitializeComponent();
@@ -35,6 +37,25 @@ namespace QuanLyDeCuongProject
 
         private void QuanLyPhanQuyen_Load(object sender, EventArgs e)
         {
+            if (Modify.taiKhoan == null)
+            {
+                MessageBox.Show("Error");
+                this.Close();
+
+                return;
+            }
+            if (!helpers.checkPermission(26, Modify.taiKhoan.ma_quyen))
+            {
+                Home h = new Home();
+                h.Show();
+                this.Close();
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // +++++++ PHÂN QUYỀN ++++++++++++
+
+
             listPermissions = permission_query.GetAllPermisstion();
             listQuyen = quyen_query.GetAllQuyen();
             displayCompoBoxPermission();
@@ -116,6 +137,13 @@ namespace QuanLyDeCuongProject
 
         private void Button2_Click(object sender, EventArgs e)
         {
+            if (!helpers.checkPermission(28, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // +++++++ PHÂN QUYỀN ++++++++++++
             try
             {
                 string maquyen = comboBoxQuyen.SelectedValue.ToString();
@@ -153,6 +181,15 @@ namespace QuanLyDeCuongProject
         } //Cap nhat
         private void Button1_Click(object sender, EventArgs e) //Them
         {
+            if (!helpers.checkPermission(27, Modify.taiKhoan.ma_quyen))
+            {
+                
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // +++++++ PHÂN QUYỀN ++++++++++++
+
             try
             {
                 string selectedPermission = comboxPermission.SelectedValue?.ToString(); 
@@ -190,8 +227,14 @@ namespace QuanLyDeCuongProject
 
         private void Button3_Click(object sender, EventArgs e)
         {
-                try
-                {
+            if (!helpers.checkPermission(29, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            // +++++++ PHÂN QUYỀN ++++++++++++
+            try
+            {
                     if (listPermission.SelectedItems.Count == 0)
                     {
                         MessageBox.Show("Vui lòng chọn quyền cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

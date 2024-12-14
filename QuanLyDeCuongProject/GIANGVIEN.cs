@@ -14,6 +14,7 @@ namespace QuanLyDeCuongProject
     public partial class GIANGVIEN : Form
     {
         string mand = "";
+        Helpers helpers = new Helpers();
         public GIANGVIEN()
         {
             InitializeComponent();
@@ -111,6 +112,12 @@ namespace QuanLyDeCuongProject
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if (!helpers.checkPermission(4, Modify.taiKhoan.ma_quyen))
+            {
+
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             string gv = txtGV.Text.Trim();
             string hoten = txtHoten.Text.Trim();
 
@@ -177,8 +184,22 @@ namespace QuanLyDeCuongProject
         }
         private void GIANGVIEN_Load(object sender, EventArgs e)
         {
-            // push: Changes => commit => SYsc
-            // push: changes => commit => sync => pushdddddd
+            if (Modify.taiKhoan == null)
+            {
+                MessageBox.Show("Error");
+                this.Close();
+
+                return;
+            }
+            if (!helpers.checkPermission(1, Modify.taiKhoan.ma_quyen))
+            {
+                Home h = new Home();
+                h.Show();
+                this.Close();
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            helpers.XulySangToi(true, button4, button2, button3, btluu);
             CSDL.KetNoi();
             DataTable dt = new DataTable();
             String sql = @"select * from donvi";
@@ -204,6 +225,13 @@ namespace QuanLyDeCuongProject
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            if (!helpers.checkPermission(2, Modify.taiKhoan.ma_quyen))
+            {
+                
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            helpers.XulySangToi(false, button4, button2, button3, btluu);
             string gv = txtGV.Text;
             string hoten = txtHoten.Text;
             string ngaysinh = d1.Value.ToString("yyyy/MM/dd");
@@ -226,6 +254,11 @@ namespace QuanLyDeCuongProject
 
         private void btluu_Click(object sender, EventArgs e)
         {
+            if (!helpers.checkPermission(3, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             string gv = txtGV.Text.Trim();
             string hoten = txtHoten.Text.Trim();
             string ngaysinh = d1.Value.ToString("yyyy/MM/dd");
@@ -283,9 +316,14 @@ namespace QuanLyDeCuongProject
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             Home h = new Home();
             h.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

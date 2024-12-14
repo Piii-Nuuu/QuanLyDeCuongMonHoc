@@ -65,6 +65,13 @@ namespace QuanLyDeCuongProject
 
         private void DoiMatKhau_Load(object sender, EventArgs e)
         {
+            if (Modify.taiKhoan == null)
+            {
+                MessageBox.Show("Error");
+                this.Close();
+
+                return;
+            }
             txtNewPassword.UseSystemPasswordChar = true;
             txtCurrentPassword.UseSystemPasswordChar = true;
         }

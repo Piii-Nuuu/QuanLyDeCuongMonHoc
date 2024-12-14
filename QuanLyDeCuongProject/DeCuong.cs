@@ -26,6 +26,21 @@ namespace QuanLyDeCuongProject
 
         private void DeCuong_Load(object sender, EventArgs e)
         {
+            if (Modify.taiKhoan == null)
+            {
+                MessageBox.Show("Error");
+                this.Close();
+
+                return;
+            }
+            if (!helper.checkPermission(21, Modify.taiKhoan.ma_quyen))
+            {
+                Home h = new Home();
+                h.Show();
+                this.Close();
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             helper.XulySangToi(true, btThem, btcapnhat, btxoa, btludecuong);
             string sql = "select TenDeCuong , MaDeCuong , MaMon from DeCuong where isAccept = '1'";
             hienthilsdanhsach(sql);
@@ -47,7 +62,12 @@ namespace QuanLyDeCuongProject
 
         private void btnTim_Click(object sender, EventArgs e)
         {
-            
+
+            if (!helper.checkPermission(21, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             string sql = "select TenDeCuong , MaDeCuong , MaMon from DeCuong where MaDeCuong= '"+txtSearchmadecuong+"' or TenDeCuong = N'"+txtSearchtendecuong.Text+ "' and isAccept = '1'";
             DataTable dt = Db.ExecuteQuery(sql);
             //MessageBox.Show(dt.Rows.Count.ToString());
@@ -68,7 +88,11 @@ namespace QuanLyDeCuongProject
         }
         private void txtSearchDeCuong_TextChanged(object sender, EventArgs e)
         {
-           
+            if (!helper.checkPermission(21, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             string sql_MaDecuong = "select TenDeCuong , MaDeCuong , MaMon  from DeCuong where  MaDeCuong like N'%" + txtSearchmadecuong.Text+"%'  and isAccept = '1'";
             hienthilsdanhsach(sql_MaDecuong);
             laysldc() ;
@@ -252,7 +276,7 @@ namespace QuanLyDeCuongProject
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             Home h = new Home();
             h.Show();
         }

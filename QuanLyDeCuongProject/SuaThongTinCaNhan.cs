@@ -23,6 +23,13 @@ namespace QuanLyDeCuongProject
 
         private void SuaThongTinCaNhan_Load(object sender, EventArgs e)
         {
+            if (Modify.taiKhoan == null)
+            {
+                MessageBox.Show("Error");
+                this.Close();
+
+                return;
+            }
             displayComboGender();
             displayField();
         }
@@ -95,6 +102,7 @@ namespace QuanLyDeCuongProject
                 userEdit.GioiTinh = cbGender.SelectedItem.ToString();
                 userEdit.SoDT = txtPhone.Text;
                 userEdit.HoTen = txtName.Text;
+                MessageBox.Show(userEdit.NgaySinh + userEdit.GioiTinh);
                 userQuery.UpdateUser(userEdit, Modify.taiKhoan.ma_nguoi_dung);
                 MessageBox.Show("Cập nhật thành công", "Thành công", MessageBoxButtons.OK);
                 this.Hide();

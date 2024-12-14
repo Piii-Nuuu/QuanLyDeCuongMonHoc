@@ -32,7 +32,11 @@ namespace QuanLyDeCuongProject
             btnAdd.Enabled = check;
             btnEdit.Enabled = check;
             btnDelete.Enabled = check;
-            btnSave.Enabled = !check;
+            if(btnSave != null)
+            {
+                btnSave.Enabled = !check;
+
+            }
         }
     }
 }

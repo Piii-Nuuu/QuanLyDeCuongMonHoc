@@ -15,7 +15,7 @@ namespace QuanLyDeCuongProject
 {
     internal class Modify
     {
-        public static Taikhoans taiKhoan;
+        public static Taikhoans taiKhoan = null;
         public static NguoiDung user;
         DataBase db = new DataBase();
         public Modify()

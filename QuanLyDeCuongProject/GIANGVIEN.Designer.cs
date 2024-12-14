@@ -217,11 +217,13 @@
             this.groupBox1.TabIndex = 99;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "THÔNG TIN GIẢNG VIÊN";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btluu
             // 
             this.btluu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btluu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btluu.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btluu.ForeColor = System.Drawing.Color.White;
             this.btluu.Location = new System.Drawing.Point(294, 356);
             this.btluu.Margin = new System.Windows.Forms.Padding(4);
@@ -234,21 +236,23 @@
             // 
             // cbhocvi
             // 
+            this.cbhocvi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cbhocvi.FormattingEnabled = true;
             this.cbhocvi.Location = new System.Drawing.Point(566, 152);
             this.cbhocvi.Margin = new System.Windows.Forms.Padding(4);
             this.cbhocvi.Name = "cbhocvi";
-            this.cbhocvi.Size = new System.Drawing.Size(275, 37);
+            this.cbhocvi.Size = new System.Drawing.Size(275, 32);
             this.cbhocvi.TabIndex = 28;
             this.cbhocvi.SelectedIndexChanged += new System.EventHandler(this.cbhocvi_SelectedIndexChanged);
             // 
             // cbhocham
             // 
+            this.cbhocham.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cbhocham.FormattingEnabled = true;
             this.cbhocham.Location = new System.Drawing.Point(147, 144);
             this.cbhocham.Margin = new System.Windows.Forms.Padding(4);
             this.cbhocham.Name = "cbhocham";
-            this.cbhocham.Size = new System.Drawing.Size(286, 37);
+            this.cbhocham.Size = new System.Drawing.Size(286, 32);
             this.cbhocham.TabIndex = 88;
             // 
             // button4

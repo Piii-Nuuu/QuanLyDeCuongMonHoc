@@ -135,6 +135,21 @@ namespace QuanLyDeCuongProject
 
         private void QLMonHoc_Load(object sender, EventArgs e)
         {
+            if (Modify.taiKhoan == null)
+            {
+                MessageBox.Show("Error");
+                this.Close();
+
+                return;
+            }
+            if (!helper.checkPermission(17, Modify.taiKhoan.ma_quyen))
+            {
+                Home h = new Home();
+                h.Show();
+                this.Close();
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             LoadData(); LoadComboBoxMaNganh();
             UpdateTotalCounts();
 
@@ -289,12 +304,16 @@ namespace QuanLyDeCuongProject
                 MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            helper.XulySangToi(false, btnThem, btnCapNhat, btnXoa, null);
+           
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
 
                 string newMaMH = GenerateNewMaMH(connection);
-
+                if(txtTenMon.Text.Length==0 || cbbMaNganh.SelectedItem.ToString().Length == 0 || txtSoTinChi.Text.Length == 0 || txtSoTietLyThuyet.Text.Length==0 || txtSoTietThucHanh.Text.Length == 0)
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                    return;
+                }
 
                 string query = "INSERT INTO MONHOC (MaMH, TenMH, MaNganh, SoTC, SoTietLT, SoTietTH) VALUES (@MaMH, @TenMH, @MaNganh, @SoTC, @SoTietLT, @SoTietTH)";
                 SqlCommand command = new SqlCommand(query, connection);
