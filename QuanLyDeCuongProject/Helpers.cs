@@ -27,5 +27,14 @@ namespace QuanLyDeCuongProject
             }
             return false;
         }
+        public void IsAccept(int permission, int permissonUser)
+        {
+
+            if (!checkPermission(permission, permissonUser))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+        }
     }
 }
