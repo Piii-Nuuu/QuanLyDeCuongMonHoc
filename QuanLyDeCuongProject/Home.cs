@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace QuanLyDeCuongProject
 {
@@ -93,7 +94,7 @@ namespace QuanLyDeCuongProject
             this.Hide();
             DeCuong de_cuong_frm = new DeCuong();
             de_cuong_frm.ShowDialog();
-
+            this.Show();
 
         }
 
@@ -105,6 +106,7 @@ namespace QuanLyDeCuongProject
                 this.Hide();
                 QL_Nganh nganh_frm = new QL_Nganh();
                 nganh_frm.ShowDialog();
+                this.Show();
             }
             else
             {
@@ -121,6 +123,7 @@ namespace QuanLyDeCuongProject
                 this.Hide();
                 QuanLyPhanQuyen phan_quyen_frm = new QuanLyPhanQuyen();
                 phan_quyen_frm.ShowDialog();
+                this.Show();
             }
             else
             {
@@ -137,6 +140,7 @@ namespace QuanLyDeCuongProject
                 this.Hide();
                 GIANGVIEN giang_vien_frm = new GIANGVIEN();
                 giang_vien_frm.ShowDialog();
+                this.Show();
             }
             else
             {
@@ -153,6 +157,7 @@ namespace QuanLyDeCuongProject
                 this.Hide();
                 SINHVIEN sinh_vien_frm = new SINHVIEN();
                 sinh_vien_frm.ShowDialog();
+                this.Show();
             }
             else
             {
@@ -178,6 +183,7 @@ namespace QuanLyDeCuongProject
             frm_password.Show();
             this.Hide();
 
+
         }
 
         private void label13_Click(object sender, EventArgs e)
@@ -192,17 +198,18 @@ namespace QuanLyDeCuongProject
                 Modify.taiKhoan = null;
                 this.Hide();
                 DangNhap frm_signIn = new DangNhap();
-                frm_signIn.Show();
+                frm_signIn.ShowDialog();
+                this.Show();
+              
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SuaThongTinCaNhan frm_edit = new SuaThongTinCaNhan();
-            frm_edit.Show();
             this.Hide();
-
-
+            SuaThongTinCaNhan frm_edit = new SuaThongTinCaNhan();
+            frm_edit.ShowDialog();
+            this.Show();
         }
 
       

@@ -70,8 +70,7 @@ namespace QuanLyDeCuongProject
             }
             if (!helper.checkPermission(21, Modify.taiKhoan.ma_quyen))
             {
-                Home h = new Home();
-                h.Show();
+              
                 this.Close();
                 MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -151,8 +150,11 @@ namespace QuanLyDeCuongProject
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
-            Home h = new Home();
-            h.Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
