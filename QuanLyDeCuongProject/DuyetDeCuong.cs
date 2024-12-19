@@ -63,7 +63,7 @@ namespace QuanLyDeCuongProject
         {
             if (Modify.taiKhoan == null)
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Bạn chưa đăng nhập tài khoản?");
                 this.Close();
 
                 return;

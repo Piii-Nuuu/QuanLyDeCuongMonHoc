@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,7 @@ namespace QuanLyDeCuongProject
         NguoiDungQuery userQuery = new NguoiDungQuery();
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
            
         }
 
@@ -28,18 +29,28 @@ namespace QuanLyDeCuongProject
         {
             try
             {
-                string currentPass = userQuery.getPassword(Modify.taiKhoan.ma_nguoi_dung).Rows[0][0].ToString();
-                if (currentPass != txtCurrentPassword.Text)
-                {
-                    MessageBox.Show("Mật khẩu hiện tại không đúng", "Nhập sai mật khẩu");
-                    return;
-                }
+                DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn thay đổi mật khẩu?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                userQuery.UpdatePassword(txtNewPassword.Text, Modify.taiKhoan.ma_nguoi_dung);
-                MessageBox.Show("Cập nhật mật khẩu thành công ");
-                this.Hide();
-                Home h = new Home();
-                h.Show();
+                if (dialogResult == DialogResult.Yes)
+                {
+                    string currentPass = userQuery.getPassword(Modify.taiKhoan.ma_nguoi_dung).Rows[0][0].ToString();
+                    if (currentPass != txtCurrentPassword.Text)
+                    {
+                        MessageBox.Show("Mật khẩu hiện tại không đúng", "Nhập sai mật khẩu");
+                        return;
+                    }
+
+                    userQuery.UpdatePassword(txtNewPassword.Text, Modify.taiKhoan.ma_nguoi_dung);
+                    MessageBox.Show("Cập nhật mật khẩu thành công ");
+                    this.Hide();
+                    Home h = new Home();
+                    h.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Hành động bị hủy bỏ.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+              
 
             }
             catch(Exception ex)
@@ -66,7 +77,7 @@ namespace QuanLyDeCuongProject
         {
             if (Modify.taiKhoan == null)
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Bạn chưa đăng nhập tài khoản?");
                 this.Close();
 
                 return;

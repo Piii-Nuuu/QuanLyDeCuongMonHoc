@@ -186,15 +186,14 @@ namespace QuanLyDeCuongProject
         {
             if (Modify.taiKhoan == null)
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Bạn chưa đăng nhập tài khoản?");
                 this.Close();
 
                 return;
             }
             if (!helpers.checkPermission(1, Modify.taiKhoan.ma_quyen))
             {
-                Home h = new Home();
-                h.Show();
+               
                 this.Close();
                 MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;

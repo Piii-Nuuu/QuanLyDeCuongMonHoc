@@ -1,4 +1,5 @@
 ﻿using QuanLyDeCuongProject.Consts;
+using QuanLyDeCuongProject.Queries;
 using QuanLyDeCuongProject.Query;
 using System;
 using System.Collections.Generic;
@@ -160,17 +161,30 @@ namespace QuanLyDeCuongProject
                 SqlCommand checkCmdLop = new SqlCommand(checkForeignKeyLopQuery, conn);
                 checkCmdLop.Parameters.AddWithValue("@MaNganh", txtMaNganh.Text);
                 int countLop = (int)checkCmdLop.ExecuteScalar();
+
                 if (countLop > 0)
                 {
                     MessageBox.Show("Không thể xóa vì mã ngành đang được sử dụng trong bảng Lop!");
                     return;
                 }
-                string deleteQuery = "DELETE FROM NGANH WHERE MaNganh = @MaNganh";
-                SqlCommand deleteCmd = new SqlCommand(deleteQuery, conn);
-                deleteCmd.Parameters.AddWithValue("@MaNganh", txtMaNganh.Text);
-                deleteCmd.ExecuteNonQuery();
-                MessageBox.Show("Xóa ngành thành công!");
-                LoadData();
+
+                DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn xóa ngành này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (dialogResult == DialogResult.Yes)
+                {
+                    string deleteQuery = "DELETE FROM NGANH WHERE MaNganh = @MaNganh";
+                    SqlCommand deleteCmd = new SqlCommand(deleteQuery, conn);
+                    deleteCmd.Parameters.AddWithValue("@MaNganh", txtMaNganh.Text);
+                    deleteCmd.ExecuteNonQuery();
+                    MessageBox.Show("Xóa ngành thành công!");
+                    resetFields();
+                    LoadData();
+                }
+                else
+                {
+                    MessageBox.Show("Hành động bị hủy bỏ.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+              
             }
         }
 
@@ -230,15 +244,14 @@ namespace QuanLyDeCuongProject
         {
             if (Modify.taiKhoan == null)
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Bạn chưa đăng nhập tài khoản?");
                 this.Close();
 
                 return;
             }
             if (!helper.checkPermission(13, Modify.taiKhoan.ma_quyen))
             {
-                Home h = new Home();
-                h.Show();
+              
                 this.Close();
                 MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -270,6 +283,7 @@ namespace QuanLyDeCuongProject
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Thêm ngành thành công!");
+                resetFields();
                 LoadData();
                 helper.XulySangToi(true, btthem, btcapnhat, btxoa, button1);
             }

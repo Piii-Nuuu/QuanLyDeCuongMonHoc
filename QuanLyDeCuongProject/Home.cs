@@ -26,7 +26,7 @@ namespace QuanLyDeCuongProject
         {
             if(Modify.taiKhoan == null )
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Bạn chưa đăng nhập tài khoản?");
                 this.Close();
                 
                 return;
@@ -80,6 +80,7 @@ namespace QuanLyDeCuongProject
                 this.Hide();
                 QLMonHoc mon_hoc_frm = new QLMonHoc();
                 mon_hoc_frm.ShowDialog();
+                this.Show();
             }
             else
             {
@@ -179,10 +180,10 @@ namespace QuanLyDeCuongProject
 
         private void label12_Click(object sender, EventArgs e)
         {
-            DoiMatKhau frm_password = new DoiMatKhau();
-            frm_password.Show();
             this.Hide();
-
+            DoiMatKhau frm_password = new DoiMatKhau();
+            frm_password.ShowDialog();
+            this.Show();
 
         }
 
@@ -206,12 +207,15 @@ namespace QuanLyDeCuongProject
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             SuaThongTinCaNhan frm_edit = new SuaThongTinCaNhan();
             frm_edit.ShowDialog();
-            this.Show();
+       
         }
 
-      
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

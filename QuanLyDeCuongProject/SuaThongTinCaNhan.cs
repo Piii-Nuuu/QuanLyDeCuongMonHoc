@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -25,7 +26,7 @@ namespace QuanLyDeCuongProject
         {
             if (Modify.taiKhoan == null)
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Bạn chưa đăng nhập tài khoản?");
                 this.Close();
 
                 return;
@@ -58,9 +59,7 @@ namespace QuanLyDeCuongProject
                 if (dialogResult == DialogResult.Yes)
                 {
                     this.Hide();
-                    Home h = new Home();
-                    h.refershUser();
-                        h.Show();
+                  
                 }
            
         }
@@ -72,7 +71,7 @@ namespace QuanLyDeCuongProject
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
            
         }
 
@@ -95,19 +94,28 @@ namespace QuanLyDeCuongProject
         {
             try
             {
-                NguoiDung userEdit = new NguoiDung();
-                userEdit.DiaChi = txtAddress.Text;
-                userEdit.NgaySinh = txtBorn.Value.ToString("MM/dd/yyyy");
-                userEdit.GioiTinh = cbGender.SelectedItem.ToString();
-                userEdit.SoDT = txtPhone.Text;
-                userEdit.HoTen = txtName.Text;
-                MessageBox.Show(userEdit.NgaySinh + userEdit.GioiTinh);
-                userQuery.UpdateUser(userEdit, Modify.taiKhoan.ma_nguoi_dung);
-                MessageBox.Show("Cập nhật thành công", "Thành công", MessageBoxButtons.OK);
-                this.Hide();
-                Home h = new Home();
-                h.refershUser();
-                h.Show();
+                DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn cập nhật thông tin mới?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (dialogResult == DialogResult.Yes)
+                {
+                    NguoiDung userEdit = new NguoiDung();
+                    userEdit.DiaChi = txtAddress.Text;
+                    userEdit.NgaySinh = txtBorn.Value.ToString("MM/dd/yyyy");
+                    userEdit.GioiTinh = cbGender.SelectedItem.ToString();
+                    userEdit.SoDT = txtPhone.Text;
+                    userEdit.HoTen = txtName.Text;
+                    userQuery.UpdateUser(userEdit, Modify.taiKhoan.ma_nguoi_dung);
+                    MessageBox.Show("Cập nhật thành công", "Thành công", MessageBoxButtons.OK);
+                    this.Close();
+                    Home h = new Home();
+                    h.refershUser();
+                    h.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Hành động bị hủy bỏ.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+               
             }
             catch(Exception ex)
             {
