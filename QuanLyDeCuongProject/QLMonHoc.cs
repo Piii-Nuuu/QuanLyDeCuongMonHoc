@@ -15,12 +15,8 @@ namespace QuanLyDeCuongProject
 
     {
 
-
-
-
-
         Helpers helper = new Helpers();
-        string connectionString = $@"Data Source=LAPTOP-1C353TLV;Initial Catalog=QuanLyDeCuong;Integrated Security=True";
+        string connectionString = $@"Data Source={Const.ServerName};Initial Catalog=QuanLyDeCuong;Integrated Security=True";
 
 
         private void ClearInputFields()
@@ -139,15 +135,15 @@ namespace QuanLyDeCuongProject
             if (Modify.taiKhoan == null)
             {
                 MessageBox.Show("Bạn chưa đăng nhập tài khoản?");
-                this.Close();
+                this.Close();   
 
                 return;
             }
             if (!helper.checkPermission(17, Modify.taiKhoan.ma_quyen))
             {
                
-                this.Close();
                 MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+               this.Close();
                 return;
             }
             LoadData(); LoadComboBoxMaNganh();
@@ -398,9 +394,8 @@ namespace QuanLyDeCuongProject
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Home h = new Home();
-            h.Show();
+            this.Close();
+            
         }
 
         private void btnLuu_Click(object sender, EventArgs e)

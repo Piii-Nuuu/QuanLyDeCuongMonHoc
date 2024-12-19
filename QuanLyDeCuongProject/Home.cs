@@ -77,7 +77,7 @@ namespace QuanLyDeCuongProject
         {
             if(Modify.taiKhoan.ma_quyen != 4)
             {
-                this.Hide();
+                  this.Hide();
                 QLMonHoc mon_hoc_frm = new QLMonHoc();
                 mon_hoc_frm.ShowDialog();
                 this.Show();
@@ -197,19 +197,20 @@ namespace QuanLyDeCuongProject
             if(confirmResult == DialogResult.Yes)
             {
                 Modify.taiKhoan = null;
-                this.Hide();
+                this.Close();
                 DangNhap frm_signIn = new DangNhap();
                 frm_signIn.ShowDialog();
-                this.Show();
+               
               
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             SuaThongTinCaNhan frm_edit = new SuaThongTinCaNhan();
             frm_edit.ShowDialog();
+            this.Show();
        
         }
 

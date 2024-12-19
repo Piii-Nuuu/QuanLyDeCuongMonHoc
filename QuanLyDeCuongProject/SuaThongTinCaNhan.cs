@@ -58,7 +58,7 @@ namespace QuanLyDeCuongProject
 
                 if (dialogResult == DialogResult.Yes)
                 {
-                    this.Hide();
+                    this.Close();
                   
                 }
            
