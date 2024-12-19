@@ -8,6 +8,8 @@ namespace QuanLyDeCuongProject.Consts
 {
     internal class Const
     {
-        public static string ServerName = @"MSI\MSSQLSERVER01";
+        public static string ServerName = @"LAPTOP-1C353TLV";
+        //public static string ServerName = @"MSI\MSSQLSERVER01";
+
     }
 }

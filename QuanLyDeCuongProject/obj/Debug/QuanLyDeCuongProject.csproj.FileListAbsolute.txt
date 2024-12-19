@@ -183,3 +183,6 @@ D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.
 D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QL_Nganh.resources
 D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QuanLyPhanQuyen.resources
 D:\Ngọc Nữ-Gia Tự\nnn\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.GenerateResource.Cache
+C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DuyetDeCuong.resources
+C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DoiMatKhau.resources
+C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.SuaThongTinCaNhan.resources

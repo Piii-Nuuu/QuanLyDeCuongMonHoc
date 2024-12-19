@@ -46,7 +46,7 @@ namespace QuanLyDeCuongProject
         {
             string email = txtEmail.Text;
             string password = txtPassword.Text;
-            email = "nguyenvannoi@tgu.edu.vn";
+            email = "admin@gmail.com";
             password = "12345";
             if (email == "") { MessageBox.Show("Vui lòng nhập email!"); }
             else if (password == "")
@@ -55,8 +55,7 @@ namespace QuanLyDeCuongProject
             }
             else
             {
-               
-                m = new Modify();
+                Modify m = new Modify();
                 Taikhoans tk =   m.Taikhoans("select Email, Hoten , MaQuyen , MaNguoiDung from NguoiDung where Email='" + email + "' and Makhau ='" + password + "'");
                 if (tk == null)
                 {
