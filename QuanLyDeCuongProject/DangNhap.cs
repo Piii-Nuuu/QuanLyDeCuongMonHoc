@@ -55,8 +55,7 @@ namespace QuanLyDeCuongProject
             }
             else
             {
-               
-                m = new Modify();
+                Modify m = new Modify();
                 Taikhoans tk =   m.Taikhoans("select Email, Hoten , MaQuyen , MaNguoiDung from NguoiDung where Email='" + email + "' and Makhau ='" + password + "'");
                 if (tk == null)
                 {

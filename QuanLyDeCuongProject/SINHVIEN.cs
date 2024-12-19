@@ -203,6 +203,22 @@ namespace QuanLyDeCuongProject
 
         private void btnxoa_Click(object sender, EventArgs e)
         {
+            string sv = txtMssv.Text.Trim();
+            string hoten = txtHoten.Text.Trim();
+
+            if (string.IsNullOrEmpty(sv) || string.IsNullOrEmpty(hoten))
+            {
+                MessageBox.Show("Vui lòng chọn sinh viên cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Xác nhận từ người dùng
+            DialogResult result = MessageBox.Show($"Bạn có chắc chắn muốn xóa sinh viên {hoten} (Mã sv: {sv}) không?",
+                "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result != DialogResult.Yes)
+                return;
+
             try
             {
                 string sqltl = $"select truonglop from Lop";
