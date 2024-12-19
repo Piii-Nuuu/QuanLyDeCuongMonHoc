@@ -249,11 +249,12 @@
             // 
             this.cbhocham.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cbhocham.FormattingEnabled = true;
-            this.cbhocham.Location = new System.Drawing.Point(147, 144);
+            this.cbhocham.Location = new System.Drawing.Point(147, 151);
             this.cbhocham.Margin = new System.Windows.Forms.Padding(4);
             this.cbhocham.Name = "cbhocham";
             this.cbhocham.Size = new System.Drawing.Size(286, 32);
             this.cbhocham.TabIndex = 88;
+            this.cbhocham.SelectedIndexChanged += new System.EventHandler(this.cbhocham_SelectedIndexChanged);
             // 
             // button4
             // 
