@@ -348,6 +348,28 @@ namespace QuanLyDeCuongProject
         {
 
         }
+
+        private void txtMaGv_TextChanged(object sender, EventArgs e)
+        {
+           
+            string sql1 = $"select MaGV , HoTen, NgaySinh, GioiTinh ,MaDV,HocHam ,HocVi, SoDT, MaDV, Email, DiaChi From GIANGVIEN gv, NGUOIDUNG nd where  gv.MaND = nd.MaNguoiDung and (gv.MaGV LIKE (N'%{txtMaGv.Text}%') or nd.HoTen LIKE (N'%{txtMaGv.Text}%'))";
+            DataTable dt1 = CSDL.LayDuLieu(sql1);
+
+            dt1 = CSDL.LayDuLieu(sql1);//
+            listDS.Items.Clear();
+            for (int i = 0; i < dt1.Rows.Count; i++)
+            {
+                listDS.Items.Add(dt1.Rows[i]["MaGV"].ToString());
+                listDS.Items[i].SubItems.Add(dt1.Rows[i]["HoTen"].ToString());
+                listDS.Items[i].SubItems.Add(dt1.Rows[i]["MaDV"].ToString());
+            }
+            LaySLGV();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

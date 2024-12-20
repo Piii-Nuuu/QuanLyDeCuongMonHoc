@@ -44,13 +44,11 @@ namespace QuanLyDeCuongProject
 
         private void btSIGNIn_Click(object sender, EventArgs e)
         {
-            txtEmail.Text = "nguyenvannoi@tgu.edu.vn";
+            
 
             string email = txtEmail.Text;
             string password = txtPassword.Text;
-            email = "admin@gmail.com";
-            //email = "nguyenvannoi@tgu.edu.vn";
-            password = "12345";
+            
             if (email == "") { MessageBox.Show("Vui lòng nhập email!"); }
             else if (password == "")
             {
