@@ -136,6 +136,7 @@ namespace QuanLyDeCuongProject
         }
         private void button3_Click(object sender, EventArgs e)
         {
+
             if (!helper.checkPermission(16, Modify.taiKhoan.ma_quyen))
             {
                 MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
