@@ -57,7 +57,7 @@
             this.btSIGNIn.Name = "btSIGNIn";
             this.btSIGNIn.Size = new System.Drawing.Size(215, 62);
             this.btSIGNIn.TabIndex = 0;
-            this.btSIGNIn.Text = "Đăng Nhập";
+            this.btSIGNIn.Text = "ĐĂNG NHẬP";
             this.btSIGNIn.UseVisualStyleBackColor = false;
             this.btSIGNIn.Click += new System.EventHandler(this.btSIGNIn_Click);
             // 
@@ -79,7 +79,7 @@
             this.txtPassword.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtPassword.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtPassword.Location = new System.Drawing.Point(88, 367);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(15);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(449, 27);
             this.txtPassword.TabIndex = 1;

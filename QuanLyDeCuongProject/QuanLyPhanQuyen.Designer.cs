@@ -124,7 +124,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(161, 50);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Thêm";
+            this.button1.Text = "THÊM";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
@@ -139,7 +139,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(161, 50);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Sửa";
+            this.button2.Text = "CẬP NHẬT ";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
@@ -154,7 +154,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(161, 50);
             this.button3.TabIndex = 3;
-            this.button3.Text = "Xóa";
+            this.button3.Text = "XÓA";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 

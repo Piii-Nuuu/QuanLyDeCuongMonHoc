@@ -44,6 +44,8 @@ namespace QuanLyDeCuongProject
 
         private void btSIGNIn_Click(object sender, EventArgs e)
         {
+            txtEmail.Text = "nguyenvannoi@tgu.edu.vn";
+
             string email = txtEmail.Text;
             string password = txtPassword.Text;
             

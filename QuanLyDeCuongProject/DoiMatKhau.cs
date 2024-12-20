@@ -42,8 +42,9 @@ namespace QuanLyDeCuongProject
 
                     userQuery.UpdatePassword(txtNewPassword.Text, Modify.taiKhoan.ma_nguoi_dung);
                     MessageBox.Show("Cập nhật mật khẩu thành công ");
-                    this.Close();
-                    
+                    this.Hide();
+                    Home h = new Home();
+                    h.Show();
                 }
                 else
                 {
