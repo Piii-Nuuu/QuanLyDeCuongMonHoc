@@ -207,10 +207,10 @@ namespace QuanLyDeCuongProject
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             SuaThongTinCaNhan frm_edit = new SuaThongTinCaNhan();
             frm_edit.ShowDialog();
-            this.Show();
+           
        
         }
 

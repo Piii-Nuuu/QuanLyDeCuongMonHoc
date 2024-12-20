@@ -56,11 +56,13 @@ namespace QuanLyDeCuongProject
         
                 DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn thoát ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                if (dialogResult == DialogResult.Yes)
-                {
-                    this.Close();
-                  
-                }
+            if (dialogResult == DialogResult.Yes)
+            {
+                this.Close();
+                Home h = new Home();
+                h.Show();
+            
+            }
            
         }
 
@@ -72,7 +74,8 @@ namespace QuanLyDeCuongProject
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
-           
+            Home h = new Home();
+            h.Show();
         }
 
         private void txtName_TextChanged(object sender, EventArgs e)
@@ -98,6 +101,11 @@ namespace QuanLyDeCuongProject
 
                 if (dialogResult == DialogResult.Yes)
                 {
+                    if(txtAddress.Text.Trim().Length==0 || txtPhone.Text.Trim().Length == 0 || txtName.Text.Trim().Length == 0)
+                    {
+                        MessageBox.Show("Vui lòng nhập đầy đủ thông tin?", "Dữ liệu không hợp lệ", MessageBoxButtons.OK);
+                        return;
+                    }
                     NguoiDung userEdit = new NguoiDung();
                     userEdit.DiaChi = txtAddress.Text;
                     userEdit.NgaySinh = txtBorn.Value.ToString("MM/dd/yyyy");
