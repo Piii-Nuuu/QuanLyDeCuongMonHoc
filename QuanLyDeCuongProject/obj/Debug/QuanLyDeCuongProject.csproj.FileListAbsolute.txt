@@ -145,7 +145,6 @@ C:\New folder (5)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.Cor
 C:\New folder (5)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.exe
 C:\New folder (5)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.pdb
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DoiMatKhau.resources
-D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.SuaThongTinCaNhan.resources
 C:\Users\nguye\Source\Repos\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe.config
 C:\Users\nguye\Source\Repos\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe
 C:\Users\nguye\Source\Repos\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.pdb
@@ -206,3 +205,4 @@ D:\Ngọc Nữ-Gia Tự\doan\xong\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongPr
 C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DuyetDeCuong.resources
 C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DoiMatKhau.resources
 C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.SuaThongTinCaNhan.resources
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.CapNhatThongTinCaNhan.resources

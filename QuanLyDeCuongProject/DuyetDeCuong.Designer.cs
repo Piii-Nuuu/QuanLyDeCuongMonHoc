@@ -147,6 +147,7 @@
             this.txtDuyetDC_mamonhoc.Name = "txtDuyetDC_mamonhoc";
             this.txtDuyetDC_mamonhoc.Size = new System.Drawing.Size(402, 32);
             this.txtDuyetDC_mamonhoc.TabIndex = 24;
+            this.txtDuyetDC_mamonhoc.TextChanged += new System.EventHandler(this.txtDuyetDC_mamonhoc_TextChanged);
             // 
             // label10
             // 
