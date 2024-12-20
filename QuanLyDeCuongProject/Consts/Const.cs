@@ -14,6 +14,6 @@ namespace QuanLyDeCuongProject.Consts
 
         // public static string ServerName = @"LAPTOP-1C353TLV";
         //public static string ServerName = @"MSI\MSSQLSERVER01";
-        public static string ServerName = @"DESKTOP-9TCL0NI\SQLEXPRESS";
+      //  public static string ServerName = @"DESKTOP-9TCL0NI\SQLEXPRESS";
     }
 }
