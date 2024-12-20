@@ -78,7 +78,7 @@ namespace QuanLyDeCuongProject
             }
             if (txtHoten.Text == "")
             {
-                MessageBox.Show("Vui lòng nhập mã giáo viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                MessageBox.Show("Vui lòng nhập họ tên giáo viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
                 return;
             }
             if (txtSDT.Text == "")
