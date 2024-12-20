@@ -112,6 +112,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Query\KhoaQuery.cs" />
+    <Compile Include="Query\MonHocQuery.cs" />
     <Compile Include="Query\NganhQuery.cs" />
     <Compile Include="Query\NguoiDungQuery.cs" />
     <Compile Include="Query\PermissionQuery.cs" />

@@ -61,7 +61,20 @@ namespace QuanLyDeCuongProject
         }
         private void DuyetDeCuong_Load(object sender, EventArgs e)
         {
-            
+            if (Modify.taiKhoan == null)
+            {
+                MessageBox.Show("Bạn chưa đăng nhập tài khoản?");
+                this.Close();
+
+                return;
+            }
+            if (!helper.checkPermission(21, Modify.taiKhoan.ma_quyen))
+            {
+              
+                this.Close();
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             hienthilsdanhsach();
            
@@ -136,9 +149,12 @@ namespace QuanLyDeCuongProject
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Home h = new Home();
-            h.Show();
+            this.Close();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

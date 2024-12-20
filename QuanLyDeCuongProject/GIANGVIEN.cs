@@ -14,6 +14,7 @@ namespace QuanLyDeCuongProject
     public partial class GIANGVIEN : Form
     {
         string mand = "";
+        Helpers helpers = new Helpers();
         public GIANGVIEN()
         {
             InitializeComponent();
@@ -49,8 +50,27 @@ namespace QuanLyDeCuongProject
             LaySLGV();
         }
 
+        void clearFields()
+        {
+            txtGV.Text = "";
+            txtHoten.Text = "";
+            d1.Value = DateTime.Parse("1/1/1999");
+            cbGioi.Text = "";
+            txtSDT.Text = "";
+            txtEmail.Text = "";
+            txtDiachi.Text = "";
+            cbdonvi1.Text = "";
+            cbhocham.Text = "";
+            cbhocvi.Text = "";
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
+            if (!helpers.checkPermission(3, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (txtGV.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập mã giáo viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
@@ -84,9 +104,9 @@ namespace QuanLyDeCuongProject
             string sdt = txtSDT.Text;
             string email = txtEmail.Text;
             string diachi = txtDiachi.Text;
-            string dv = cbdonvi1.Text;
-            string hocham = cbhocham.Text;
-            string hocvi = cbhocvi.Text;
+            string dv = cbdonvi1.SelectedItem.ToString();
+            string hocham = cbhocham.SelectedItem.ToString();
+            string hocvi = cbhocvi.SelectedItem.ToString();
 
             string sqlGV = $"update GIANGVIEN set MaDV = '{dv}',HocHam = N'{hocham}',HocVi = N'{hocvi}' where MaGV ='{gv}'  ";
             string sqlND = $"update NguoiDung set NgaySinh = '{ngaysinh}', HoTen = '{hoten}', GioiTinh = '{gt}', SoDT = '{sdt}', DiaChi = '{diachi}' where MaNguoiDung = '{mand}' ";
@@ -111,6 +131,12 @@ namespace QuanLyDeCuongProject
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if (!helpers.checkPermission(4, Modify.taiKhoan.ma_quyen))
+            {
+
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             string gv = txtGV.Text.Trim();
             string hoten = txtHoten.Text.Trim();
 
@@ -146,7 +172,7 @@ namespace QuanLyDeCuongProject
                     CSDL.XuLy(sqlDeleteNguoiDung);
 
                     MessageBox.Show("Đã xóa giảng viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                    clearFields();
                     // Làm mới danh sách hiển thị
                     GIANGVIEN_Load(sender, e);
                 }
@@ -177,8 +203,27 @@ namespace QuanLyDeCuongProject
         }
         private void GIANGVIEN_Load(object sender, EventArgs e)
         {
-            // push: Changes => commit => SYsc
-            // push: changes => commit => sync => pushdddddd
+            if (Modify.taiKhoan == null)
+            {
+                MessageBox.Show("Bạn chưa đăng nhập tài khoản?");
+                this.Close();
+
+                return;
+            }
+            if (!helpers.checkPermission(1, Modify.taiKhoan.ma_quyen))
+            {
+               
+                this.Close();
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            helpers.XulySangToi(true, button4, button2, button3, btluu);
+            // +++++++ PHÂN QUYỀN 
+
+
+            string[] listHocHam = { "Tiến Sĩ", "Thạc Sĩ" };
+            for (int i = 0; i < listHocHam.Length; i++) cbhocham.Items.Add(listHocHam[i]);
+            cbhocvi.Items.Add("Không");
             CSDL.KetNoi();
             DataTable dt = new DataTable();
             String sql = @"select * from donvi";
@@ -188,6 +233,7 @@ namespace QuanLyDeCuongProject
 
                 cbdonvi1.Items.Add(dt.Rows[i][0].ToString());
             }
+            cbGioi.Items.Clear();
             cbGioi.Items.Add("Nam");
             cbGioi.Items.Add("Nữ");
             string sql1 = "select MaGV , HoTen, NgaySinh, GioiTinh ,MaDV,HocHam ,HocVi, SoDT, MaDV, Email, DiaChi From GIANGVIEN gv, NGUOIDUNG nd where  gv.MaND = nd.MaNguoiDung";
@@ -204,19 +250,20 @@ namespace QuanLyDeCuongProject
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            string gv = txtGV.Text;
-            string hoten = txtHoten.Text;
-            string ngaysinh = d1.Value.ToString("yyyy/MM/dd");
-            string gt = cbGioi.Text;
-            string sdt = txtSDT.Text;
-            string email = txtEmail.Text;
-            string diachi = txtDiachi.Text;
-            string dv = cbdonvi1.Text;
-            string hocham = cbhocham.Text;
-            string hocvi = cbhocvi.Text;
+            
+            if (!helpers.checkPermission(2, Modify.taiKhoan.ma_quyen))
+            {
+                
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            helpers.XulySangToi(false, button4, button2, button3, btluu);
+            clearFields();
 
             string sql = "select top 1 MaGV from  GIANGVIEN order by MaGV desc ";
             DataTable dt = CSDL.LayDuLieu(sql);
+            string maxUserId = CSDL.LayDuLieu("select top 1 MaNguoiDung from NguoiDung order by MaNguoiDung desc").Rows[0][0].ToString();
+            mand = "ND" + (int.Parse(maxUserId.Substring(2, maxUserId.Length - 2)) + 1).ToString("0000");
             string mahientai = dt.Rows[0][0].ToString();
             string phanten = mahientai.Substring(0, 2);
             string phanso = mahientai.Substring(2);
@@ -226,6 +273,11 @@ namespace QuanLyDeCuongProject
 
         private void btluu_Click(object sender, EventArgs e)
         {
+            if (!helpers.checkPermission(2, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             string gv = txtGV.Text.Trim();
             string hoten = txtHoten.Text.Trim();
             string ngaysinh = d1.Value.ToString("yyyy/MM/dd");
@@ -234,8 +286,8 @@ namespace QuanLyDeCuongProject
             string email = txtEmail.Text.Trim();
             string diachi = txtDiachi.Text.Trim();
             string dv = cbdonvi1.Text.Trim();
-            string hocham = cbhocham.Text.Trim();
-            string hocvi = cbhocvi.Text.Trim();
+            string hocham = cbhocham.SelectedItem.ToString();
+            string hocvi = cbhocvi.SelectedItem.ToString();
 
             if (string.IsNullOrEmpty(gv) || string.IsNullOrEmpty(hoten) || string.IsNullOrEmpty(gt) ||
                 string.IsNullOrEmpty(sdt) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(diachi) ||
@@ -255,7 +307,7 @@ namespace QuanLyDeCuongProject
             CSDL.XuLy(sqlGV);
 
             MessageBox.Show("Lưu thông tin giảng viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+            clearFields();
             // Refresh dữ liệu hiển thị
             GIANGVIEN_Load(sender, e);
 
@@ -283,9 +335,18 @@ namespace QuanLyDeCuongProject
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Home h = new Home();
-            h.Show();
+            this.Close();
+            
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbhocham_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -55,12 +55,11 @@ namespace QuanLyDeCuongProject
             }
             else
             {
-               
-                m = new Modify();
-                Taikhoans tk =    m.Taikhoans("select Email, Hoten , MaQuyen , MaNguoiDung from NguoiDung where Email='" + email + "' and Makhau ='" + password + "'");
+                Modify m = new Modify();
+                Taikhoans tk =   m.Taikhoans("select Email, Hoten , MaQuyen , MaNguoiDung from NguoiDung where Email='" + email + "' and Makhau ='" + password + "'");
                 if (tk == null)
                 {
-                    MessageBox.Show("Tài Khoản Không Tôn Tại!");
+                    MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng!");
                 }
                 else
                 {

@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace QuanLyDeCuongProject
 {
@@ -20,10 +21,23 @@ namespace QuanLyDeCuongProject
             InitializeComponent();
         }
         NguoiDungQuery userQuery = new  NguoiDungQuery();
-        NguoiDung user;
+        
         private void Home_Load(object sender, EventArgs e)
         {
+            if(Modify.taiKhoan == null )
+            {
+                MessageBox.Show("Bạn chưa đăng nhập tài khoản?");
+                this.Close();
+                
+                return;
+            }
+            refershUser();
 
+
+        }
+
+        public void refershUser()
+        {
             DataTable dt = userQuery.getDetailUser(Modify.taiKhoan.ma_nguoi_dung);
             string hoten = dt.Rows[0]["HoTen"].ToString(),
                 ngaySinh = dt.Rows[0]["NgaySinh"].ToString(),
@@ -32,10 +46,11 @@ namespace QuanLyDeCuongProject
                 dc = dt.Rows[0]["DiaChi"].ToString(),
                 quyen = dt.Rows[0]["TenQuyen"].ToString(),
                 email = dt.Rows[0]["Email"].ToString();
-            user = new NguoiDung(hoten, ngaySinh, gioitinh, sdt, email, dc, quyen);
-            displayDetailUser(user);
+            Modify.user = new NguoiDung(hoten, ngaySinh, gioitinh, sdt, email, dc, quyen);
 
 
+
+            displayDetailUser(Modify.user);
         }
          void displayDetailUser(NguoiDung user)
         {
@@ -62,9 +77,10 @@ namespace QuanLyDeCuongProject
         {
             if(Modify.taiKhoan.ma_quyen != 4)
             {
-                this.Hide();
+                  this.Hide();
                 QLMonHoc mon_hoc_frm = new QLMonHoc();
                 mon_hoc_frm.ShowDialog();
+                this.Show();
             }
             else
             {
@@ -79,7 +95,7 @@ namespace QuanLyDeCuongProject
             this.Hide();
             DeCuong de_cuong_frm = new DeCuong();
             de_cuong_frm.ShowDialog();
-
+            this.Show();
 
         }
 
@@ -91,6 +107,7 @@ namespace QuanLyDeCuongProject
                 this.Hide();
                 QL_Nganh nganh_frm = new QL_Nganh();
                 nganh_frm.ShowDialog();
+                this.Show();
             }
             else
             {
@@ -107,6 +124,7 @@ namespace QuanLyDeCuongProject
                 this.Hide();
                 QuanLyPhanQuyen phan_quyen_frm = new QuanLyPhanQuyen();
                 phan_quyen_frm.ShowDialog();
+                this.Show();
             }
             else
             {
@@ -123,6 +141,7 @@ namespace QuanLyDeCuongProject
                 this.Hide();
                 GIANGVIEN giang_vien_frm = new GIANGVIEN();
                 giang_vien_frm.ShowDialog();
+                this.Show();
             }
             else
             {
@@ -139,6 +158,7 @@ namespace QuanLyDeCuongProject
                 this.Hide();
                 SINHVIEN sinh_vien_frm = new SINHVIEN();
                 sinh_vien_frm.ShowDialog();
+                this.Show();
             }
             else
             {
@@ -160,8 +180,10 @@ namespace QuanLyDeCuongProject
 
         private void label12_Click(object sender, EventArgs e)
         {
+            this.Hide();
             DoiMatKhau frm_password = new DoiMatKhau();
             frm_password.ShowDialog();
+            this.Show();
 
         }
 
@@ -174,18 +196,26 @@ namespace QuanLyDeCuongProject
                        MessageBoxIcon.Question);
             if(confirmResult == DialogResult.Yes)
             {
-                this.Hide();
+                Modify.taiKhoan = null;
+                this.Close();
                 DangNhap frm_signIn = new DangNhap();
-                frm_signIn.Show();
+                frm_signIn.ShowDialog();
+               
+              
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
             SuaThongTinCaNhan frm_edit = new SuaThongTinCaNhan();
             frm_edit.ShowDialog();
+            this.Show();
+       
+        }
 
-
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
 
         }
     }

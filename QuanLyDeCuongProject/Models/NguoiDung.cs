@@ -16,7 +16,7 @@ namespace QuanLyDeCuongProject.Modals
         public string DiaChi { get; set; }
         public string Quyen { get; set; }
 
-
+        public NguoiDung() { }
         public NguoiDung(string hoten, string ngSinh, string gioiTinh, string sdt, string email, string diachi, string quyen)
         {
             HoTen = hoten;

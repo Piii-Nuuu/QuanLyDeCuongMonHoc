@@ -15,10 +15,6 @@ namespace QuanLyDeCuongProject
 
     {
 
-
-
-
-
         Helpers helper = new Helpers();
         string connectionString = $@"Data Source={Const.ServerName};Initial Catalog=QuanLyDeCuong;Integrated Security=True";
 
@@ -135,6 +131,21 @@ namespace QuanLyDeCuongProject
 
         private void QLMonHoc_Load(object sender, EventArgs e)
         {
+            helper.XulySangToi(true, btnThem, btnCapNhat, btnXoa, btnLuu);
+            if (Modify.taiKhoan == null)
+            {
+                MessageBox.Show("Bạn chưa đăng nhập tài khoản?");
+                this.Close();   
+
+                return;
+            }
+            if (!helper.checkPermission(17, Modify.taiKhoan.ma_quyen))
+            {
+               
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+               this.Close();
+                return;
+            }
             LoadData(); LoadComboBoxMaNganh();
             UpdateTotalCounts();
 
@@ -165,7 +176,7 @@ namespace QuanLyDeCuongProject
                 MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            helper.XulySangToi(true, btnThem, btnCapNhat, btnXoa, null);
+            helper.XulySangToi(true, btnThem, btnCapNhat, btnXoa, btnLuu);
             if (listMonHoc.SelectedItems.Count > 0)
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
@@ -214,7 +225,7 @@ namespace QuanLyDeCuongProject
                 MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            helper.XulySangToi(true, btnThem, btnCapNhat, btnXoa, null);
+            helper.XulySangToi(true, btnThem, btnCapNhat, btnXoa, btnLuu);
             if (listMonHoc.SelectedItems.Count > 0)
             {
                 if (string.IsNullOrWhiteSpace(txtMaMon.Text))
@@ -223,7 +234,7 @@ namespace QuanLyDeCuongProject
                     return;
                 }
 
-                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa môn học này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa môn học này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result != DialogResult.Yes)
                 {
                     return;
@@ -282,6 +293,7 @@ namespace QuanLyDeCuongProject
             }
         }
 
+
         private void btnThem_Click(object sender, EventArgs e)
         {
             if (!helper.checkPermission(18, Modify.taiKhoan.ma_quyen))
@@ -289,33 +301,36 @@ namespace QuanLyDeCuongProject
                 MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            helper.XulySangToi(false, btnThem, btnCapNhat, btnXoa, null);
+
+
+            if (!helper.checkPermission(18, Modify.taiKhoan.ma_quyen))
+            {
+                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            helper.XulySangToi(false, btnThem, btnCapNhat, btnXoa, btnLuu);
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
+                try
+                {
+                    
+                    string newMaMH = GenerateNewMaMH(connection);
+                    txtMaMon.Text = newMaMH;
+                    txtMaMon.ReadOnly = true; 
+                    ClearInputFields(); 
+                    txtMaMon.Text = newMaMH; 
 
-                string newMaMH = GenerateNewMaMH(connection);
-
-
-                string query = "INSERT INTO MONHOC (MaMH, TenMH, MaNganh, SoTC, SoTietLT, SoTietTH) VALUES (@MaMH, @TenMH, @MaNganh, @SoTC, @SoTietLT, @SoTietTH)";
-                SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@MaMH", newMaMH);
-                command.Parameters.AddWithValue("@TenMH", txtTenMon.Text);
-                command.Parameters.AddWithValue("@MaNganh", cbbMaNganh.SelectedItem.ToString());
-                command.Parameters.AddWithValue("@SoTC", txtSoTinChi.Text);
-                command.Parameters.AddWithValue("@SoTietLT", txtSoTietLyThuyet.Text);
-                command.Parameters.AddWithValue("@SoTietTH", txtSoTietThucHanh.Text);
-
-                connection.Open();
-                command.ExecuteNonQuery();
-                connection.Close();
-
-                MessageBox.Show("Thêm mới thành công!");
-
-
-                LoadListView();
-                ClearInputFields();
+                    MessageBox.Show($"Mã môn học mới: {newMaMH}. Hãy nhập các thông tin còn lại để thêm mới môn học!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi khi tạo mã môn học: {ex.Message}");
+                }
             }
+
         }
+        
+
 
         private void btnTim_Click_1(object sender, EventArgs e)
         {
@@ -365,6 +380,7 @@ namespace QuanLyDeCuongProject
                 lbSL.Text = count.ToString();
             }
         }
+       
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -378,9 +394,50 @@ namespace QuanLyDeCuongProject
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Home h = new Home();
-            h.Show();
+            this.Close();
+            
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtTenMon.Text) || cbbMaNganh.SelectedIndex == -1 ||
+       string.IsNullOrWhiteSpace(txtSoTinChi.Text) || string.IsNullOrWhiteSpace(txtSoTietLyThuyet.Text) ||
+       string.IsNullOrWhiteSpace(txtSoTietThucHanh.Text))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    string newMaMH = GenerateNewMaMH(connection);
+
+                    string query = "INSERT INTO MONHOC (MaMH, TenMH, MaNganh, SoTC, SoTietLT, SoTietTH) " +
+                                   "VALUES (@MaMH, @TenMH, @MaNganh, @SoTC, @SoTietLT, @SoTietTH)";
+
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@MaMH", newMaMH);
+                    command.Parameters.AddWithValue("@TenMH", txtTenMon.Text);
+                    command.Parameters.AddWithValue("@MaNganh", cbbMaNganh.SelectedItem.ToString());
+                    command.Parameters.AddWithValue("@SoTC", txtSoTinChi.Text);
+                    command.Parameters.AddWithValue("@SoTietLT", txtSoTietLyThuyet.Text);
+                    command.Parameters.AddWithValue("@SoTietTH", txtSoTietThucHanh.Text);
+
+                    connection.Open();
+                    command.ExecuteNonQuery();
+
+                    MessageBox.Show("Lưu dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    helper.XulySangToi(true, btnThem, btnCapNhat, btnXoa, btnLuu);
+                    LoadListView();
+                    ClearInputFields();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi lưu dữ liệu: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }
