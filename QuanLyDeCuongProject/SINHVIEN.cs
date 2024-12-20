@@ -129,7 +129,7 @@ namespace QuanLyDeCuongProject
                 return;
             }
             helper.XulySangToi(false, btnthem, btncapnhat, btnxoa, btghi);
-
+            
             // +++++++ PHÂN QUYỀN ++++++++++++
 
             string sql = "select top 1 MaSV from SINHVIEN ORDER BY MaSV DESC";
@@ -157,15 +157,36 @@ namespace QuanLyDeCuongProject
 
         private void btghi_Click(object sender, EventArgs e)
         {
+            if (txtDiachi.Text.Length == 0 || txtMssv.Text.Length == 0 || dtns.Text.Length == 0 || txtSDT.Text.Length == 0 || txtHoten.Text.Length == 0 || txtEmail.Text.Length == 0)
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+                return;
+            }
             helper.XulySangToi(true, btnthem, btncapnhat, btnxoa, btghi);
             string mssv = txtMssv.Text, hoten = txtHoten.Text, ngay = dtns.Value.ToString("MM/dd/yyyy"), sdt = txtSDT.Text, nganh = cbnganh.SelectedValue.ToString(), email = txtEmail.Text, lop = cbLOP.SelectedValue.ToString(), diachi = txtDiachi.Text, htdt = cbhtdt.SelectedValue.ToString();
             string gt = cbbgt.SelectedItem.ToString();
+            string sql = $"select * from NguoiDung where email='{email}'";
+            DataTable dt = LayDL(sql);
+            if(dt.Rows.Count > 0 )
+            {
+                MessageBox.Show("Email Đã Tồn Tại Trong Hệ Thống!");
+                helper.XulySangToi(false, btnthem, btncapnhat, btnxoa, btghi);
+                return;
+            }
+            sql = $"select * from NguoiDung where SoDT='{sdt}'";
+            dt = LayDL(sql);
+            if (dt.Rows.Count > 0)
+            {
+                MessageBox.Show("Số Điện Thoạiư Đã Tồn Tại Trong Hệ Thống!");
+                helper.XulySangToi(false, btnthem, btncapnhat, btnxoa, btghi);
+                return;
+            }
             try
             {
                 if (maND.Length != 0)
                 {
                     string sql0 = $"insert into NguoiDung(MaNguoiDung,HoTen,NgaySinh,GioiTinh,SoDT,Email,DiaChi,MaQuyen) Values('{maND}','{hoten}','{ngay}','{gt}','{sdt}','{email}',N'{diachi}',4)";
-                    string sql = $"insert into SINHVIEN(MaSV, MaND,MaNganh,HinhThucDaoTao,MaLop) Values('{mssv}', '{maND}','{nganh}','{htdt}','{lop}');";
+                    sql = $"insert into SINHVIEN(MaSV, MaND,MaNganh,HinhThucDaoTao,MaLop) Values('{mssv}', '{maND}','{nganh}','{htdt}','{lop}');";
                     SqlCommand cd = new SqlCommand(sql0, cn);
                     cn.Open();
                     cd.ExecuteNonQuery();
@@ -228,7 +249,7 @@ namespace QuanLyDeCuongProject
                 {
                     if (dttl.Rows[i][0].ToString().Equals(txtMssv.Text))
                     {
-                        MessageBox.Show("SV này là Trưởng lớp");
+                        MessageBox.Show("Sinh viên này là Trưởng lớp");
                         return;
                     }
                 }
@@ -282,7 +303,11 @@ namespace QuanLyDeCuongProject
 
         private void btncapnhat_Click(object sender, EventArgs e)
         {
-
+            if (txtDiachi.Text.Length == 0 || txtMssv.Text.Length == 0 || dtns.Text.Length == 0 || txtSDT.Text.Length == 0 || txtHoten.Text.Length == 0 || txtEmail.Text.Length == 0)
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+                return;
+            }
             string mssv = txtMssv.Text;
             string hoten = txtHoten.Text;
             string email = txtEmail.Text;
@@ -326,6 +351,11 @@ namespace QuanLyDeCuongProject
         {
             this.Close();
            
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 
