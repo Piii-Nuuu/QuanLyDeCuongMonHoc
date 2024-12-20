@@ -177,7 +177,7 @@ namespace QuanLyDeCuongProject
                     cn.Close();
 
 
-                    MessageBox.Show("Ghi Thành Công");
+                    MessageBox.Show("Lưu Thành Công!");
                     DataTable dt1 = LayDL("select MaSV, HoTen, Email, SoDT,DiaChi, NgaySinh, GioiTinh, TenLop, TenNganh, Ten  from SINHVIEN sv, NguoiDung nd, LOP l, NGANH n, HINHTHUCDAOTAO dt where sv.MaND = nd.MaNguoiDung and l.MaLop = sv.MaLop and n.MaNganh = sv.MaNganh and sv.HinhThucDaoTao = dt.Ma");
                     hienthi(dt1);
                     reset();

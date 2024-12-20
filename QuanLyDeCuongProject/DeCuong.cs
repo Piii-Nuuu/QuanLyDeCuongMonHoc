@@ -166,7 +166,7 @@ namespace QuanLyDeCuongProject
                 catch (Exception)
                 {
                     MessageBox.Show("Thêm không thành công!");
-             
+                    helper.XulySangToi(true, btThem, btcapnhat, btxoa, btludecuong);
                 }
                 
             }

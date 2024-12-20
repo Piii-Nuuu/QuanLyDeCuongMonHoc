@@ -117,12 +117,12 @@ namespace QuanLyDeCuongProject
                 CSDL.XuLy(sqlND);
                 //CSDL.GhiLenhXuLySQL(sql);
                 GIANGVIEN_Load(sender, e);
-                MessageBox.Show("Đã sửa thông tin giảng viên mới!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Đã cập nhật thông tin giảng viên mới!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
             {
                 GIANGVIEN_Load(sender, e);
-                MessageBox.Show("Sửa thông tin giảng viên mới không thành công. Vui lòng thử lại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Cập nhật thông tin giảng viên mới không thành công. Vui lòng thử lại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

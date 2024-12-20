@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoiMatKhau));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ckHienMatKhau = new System.Windows.Forms.CheckBox();
             this.button3 = new System.Windows.Forms.Button();
             this.txtNewPassword = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -37,7 +38,6 @@
             this.txtCurrentPassword = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ckHienMatKhau = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,6 +62,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thay Đổi Mật Khẩu";
             // 
+            // ckHienMatKhau
+            // 
+            this.ckHienMatKhau.AutoSize = true;
+            this.ckHienMatKhau.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ckHienMatKhau.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            this.ckHienMatKhau.Location = new System.Drawing.Point(284, 213);
+            this.ckHienMatKhau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ckHienMatKhau.Name = "ckHienMatKhau";
+            this.ckHienMatKhau.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ckHienMatKhau.Size = new System.Drawing.Size(107, 20);
+            this.ckHienMatKhau.TabIndex = 89;
+            this.ckHienMatKhau.Text = "Hiện mật khẩu";
+            this.ckHienMatKhau.UseVisualStyleBackColor = true;
+            this.ckHienMatKhau.CheckedChanged += new System.EventHandler(this.ckHienMatKhau_CheckedChanged);
+            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
@@ -74,7 +89,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(161, 50);
             this.button3.TabIndex = 88;
-            this.button3.Text = "Gửi";
+            this.button3.Text = "GỬI ";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -140,21 +155,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // ckHienMatKhau
-            // 
-            this.ckHienMatKhau.AutoSize = true;
-            this.ckHienMatKhau.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ckHienMatKhau.Font = new System.Drawing.Font("Tahoma", 7.8F);
-            this.ckHienMatKhau.Location = new System.Drawing.Point(284, 213);
-            this.ckHienMatKhau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ckHienMatKhau.Name = "ckHienMatKhau";
-            this.ckHienMatKhau.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ckHienMatKhau.Size = new System.Drawing.Size(107, 20);
-            this.ckHienMatKhau.TabIndex = 89;
-            this.ckHienMatKhau.Text = "Hiện mật khẩu";
-            this.ckHienMatKhau.UseVisualStyleBackColor = true;
-            this.ckHienMatKhau.CheckedChanged += new System.EventHandler(this.ckHienMatKhau_CheckedChanged);
             // 
             // DoiMatKhau
             // 

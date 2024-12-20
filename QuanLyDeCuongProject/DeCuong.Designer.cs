@@ -48,6 +48,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbMonHoc = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.txttendecuong = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btThem = new System.Windows.Forms.Button();
@@ -61,7 +62,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.btxoadecuong = new System.Windows.Forms.Button();
             this.btcapnhatdecuong = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
@@ -305,6 +305,18 @@
             this.cbMonHoc.TabIndex = 98;
             this.cbMonHoc.SelectedIndexChanged += new System.EventHandler(this.cbMonHoc_SelectedIndexChanged);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(218, 318);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(186, 21);
+            this.label9.TabIndex = 98;
+            this.label9.Text = "->DUYỆT ĐỀ CƯƠNG";
+            this.label9.Click += new System.EventHandler(this.label9_Click_1);
+            // 
             // txttendecuong
             // 
             this.txttendecuong.Enabled = false;
@@ -327,7 +339,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(161, 50);
             this.button1.TabIndex = 97;
-            this.button1.Text = "Xem";
+            this.button1.Text = "XEM";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -342,7 +354,7 @@
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(161, 50);
             this.btThem.TabIndex = 97;
-            this.btThem.Text = "THÊM";
+            this.btThem.Text = "THÊM MỚI";
             this.btThem.UseVisualStyleBackColor = false;
             this.btThem.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -483,18 +495,6 @@
             this.btcapnhatdecuong.TabIndex = 86;
             this.btcapnhatdecuong.Text = "CẬP NHẬT";
             this.btcapnhatdecuong.UseVisualStyleBackColor = false;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(218, 318);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(186, 21);
-            this.label9.TabIndex = 98;
-            this.label9.Text = "->DUYỆT ĐỀ CƯƠNG";
-            this.label9.Click += new System.EventHandler(this.label9_Click_1);
             // 
             // panel1
             // 
