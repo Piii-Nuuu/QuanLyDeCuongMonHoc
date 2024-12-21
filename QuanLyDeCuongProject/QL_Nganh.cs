@@ -64,20 +64,15 @@ namespace QuanLyDeCuongProject
                 lbSL.Text = count.ToString() + " Ngành ";
                 reader.Close();
                 string sqlKhoa = @"select MaKhoa from Khoa";
-                string sqlTruong = @"select MaGV from GiangVien where MaGV not in (select  TruongNganh from Nganh )";
+            
                 SqlDataAdapter da = new SqlDataAdapter(sqlKhoa, conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 cbmakhoa.DataSource = dt;
                 cbmakhoa.DisplayMember = "TenKhoa";
                 cbmakhoa.ValueMember = "MaKhoa";
-                da = new SqlDataAdapter(sqlTruong, conn);
-                dt = new DataTable();
-                da.Fill(dt);
-                cbmatn.DataSource = dt;
-                cbmatn.DisplayMember = "MaGV";
-                cbmatn.ValueMember = "MaGV";
-
+             
+               
             }
         }
 
@@ -132,7 +127,7 @@ namespace QuanLyDeCuongProject
         {
             txtMaNganh.Text = "";
             txtTenNganh.Text = "";
-            cbmatn.Text = "";
+          
             cbmakhoa.Text = "";
         }
         private void button3_Click(object sender, EventArgs e)
@@ -209,12 +204,11 @@ namespace QuanLyDeCuongProject
             helper.XulySangToi(true, btthem, btcapnhat, btxoa, button1);
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "UPDATE NGANH SET TenNganh = @TenNganh, TruongNganh = @TruongNganh, MaKhoa = @MaKhoa WHERE MaNganh = @MaNganh";
+                string query = "UPDATE NGANH SET TenNganh = @TenNganh, MaKhoa = @MaKhoa WHERE MaNganh = @MaNganh";
                 SqlCommand cmd = new SqlCommand(query, conn);
 
                 cmd.Parameters.AddWithValue("@MaNganh", txtMaNganh.Text);
                 cmd.Parameters.AddWithValue("@TenNganh", txtTenNganh.Text);
-                cmd.Parameters.AddWithValue("@TruongNganh", cbmatn.SelectedValue.ToString());
                 cmd.Parameters.AddWithValue("@MaKhoa", cbmakhoa.SelectedValue.ToString());
                 conn.Open();
                 cmd.ExecuteNonQuery();
@@ -230,7 +224,7 @@ namespace QuanLyDeCuongProject
                 ListViewItem selectedItem = listNganh.SelectedItems[0];
                 txtMaNganh.Text = selectedItem.SubItems[0].Text;
                 txtTenNganh.Text = selectedItem.SubItems[1].Text;
-                cbmatn.Text = selectedItem.SubItems[2].Text;
+            
                 cbmakhoa.Text = selectedItem.SubItems[3].Text;
             }
         }
@@ -275,12 +269,11 @@ namespace QuanLyDeCuongProject
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "INSERT INTO NGANH (MaNganh, TenNganh, MaKhoa, TruongNganh, MaDV) VALUES (@MaNganh, @TenNganh, @MaKhoa, @TruongNganh, 'KTCN')";
+                string query = "INSERT INTO NGANH (MaNganh, TenNganh, MaKhoa, MaDV) VALUES (@MaNganh, @TenNganh, @MaKhoa, 'KTCN')";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@MaNganh", txtMaNganh.Text);
                 cmd.Parameters.AddWithValue("@TenNganh", txtTenNganh.Text);
                 cmd.Parameters.AddWithValue("@MaKhoa", cbmakhoa.SelectedValue.ToString());
-                cmd.Parameters.AddWithValue("@TruongNganh", cbmatn.SelectedValue.ToString());
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Thêm ngành thành công!");
@@ -296,7 +289,7 @@ namespace QuanLyDeCuongProject
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
 
-                string query = $"SELECT MaNganh, TenNganh, TruongNganh, MaKhoa FROM NGANH WHERE TenNganh LIKE (N'%{txtTenNgSearch.Text.ToString().Trim()}%')";
+                string query = $"SELECT MaNganh, TenNganh, MaKhoa FROM NGANH WHERE TenNganh LIKE (N'%{txtTenNgSearch.Text.ToString().Trim()}%')";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 conn.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -307,7 +300,6 @@ namespace QuanLyDeCuongProject
                     count++;
                     ListViewItem item = new ListViewItem(reader["MaNganh"].ToString());
                     item.SubItems.Add(reader["TenNganh"].ToString());
-                    item.SubItems.Add(reader["TruongNganh"].ToString());
                     item.SubItems.Add(reader["MaKhoa"].ToString());
                     listNganh.Items.Add(item);
                 }
