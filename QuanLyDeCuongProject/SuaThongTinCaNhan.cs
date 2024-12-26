@@ -130,5 +130,13 @@ namespace QuanLyDeCuongProject
                 MessageBox.Show("Cập nhật thất bài");
             }
         }
+
+        private void txtPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

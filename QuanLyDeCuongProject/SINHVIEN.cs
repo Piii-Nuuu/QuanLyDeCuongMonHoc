@@ -165,6 +165,12 @@ namespace QuanLyDeCuongProject
             helper.XulySangToi(true, btnthem, btncapnhat, btnxoa, btghi);
             string mssv = txtMssv.Text, hoten = txtHoten.Text, ngay = dtns.Value.ToString("MM/dd/yyyy"), sdt = txtSDT.Text, nganh = cbnganh.SelectedValue.ToString(), email = txtEmail.Text, lop = cbLOP.SelectedValue.ToString(), diachi = txtDiachi.Text, htdt = cbhtdt.SelectedValue.ToString();
             string gt = cbbgt.SelectedItem.ToString();
+            if (!helper.IsValidEmail(email))
+            {
+                MessageBox.Show("Định dạng email không đúng , vui lòng nhập lại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                txtEmail.Focus();
+                return;
+            }
             string sql = $"select * from NguoiDung where email='{email}'";
             DataTable dt = LayDL(sql);
             if(dt.Rows.Count > 0 )
@@ -318,6 +324,12 @@ namespace QuanLyDeCuongProject
             string htdt = cbhtdt.SelectedValue.ToString();
             DateTime ngaysinh = dtns.Value;
             string gt = cbbgt.SelectedItem.ToString();
+            if (!helper.IsValidEmail(email))
+            {
+                MessageBox.Show("Định dạng email không đúng , vui lòng nhập lại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                txtEmail.Focus();
+                return;
+            }
             try
             { 
                 string sqlNguoiDung = $@"UPDATE NguoiDung SET HoTen = '{hoten}', NgaySinh = '{ngaysinh.ToString("MM/dd/yyyy")}', GioiTinh = '{gt}', SoDT = '{sdt}', Email = '{email}', DiaChi = N'{diachi}' WHERE MaNguoiDung = (SELECT MaND FROM SINHVIEN WHERE MaSV = '{mssv}')";
@@ -356,6 +368,14 @@ namespace QuanLyDeCuongProject
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void txtSDT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 

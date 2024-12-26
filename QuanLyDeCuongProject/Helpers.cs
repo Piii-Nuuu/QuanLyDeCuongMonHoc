@@ -6,6 +6,7 @@ using System.Data;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -43,7 +44,11 @@ namespace QuanLyDeCuongProject
 
             }
         }
-
+        public bool IsValidEmail(string email)
+        {
+            Regex emailRegex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$", RegexOptions.IgnoreCase);
+            return emailRegex.IsMatch(email);
+        }
 
         public void createFile(string madc, string tenDc, string maMH, string hoten)
         {
