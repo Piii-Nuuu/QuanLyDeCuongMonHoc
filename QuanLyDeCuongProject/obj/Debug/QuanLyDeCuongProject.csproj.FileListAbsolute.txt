@@ -89,7 +89,6 @@ D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject
 D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QL_Nganh.resources
 D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QuanLyPhanQuyen.resources
 D:\Ngọc Nữ-Gia Tự\doan\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.csproj.GenerateResource.Cache
-D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DeCuong.resources
 C:\M\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe.config
 C:\M\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.exe
 C:\M\QuanLyDeCuongProject\bin\Debug\QuanLyDeCuongProject.pdb
@@ -206,3 +205,12 @@ C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DuyetDeCuo
 C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.DoiMatKhau.resources
 C:\New folder (2)\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.SuaThongTinCaNhan.resources
 D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.CapNhatThongTinCaNhan.resources
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\Syncfusion.Compression.Base.dll
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\Syncfusion.DocIO.Base.dll
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\Syncfusion.Licensing.dll
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\Syncfusion.OfficeChart.Base.dll
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\Syncfusion.Compression.Base.xml
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\Syncfusion.DocIO.Base.xml
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\bin\Debug\Syncfusion.OfficeChart.Base.xml
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDeCuongProject.QLDeCuong.resources
+D:\QuanLyDeCuongMonHoc\QuanLyDeCuongProject\obj\Debug\QuanLyDe.31FE06E8.Up2Date

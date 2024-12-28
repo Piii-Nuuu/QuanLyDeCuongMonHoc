@@ -65,7 +65,7 @@ namespace QuanLyDeCuongProject
             }
             helper.XulySangToi(true, btnthem, btncapnhat, btnxoa, btghi);
             // +++++++ PHÂN QUYỀN ++++++++++++
-            cbbgt.Items.Add("Nu");
+            cbbgt.Items.Add("Nữ");
             cbbgt.Items.Add("Nam");
 
             DataTable dt1 = LayDL("select MaSV, HoTen, Email, SoDT,DiaChi, NgaySinh, GioiTinh, TenLop, TenNganh, Ten  from SINHVIEN sv, NguoiDung nd, LOP l, NGANH n, HINHTHUCDAOTAO dt where sv.MaND = nd.MaNguoiDung and l.MaLop = sv.MaLop and n.MaNganh = sv.MaNganh and sv.HinhThucDaoTao = dt.Ma");
@@ -131,9 +131,14 @@ namespace QuanLyDeCuongProject
             helper.XulySangToi(false, btnthem, btncapnhat, btnxoa, btghi);
             
             // +++++++ PHÂN QUYỀN ++++++++++++
-
+            listSV.Enabled = false;
             string sql = "select top 1 MaSV from SINHVIEN ORDER BY MaSV DESC";
             DataTable dt = LayDL(sql);
+            if (dt.Rows.Count == 0)
+            {
+                txtMssv.Text = "022101001";
+                return;
+            }
             string newMaSV = (int.Parse(dt.Rows[0][0].ToString()) + 1).ToString();
             txtMssv.Text = "0"+newMaSV;
 
@@ -183,7 +188,7 @@ namespace QuanLyDeCuongProject
             dt = LayDL(sql);
             if (dt.Rows.Count > 0)
             {
-                MessageBox.Show("Số Điện Thoạiư Đã Tồn Tại Trong Hệ Thống!");
+                MessageBox.Show("Số Điện Thoại Đã Tồn Tại Trong Hệ Thống!");
                 helper.XulySangToi(false, btnthem, btncapnhat, btnxoa, btghi);
                 return;
             }
@@ -212,7 +217,7 @@ namespace QuanLyDeCuongProject
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Loi DataBase" + ex.Message);
+                MessageBox.Show("Lỗi DataBase" + ex.Message);
             }
         }
 
@@ -279,12 +284,12 @@ namespace QuanLyDeCuongProject
                 DataTable dt1 = LayDL("select MaSV, HoTen, Email, SoDT,DiaChi, NgaySinh, GioiTinh, TenLop, TenNganh, Ten  from SINHVIEN sv, NguoiDung nd, LOP l, NGANH n, HINHTHUCDAOTAO dt where sv.MaND = nd.MaNguoiDung and l.MaLop = sv.MaLop and n.MaNganh = sv.MaNganh and sv.HinhThucDaoTao = dt.Ma");
                 hienthi(dt1);
                 reset();
-                MessageBox.Show("Xoa Thanh Cong");
+                MessageBox.Show("Xóa Thành Công");
                 return;
 
             }
             catch (Exception ex) {
-                MessageBox.Show("Loi Xoa " +ex.Message);
+                MessageBox.Show("Lỗi Xóa " +ex.Message);
             }
             
         }
@@ -376,6 +381,12 @@ namespace QuanLyDeCuongProject
             {
                 e.Handled = true;
             }
+        }
+
+        private void txtHoten_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !((e.KeyChar >= 65 && e.KeyChar <= 122) || (e.KeyChar == 8));
+
         }
     }
 

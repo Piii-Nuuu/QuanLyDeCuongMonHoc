@@ -396,6 +396,11 @@ namespace QuanLyDeCuongProject
                 e.Handled = true;
             }
         }
+
+        private void txtHoten_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !((e.KeyChar >= 65 && e.KeyChar <= 122) || (e.KeyChar == 8));
+        }
     }
 }
 

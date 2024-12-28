@@ -296,13 +296,7 @@ namespace QuanLyDeCuongProject
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if (!helper.checkPermission(18, Modify.taiKhoan.ma_quyen))
-            {
-                MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-
+          
             if (!helper.checkPermission(18, Modify.taiKhoan.ma_quyen))
             {
                 MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -467,6 +461,11 @@ namespace QuanLyDeCuongProject
             {
                 e.Handled = true;
             }
+        }
+
+        private void txtTenMon_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !((e.KeyChar >= 65 && e.KeyChar <= 122) || (e.KeyChar == 8));
         }
     }
 }

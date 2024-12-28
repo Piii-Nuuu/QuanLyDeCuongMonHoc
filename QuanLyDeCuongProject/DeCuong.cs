@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace QuanLyDeCuongProject
 {
-    public partial class DeCuong : Form
+    public partial class QLDeCuong : Form
     {
         // mã môn học chuyển thành combobox
         // nút duyệt đề cương đâu
@@ -21,7 +21,7 @@ namespace QuanLyDeCuongProject
         DataBase Db  = new DataBase();
         Helpers helper = new Helpers();
         MonHocQuery monhocQuery = new MonHocQuery();
-        public DeCuong()
+        public QLDeCuong()
         {
             InitializeComponent();
         }
@@ -220,8 +220,14 @@ namespace QuanLyDeCuongProject
                 return;
             }
             helper.XulySangToi(false, btThem, btcapnhat, btxoa, btludecuong);
+            cbMaMH.Enabled = false;
             string sql = "select top 1 MaDeCuong  from DeCuong order by MaDeCuong desc";
             DataTable dt = Db.ExecuteQuery(sql);
+            if (dt.Rows.Count == 0)
+            {
+                txtmadecuong.Text = "DC001";
+                return;
+            }
             int madc =int.Parse( dt.Rows[0][0].ToString().Substring(dt.Rows[0][0].ToString().Length - 3));
           
             txtmadecuong.Text = "DC"+(madc+1).ToString("00#") ;

@@ -385,6 +385,7 @@
             this.txtHoten.Name = "txtHoten";
             this.txtHoten.Size = new System.Drawing.Size(275, 32);
             this.txtHoten.TabIndex = 14;
+            this.txtHoten.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoten_KeyPress);
             // 
             // label4
             // 

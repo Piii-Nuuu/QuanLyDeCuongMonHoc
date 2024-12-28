@@ -93,7 +93,7 @@ namespace QuanLyDeCuongProject
         {
 
             this.Hide();
-            DeCuong de_cuong_frm = new DeCuong();
+            QLDeCuong de_cuong_frm = new QLDeCuong();
             de_cuong_frm.ShowDialog();
             this.Show();
 

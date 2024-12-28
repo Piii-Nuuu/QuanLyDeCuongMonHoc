@@ -281,6 +281,7 @@
             this.txtTenMon.Name = "txtTenMon";
             this.txtTenMon.Size = new System.Drawing.Size(344, 32);
             this.txtTenMon.TabIndex = 30;
+            this.txtTenMon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTenMon_KeyPress);
             // 
             // txtMaMon
             // 

@@ -1,6 +1,6 @@
 ﻿namespace QuanLyDeCuongProject
 {
-    partial class DeCuong
+    partial class QLDeCuong
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeCuong));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLDeCuong));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -519,7 +519,7 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // DeCuong
+            // QLDeCuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -531,8 +531,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "DeCuong";
-            this.Text = "DeCuong";
+            this.Name = "QLDeCuong";
+            this.Text = "ThongTinDeCuong";
             this.Load += new System.EventHandler(this.DeCuong_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

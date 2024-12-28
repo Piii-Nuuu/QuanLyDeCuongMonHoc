@@ -134,6 +134,7 @@
             this.txtName.Size = new System.Drawing.Size(344, 32);
             this.txtName.TabIndex = 105;
             this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
+            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // txtPermission
             // 
