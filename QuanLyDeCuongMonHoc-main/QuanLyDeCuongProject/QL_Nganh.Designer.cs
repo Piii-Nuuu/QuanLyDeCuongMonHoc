@@ -38,7 +38,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbmakhoa = new System.Windows.Forms.ComboBox();
-            this.cbmatn = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -55,7 +54,6 @@
             this.listNganh = new System.Windows.Forms.ListView();
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -158,7 +156,6 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.cbmakhoa);
-            this.groupBox1.Controls.Add(this.cbmatn);
             this.groupBox1.Controls.Add(this.btxoa);
             this.groupBox1.Controls.Add(this.btcapnhat);
             this.groupBox1.Controls.Add(this.button1);
@@ -185,23 +182,12 @@
             // 
             this.cbmakhoa.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cbmakhoa.FormattingEnabled = true;
-            this.cbmakhoa.Location = new System.Drawing.Point(221, 240);
+            this.cbmakhoa.Location = new System.Drawing.Point(221, 186);
             this.cbmakhoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbmakhoa.Name = "cbmakhoa";
             this.cbmakhoa.Size = new System.Drawing.Size(498, 29);
             this.cbmakhoa.TabIndex = 88;
             this.cbmakhoa.SelectedIndexChanged += new System.EventHandler(this.cbmakhoa_SelectedIndexChanged);
-            // 
-            // cbmatn
-            // 
-            this.cbmatn.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cbmatn.FormattingEnabled = true;
-            this.cbmatn.Location = new System.Drawing.Point(221, 180);
-            this.cbmatn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbmatn.Name = "cbmatn";
-            this.cbmatn.Size = new System.Drawing.Size(498, 29);
-            this.cbmatn.TabIndex = 88;
-            this.cbmatn.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -224,7 +210,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(17, 240);
+            this.label4.Location = new System.Drawing.Point(17, 186);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 24);
@@ -240,9 +226,8 @@
             this.label7.Location = new System.Drawing.Point(17, 181);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(192, 24);
+            this.label7.Size = new System.Drawing.Size(0, 24);
             this.label7.TabIndex = 18;
-            this.label7.Text = "Mã trưởng ngành:";
             // 
             // groupBox2
             // 
@@ -341,7 +326,6 @@
             this.listNganh.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader5,
             this.columnHeader6,
-            this.columnHeader8,
             this.columnHeader9});
             this.listNganh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listNganh.FullRowSelect = true;
@@ -366,11 +350,6 @@
             // 
             this.columnHeader6.Text = "Tên Ngành";
             this.columnHeader6.Width = 189;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "Trưởng Ngành";
-            this.columnHeader8.Width = 144;
             // 
             // columnHeader9
             // 
@@ -456,8 +435,6 @@
         private System.Windows.Forms.ListView listNganh;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader8;
-        private System.Windows.Forms.ComboBox cbmatn;
         private System.Windows.Forms.ComboBox cbmakhoa;
         private System.Windows.Forms.ColumnHeader columnHeader9;
         public System.Windows.Forms.Button button1;

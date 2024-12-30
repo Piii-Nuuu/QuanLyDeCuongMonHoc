@@ -32,6 +32,9 @@ namespace QuanLyDeCuongProject
                     Db.ExecuteNonQuery(sql);
                     MessageBox.Show("Xóa thành công!");
                     hienthilsdanhsach();
+                    txtDuyetDC_madecuong.Text = "";
+                    txtDuyetDC_mamonhoc.Text = "";
+                    txtDuyetDC_tendecuong.Text = "";
 
                 }
                 catch (Exception)
@@ -135,6 +138,9 @@ namespace QuanLyDeCuongProject
                     string sql = "update DeCuong set isAccept = '1' where MaDeCuong = '" + txtDuyetDC_madecuong.Text + "'";
                     Db.ExecuteNonQuery(sql);
                     MessageBox.Show("Đã duyệt thành công!");
+                    txtDuyetDC_madecuong.Text = "";
+                    txtDuyetDC_mamonhoc.Text = "";
+                    txtDuyetDC_tendecuong.Text = "";
                     hienthilsdanhsach();
 
                 }
@@ -153,6 +159,11 @@ namespace QuanLyDeCuongProject
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtDuyetDC_mamonhoc_TextChanged(object sender, EventArgs e)
         {
 
         }

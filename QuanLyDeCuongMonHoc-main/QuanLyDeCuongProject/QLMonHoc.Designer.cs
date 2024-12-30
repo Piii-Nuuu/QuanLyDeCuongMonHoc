@@ -250,6 +250,7 @@
             this.txtSoTietThucHanh.Size = new System.Drawing.Size(344, 32);
             this.txtSoTietThucHanh.TabIndex = 30;
             this.txtSoTietThucHanh.TextChanged += new System.EventHandler(this.txtSoTietThucHanh_TextChanged);
+            this.txtSoTietThucHanh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoTietThucHanh_KeyPress);
             // 
             // txtSoTietLyThuyet
             // 
@@ -259,6 +260,8 @@
             this.txtSoTietLyThuyet.Name = "txtSoTietLyThuyet";
             this.txtSoTietLyThuyet.Size = new System.Drawing.Size(344, 32);
             this.txtSoTietLyThuyet.TabIndex = 30;
+            this.txtSoTietLyThuyet.TextChanged += new System.EventHandler(this.txtSoTietLyThuyet_TextChanged);
+            this.txtSoTietLyThuyet.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoTietLyThuyet_KeyPress);
             // 
             // txtSoTinChi
             // 
@@ -268,6 +271,7 @@
             this.txtSoTinChi.Name = "txtSoTinChi";
             this.txtSoTinChi.Size = new System.Drawing.Size(344, 32);
             this.txtSoTinChi.TabIndex = 30;
+            this.txtSoTinChi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoTinChi_KeyPress);
             // 
             // txtTenMon
             // 

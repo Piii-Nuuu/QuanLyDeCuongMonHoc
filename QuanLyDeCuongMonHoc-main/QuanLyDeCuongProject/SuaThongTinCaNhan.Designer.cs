@@ -1,6 +1,6 @@
 ﻿namespace QuanLyDeCuongProject
 {
-    partial class SuaThongTinCaNhan
+    partial class CapNhatThongTinCaNhan
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuaThongTinCaNhan));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CapNhatThongTinCaNhan));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtBorn = new System.Windows.Forms.DateTimePicker();
             this.cbGender = new System.Windows.Forms.ComboBox();
@@ -114,6 +114,7 @@
             this.txtPhone.Size = new System.Drawing.Size(344, 32);
             this.txtPhone.TabIndex = 105;
             this.txtPhone.TextChanged += new System.EventHandler(this.txtPhone_TextChanged);
+            this.txtPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhone_KeyPress);
             // 
             // txtAddress
             // 
@@ -297,7 +298,7 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // SuaThongTinCaNhan
+            // CapNhatThongTinCaNhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -305,8 +306,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "SuaThongTinCaNhan";
-            this.Text = "SuaThongTinCaNhan";
+            this.Name = "CapNhatThongTinCaNhan";
+            this.Text = "CapNhatThongTinCaNhan";
             this.Load += new System.EventHandler(this.SuaThongTinCaNhan_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

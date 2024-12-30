@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
 namespace QuanLyDeCuongProject
@@ -78,7 +79,7 @@ namespace QuanLyDeCuongProject
             }
             if (txtHoten.Text == "")
             {
-                MessageBox.Show("Vui lòng nhập Họ Tên giáo viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                MessageBox.Show("Vui lòng nhập họ tên giáo viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
                 return;
             }
             if (txtSDT.Text == "")
@@ -89,6 +90,12 @@ namespace QuanLyDeCuongProject
             if (txtEmail.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập email!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                return;
+            }
+            if (!helpers.IsValidEmail(txtEmail.Text))
+            {
+                MessageBox.Show("Định dạng email không đúng , vui lòng nhập lại!", "Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Question);
+                txtEmail.Focus();
                 return;
             }
             if (txtDiachi.Text == "")
@@ -270,7 +277,11 @@ namespace QuanLyDeCuongProject
             int mamoi = Convert.ToInt32(phanso) + 1;
             txtGV.Text = phanten + mamoi.ToString();
         }
-
+        //public static bool IsValidEmail(string email)
+        //{
+        //    Regex emailRegex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$",RegexOptions.IgnoreCase);
+        //    return emailRegex.IsMatch(email);
+        //}
         private void btluu_Click(object sender, EventArgs e)
         {
             if (!helpers.checkPermission(2, Modify.taiKhoan.ma_quyen))
@@ -278,6 +289,7 @@ namespace QuanLyDeCuongProject
                 MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
             string gv = txtGV.Text.Trim();
             string hoten = txtHoten.Text.Trim();
             string ngaysinh = d1.Value.ToString("yyyy/MM/dd");
@@ -294,6 +306,12 @@ namespace QuanLyDeCuongProject
                 string.IsNullOrEmpty(dv) || string.IsNullOrEmpty(hocham) || string.IsNullOrEmpty(hocvi))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!helpers.IsValidEmail(email))
+            {
+                MessageBox.Show("Định dạng email không đúng , vui lòng nhập lại!", "Thông báo");
+                txtEmail.Focus();
                 return;
             }
             // Lưu thông tin vào bảng NGUOIDUNG
@@ -369,6 +387,14 @@ namespace QuanLyDeCuongProject
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtSDT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar)&&!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

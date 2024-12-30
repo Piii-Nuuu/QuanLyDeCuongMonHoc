@@ -33,8 +33,9 @@ namespace QuanLyDeCuongProject
         }
         public static DataTable LayDuLieu(string sql)
         {
-            SqlDataAdapter data = new SqlDataAdapter(sql, cn);
             DataTable dt = new DataTable();
+            SqlDataAdapter data = new SqlDataAdapter(sql, cn);
+           
             data.Fill(dt);
             return dt;
         }

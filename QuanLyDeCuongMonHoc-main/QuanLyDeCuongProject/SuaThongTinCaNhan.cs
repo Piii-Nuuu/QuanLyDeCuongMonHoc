@@ -14,9 +14,9 @@ using System.Windows.Forms;
 
 namespace QuanLyDeCuongProject
 {
-    public partial class SuaThongTinCaNhan : Form
+    public partial class CapNhatThongTinCaNhan : Form
     {
-        public SuaThongTinCaNhan()
+        public CapNhatThongTinCaNhan()
         {
             InitializeComponent();
         }
@@ -128,6 +128,14 @@ namespace QuanLyDeCuongProject
             catch(Exception ex)
             {
                 MessageBox.Show("Cập nhật thất bài");
+            }
+        }
+
+        private void txtPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
             }
         }
     }

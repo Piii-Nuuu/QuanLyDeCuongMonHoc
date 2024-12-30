@@ -263,6 +263,7 @@
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(243, 32);
             this.txtSDT.TabIndex = 24;
+            this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDT_KeyPress);
             // 
             // label12
             // 
@@ -491,6 +492,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2232, 110);
             this.panel1.TabIndex = 115;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox1
             // 

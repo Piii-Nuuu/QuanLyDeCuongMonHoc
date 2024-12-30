@@ -43,6 +43,13 @@ namespace QuanLyDeCuongProject
                 MessageBox.Show($"Bạn không có quyền vào chức năng này", "Lỗi truy cập", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            loading();
+        }
+        void loading()
+        {
+            txtmadecuong.Text = "";
+            txttendecuong.Text = "";
+            cbMonHoc.Text = "";
             helper.XulySangToi(true, btThem, btcapnhat, btxoa, btludecuong);
             string sql = "select TenDeCuong , MaDeCuong , MaMon from DeCuong where isAccept = '1'";
             hienthilsdanhsach(sql);
@@ -160,7 +167,9 @@ namespace QuanLyDeCuongProject
                     helper.XulySangToi(true, btThem, btcapnhat, btxoa, btludecuong);
                     MessageBox.Show("Thêm thành công!");
                     helper.createFile(txtmadecuong.Text, txttendecuong.Text, cbMonHoc.SelectedValue.ToString(), Modify.user.HoTen);
-                  
+                    txtmadecuong.Text = "";
+                    txttendecuong.Text = "";
+                    cbMonHoc.Text = "";
 
                 }
                 catch (Exception)
@@ -189,7 +198,7 @@ namespace QuanLyDeCuongProject
                     string sql = "update DeCuong set TenDeCuong = N'" + txttendecuong.Text + "' , MaMon = '" + cbMonHoc.SelectedValue.ToString() + "' where MaDeCuong = '" + txtmadecuong.Text + "'";
                     Db.ExecuteNonQuery(sql);
                     MessageBox.Show("Cập nhật thành công!");
-                    string sqlQuery = "select TenDeCuong , MaDeCuong , MaMon from DeCuong where MaDeCuong= '" + txtSearchmadecuong + "' or TenDeCuong = N'" + txtSearchtendecuong.Text + "' and isAccept = '1'";
+                    string sqlQuery = "select TenDeCuong , MaDeCuong , MaMon from DeCuong where isAccept = '1'"; ;
                     hienthilsdanhsach(sqlQuery);
 
                 }
@@ -236,9 +245,12 @@ namespace QuanLyDeCuongProject
                     string sql = "delete from DeCuong where MaDeCuong = '"+txtmadecuong.Text+"'";
                     Db.ExecuteNonQuery(sql);
                     MessageBox.Show("Xóa thành công!");
-                    string sqlQuery = "select TenDeCuong , MaDeCuong , MaMon from DeCuong where MaDeCuong= '" + txtSearchmadecuong + "' or TenDeCuong = N'" + txtSearchtendecuong.Text + "' and isAccept = '1'";
+                    string sqlQuery = "select TenDeCuong , MaDeCuong , MaMon from DeCuong where isAccept = '1'";
                     hienthilsdanhsach(sqlQuery);
                     laysldc();
+                    txtmadecuong.Text = "";
+                    txttendecuong.Text = "";
+                    cbMonHoc.Text = "";
 
                 }
                 catch (Exception)
@@ -271,6 +283,7 @@ namespace QuanLyDeCuongProject
                 this.Hide();
                 DuyetDeCuong duyetDeCuong = new DuyetDeCuong();
                 duyetDeCuong.ShowDialog();
+                loading();
                 this.Show();
 
 
@@ -299,6 +312,7 @@ namespace QuanLyDeCuongProject
             Form1 f = new Form1();
             f.loadFile(txtmadecuong.Text);
             f.ShowDialog();
+         
         }
 
         private void cbMonHoc_SelectedIndexChanged(object sender, EventArgs e)
@@ -309,6 +323,14 @@ namespace QuanLyDeCuongProject
                 return;
             } 
             txttendecuong.Text = monhocQuery.getSubject(cbMonHoc.SelectedValue.ToString()).Rows[0]["TenMH"].ToString();
+        }
+
+        private void btIN_Click(object sender, EventArgs e)
+        {
+            FormReport.tenmh = cbMaMH.SelectedItems[0].SubItems[1].Text;
+            FormReport f = new FormReport();
+
+            f.ShowDialog();
         }
     }
 }
