@@ -1,0 +1,37 @@
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAMUBND TỈNH TIỀN GIANG       
+
+
+
+
+TRƯỜNG ĐẠI HỌC TIỀN GIANG                             				Độc lập  -  Tự do -   Hạnh phúc
+										Tiền Giang, ngày   tháng 10  năm 2023
+
+ĐỀ CƯƠNG CHI TIẾT HỌC PHẦN 
+TÊN HỌC PHẦN:  Nhập Môn Lập trình
+
+
+
+Mã học phần: MH10101 
+1. Đơn vị quản lý học phần 
+-Tên Khoa: Khoa Kỹ thuật Công nghệ
+-Tên Bộ môn: Bộ môn Công nghệ thông tin 
+2. Thông tin chung về học phần 
+- Mã học phần:MH10101 
+- Tên học phần:  Nhập Môn Lập trình
+- Số tín chỉ: 4 
+- Số tiết (LT, TL, TH, TT, ĐA):  30, 0, 30, 0, 0 
+- Thuộc CTĐT: Đại học Công nghệ thông tin 
+3. Học phần có liên hệ
+- Học phần tiên quyết: Không có 
+- Học phần học trước: Không có 
+- Học phần song hành: Không có 
+4. Phương thức kiểm tra, đánh giá học phần 
+5.  Đánh giá quá trình
+- Trọng số: 44%  
+- Số cột điểm: 1 
+-  Thang điểm: 10 
+6. Đánh giá cuối kỳ
+- Trọng số: 56%   
+- Hình thức đánh giá: Báo cáo đồ án ngành 
+										GIANG VIEN
+										Nguyễn Văn Nối
